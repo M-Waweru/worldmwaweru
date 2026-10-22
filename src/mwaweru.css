@@ -1,0 +1,158 @@
+/* Mwaweru's evolved native garden: the world leads, paper supports, writing stays one click away. */
+:root { --garden-paper-texture: none; }
+.mwaweru-garden {
+  --paper: #f5f2e7;
+  --ink: #2d4435;
+  --muted: #54644c;
+  --green: #405f46;
+  --line: #d2d4bf;
+}
+.mwaweru-garden .world-wash {
+  background: linear-gradient(180deg, rgba(245,242,231,.84), rgba(245,242,231,.48) 65px, transparent 125px);
+}
+.mwaweru-garden .world-header { padding: 27px 36px; gap: 24px; }
+.mwaweru-garden .wordmark { gap: 12px; }
+.mwaweru-garden .wordmark__mark { width: 45px; height: 45px; font-size: 31px; border-color: #687b58; }
+.mwaweru-garden .wordmark__name { font-family: var(--display); font-size: 32px; font-weight: 400; letter-spacing: -.035em; line-height: 1; }
+.mwaweru-garden .wordmark small { font-family: var(--body); font-size: 11px; font-weight: 500; letter-spacing: .015em; line-height: 1.5; margin-top: 5px; color: #526249; }
+.mwaweru-garden .header-nav { gap: 25px; padding: 3px 11px 3px 18px; border-radius: 6px; background: var(--garden-paper-texture), var(--paper); box-shadow: 0 4px 19px rgba(36,62,42,.065); }
+.mwaweru-garden .header-nav > button:not(.icon-button) { min-height: 38px; font-size: 13px; }
+.mwaweru-garden .header-nav > button[aria-current='page'] { color: #3e694d; }
+.mwaweru-garden .header-nav__rule { background: #a8b298; height: 20px; }
+.mwaweru-garden .world-canvas:focus-visible { outline: 2px solid #c5d3af; outline-offset: -5px; }
+
+.mwaweru-garden .welcome { left: 38px; bottom: 139px; width: 338px; }
+.mwaweru-garden .welcome::before { inset: -23px -24px -23px -24px; background: var(--garden-paper-texture), var(--paper); box-shadow: 0 8px 28px rgba(34,60,39,.085); border-radius: 7px; }
+.mwaweru-garden .welcome h1 { font-size: clamp(42px, 3.5vw, 51px); line-height: 1.03; letter-spacing: -.035em; margin-bottom: 18px; }
+.mwaweru-garden .welcome p { max-width: 300px; font-size: 14px; line-height: 1.65; color: #526249; margin-bottom: 23px; }
+.mwaweru-garden .welcome .primary-button { min-height: 46px; font-size: 13px; gap: 19px; }
+.welcome__links { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 19px; }
+.mwaweru-garden .welcome__link { margin: 0; font-size: 11px; padding: 5px 0; gap: 6px; }
+.mwaweru-garden .primary-button { background: #405f46; }
+.mwaweru-garden .primary-button:hover { background: #2f4c35; }
+
+.mwaweru-garden .garden-dock { background: var(--garden-paper-texture), var(--paper); padding: 8px 14px; min-height: 61px; box-shadow: 0 7px 26px rgba(32,58,37,.10); }
+.mwaweru-garden .territory-navigation { gap: 4px; }
+.mwaweru-garden .territory-navigation > button { min-height: 43px; padding: 10px 13px; font-size: 12px; }
+.mwaweru-garden .territory-navigation > button[aria-current='location'] { background: #e0e6d3; color: #355b3e; }
+.mwaweru-garden .garden-actions { gap: 5px; }
+.mwaweru-garden .garden-actions > button { min-height: 43px; padding: 9px 14px; font-size: 12px; gap: 8px; }
+.mwaweru-garden .garden-actions > button:hover { background: #e6eadb; }
+.mwaweru-garden .world-tools { bottom: 117px; right: 28px; background: var(--garden-paper-texture), var(--paper); padding: 5px; }
+.mwaweru-garden .world-tools .icon-button { width: 38px; height: 38px; }
+.world-tools__rule { width: 23px; height: 1px; background: var(--line); margin: 4px 0; }
+.mwaweru-garden .location-note { background: var(--garden-paper-texture), var(--paper); padding: 14px 17px; box-shadow: 0 5px 18px rgba(34,60,39,.08); }
+.mwaweru-garden .location-note > span { font-family: var(--display); font-size: 19px; }
+.mwaweru-garden .location-note small { font-family: var(--body); font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 4px; }
+.mwaweru-garden .interaction-prompt { background: var(--garden-paper-texture), var(--paper); }
+.mwaweru-garden .interaction-prompt small { font-size: 11px; color: var(--muted); }
+.mwaweru-garden .walk-status { background: var(--garden-paper-texture), var(--paper); font-size: 12px; }
+.mwaweru-garden .garden-map { background: var(--garden-paper-texture), var(--paper); }
+.mwaweru-garden .garden-map__destinations > button { min-height: 42px; font-size: 12px; }
+.mwaweru-garden .explore-help { background: var(--garden-paper-texture), var(--paper); }
+.mwaweru-garden .explore-help dd { font-size: 12px; }
+
+.garden-atmosphere { position: absolute; z-index: 7; bottom: 117px; right: 89px; width: 306px; padding: 22px; border-radius: 8px; background: var(--garden-paper-texture), var(--paper); box-shadow: 0 10px 34px rgba(25,51,36,.17); }
+.atmosphere-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.atmosphere-heading h2 { margin: 0; font-family: var(--display); font-size: 27px; font-weight: 400; letter-spacing: -.025em; }
+.garden-atmosphere > p { margin: 8px 0 21px; font-size: 12px; line-height: 1.6; color: var(--muted); }
+.atmosphere-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
+.atmosphere-options button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 12px 3px; min-height: 72px; border: 1px solid #c6cbb4; border-radius: 5px; background: transparent; color: #4d6248; font-size: 11px; }
+.atmosphere-options button[aria-pressed='true'] { background: #dfe7d4; border-color: #829a73; color: #35523c; }
+.atmosphere-options button:hover { background: #e8ecdf; }
+.atmosphere-options--weather { margin-top: 12px; }
+.atmosphere-options--weather button { min-height: 44px; padding: 10px 5px; flex-direction: row; gap: 6px; }
+.garden-atmosphere > small { display: block; margin-top: 18px; font-size: 11px; line-height: 1.5; color: var(--muted); }
+
+.mwaweru-garden .portfolio-sheet { background: var(--garden-paper-texture), var(--paper); box-shadow: 0 12px 38px rgba(29,51,34,.16); padding-left: 33px; padding-right: 33px; }
+.mwaweru-garden .sheet-toolbar { background: var(--garden-paper-texture), var(--paper); min-height: 62px; }
+.mwaweru-garden .sheet-toolbar > span { font-size: 12px; }
+.mwaweru-garden .sheet-toolbar .icon-button { width: 40px; height: 40px; }
+.mwaweru-garden .portfolio-sheet p { color: #526149; font-size: 14px; line-height: 1.78; }
+.mwaweru-garden .portfolio-sheet .sheet-lead { color: #314c38; font-size: 18px; line-height: 1.48; }
+.mwaweru-garden .portfolio-sheet h1 { overflow-wrap: break-word; }
+.mwaweru-garden .project-image { height: 190px; border-radius: 5px; }
+.mwaweru-garden .project-entry__meta { font-size: 11px; flex-wrap: wrap; }
+.mwaweru-garden .project-entry__meta a { min-height: 38px; }
+.mwaweru-garden .library-filter, .mwaweru-garden .library-filter select, .mwaweru-garden .library-count, .mwaweru-garden .note-entry small, .mwaweru-garden .portfolio-sheet .essay-meta, .mwaweru-garden .portfolio-sheet .source-note { font-size: 12px; }
+.mwaweru-garden .library-filter { margin-top: 18px; }
+.mwaweru-garden .library-search { min-height: 48px; }
+.mwaweru-garden .note-entry { padding: 17px 0; }
+.mwaweru-garden .note-entry strong { line-height: 1.45; }
+.mwaweru-garden .note-entry small { margin-top: 6px; }
+.mwaweru-garden .narrative-paths small { font-size: 12px; }
+.mwaweru-garden.is-night .world-wash { background: linear-gradient(180deg, rgba(23,41,45,.5), transparent 125px); }
+.mwaweru-garden.is-night .wordmark { color: #f0efdc; }
+.mwaweru-garden.is-night .wordmark small { color: #e1e5cb; }
+.mwaweru-garden.is-night .wordmark__mark { border-color: #c3cead; }
+
+@media (min-width: 1650px) {
+  .mwaweru-garden .world-header { padding: 32px 47px; }
+  .mwaweru-garden .welcome { left: 49px; bottom: 155px; width: 358px; }
+  .mwaweru-garden .welcome h1 { font-size: 53px; }
+}
+@media (max-width: 1100px) {
+  .mwaweru-garden .territory-navigation > button { padding: 9px 10px; }
+  .mwaweru-garden .garden-actions > button { padding: 9px 10px; }
+  .mwaweru-garden .welcome { left: 33px; width: 302px; bottom: 140px; }
+  .mwaweru-garden .welcome h1 { font-size: 43px; }
+}
+@media (max-width: 800px) {
+  .mwaweru-garden .wordmark__name { font-size: 29px; }
+  .mwaweru-garden .header-nav { gap: 18px; padding: 2px 7px 2px 13px; }
+  .mwaweru-garden .header-nav > button:not(.icon-button) { font-size: 12px; min-height: 42px; }
+  .mwaweru-garden .garden-actions > button { min-height: 46px; }
+}
+@media (max-width: 600px), (pointer: coarse) and (max-height: 600px) {
+  .mwaweru-garden .world-header { padding: 17px 15px; gap: 10px; align-items: flex-start; }
+  .mwaweru-garden .wordmark { gap: 8px; }
+  .mwaweru-garden .wordmark__mark { width: 34px; height: 34px; font-size: 24px; }
+  .mwaweru-garden .wordmark__name { font-size: 25px; }
+  .mwaweru-garden .wordmark small { font-size: 9px; margin-top: 4px; }
+  .mwaweru-garden .header-nav { gap: 12px; padding: 0 3px 0 10px; }
+  .mwaweru-garden .header-nav > button:not(.icon-button) { font-size: 11px; min-height: 42px; }
+  .mwaweru-garden .header-nav .icon-button { width: 36px; height: 42px; }
+  .mwaweru-garden .header-nav__rule { display: none; }
+  .mwaweru-garden .welcome { width: auto; left: 31px; right: 31px; bottom: 116px; }
+  .mwaweru-garden .welcome::before { inset: -19px -18px -18px; }
+  .mwaweru-garden .welcome h1 { font-size: 35px; line-height: 1.08; margin-bottom: 11px; }
+  .mwaweru-garden .welcome p { font-size: 13px; line-height: 1.6; max-width: 315px; margin-bottom: 17px; }
+  .mwaweru-garden .welcome .primary-button { min-height: 45px; font-size: 12px; }
+  .welcome__links { margin-top: 13px; gap: 11px; }
+  .mwaweru-garden .welcome__link { font-size: 11px; }
+  .mwaweru-garden .garden-dock { padding: 6px 9px; min-height: 60px; }
+  .mwaweru-garden .garden-actions > button { min-height: 46px; font-size: 11px; }
+  .mwaweru-garden .world-tools { top: 90px; bottom: auto; right: 14px; padding: 4px; }
+  .mwaweru-garden .world-tools .icon-button { width: 40px; height: 40px; }
+  .mwaweru-garden .world-tools__rule { display: none; }
+  .garden-atmosphere { top: 90px; bottom: auto; right: 64px; width: min(290px, calc(100vw - 81px)); padding: 18px; }
+  .atmosphere-heading h2 { font-size: 23px; }
+  .garden-atmosphere .icon-button { width: 36px; height: 36px; }
+  .garden-atmosphere > p { margin-bottom: 16px; }
+  .atmosphere-options { gap: 5px; }
+  .atmosphere-options button { min-height: 67px; font-size: 11px; }
+  .atmosphere-options--weather button { min-height: 44px; gap: 4px; }
+  .atmosphere-options--weather svg { width: 16px; }
+  .mwaweru-garden .portfolio-sheet { padding-left: 24px; padding-right: 24px; }
+  .mwaweru-garden .portfolio-sheet p { font-size: 14px; }
+  .mwaweru-garden .portfolio-sheet .sheet-lead { font-size: 17px; }
+  .mwaweru-garden .library-filter select { max-width: 190px; min-height: 42px; }
+  .mwaweru-garden .library-count, .mwaweru-garden .note-entry small { font-size: 11px; }
+  .mwaweru-garden .touch-actions > button { min-width: 52px; min-height: 52px; }
+}
+@media (pointer: coarse) and (max-height: 600px) {
+  .mwaweru-garden .welcome { left: 31px; right: auto; width: 295px; bottom: 117px; }
+  .mwaweru-garden .welcome h1 { font-size: 30px; }
+  .mwaweru-garden .welcome p { font-size: 12px; }
+  .garden-atmosphere { top: 81px; right: 64px; padding: 15px 18px; }
+  .garden-atmosphere > p { margin: 5px 0 10px; }
+  .garden-atmosphere > small { margin-top: 10px; }
+}
+@media (max-width: 370px) {
+  .mwaweru-garden .world-header { padding-left: 12px; padding-right: 12px; }
+  .mwaweru-garden .wordmark__name { font-size: 23px; }
+  .mwaweru-garden .header-nav { gap: 9px; }
+  .mwaweru-garden .wordmark small { display: none; }
+  .mwaweru-garden .welcome h1 { font-size: 33px; }
+  .mwaweru-garden .welcome__link { font-size: 10px; }
+}

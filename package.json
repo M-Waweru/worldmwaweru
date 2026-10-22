@@ -1,0 +1,38 @@
+{
+  "name": "worldmwaweru",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "garden": "node scripts/build-garden.mjs",
+    "garden:links": "node scripts/audit-garden-links.mjs",
+    "articles:sync": "node scripts/sync-articles.mjs",
+    "articles:check": "node scripts/check-articles.mjs",
+    "repo:check": "node scripts/repo-preflight.mjs",
+    "world:art": "node scripts/build-world-art.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/verify-worldmwaweru.mjs",
+    "dev": "vite",
+    "build": "node scripts/build-garden.mjs --if-available && node scripts/check-articles.mjs && tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dompurify": "^3.3.0",
+    "katex": "^0.19.0",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "4.7.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.185.1",
+    "typescript": "^5.8.3",
+    "vite": "7.3.7"
+  },
+  "devDependencies": {
+    "cheerio": "^1.1.2",
+    "playwright-core": "1.58.2",
+    "sanitize-html": "^2.17.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}

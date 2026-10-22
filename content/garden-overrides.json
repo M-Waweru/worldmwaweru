@@ -1,0 +1,77 @@
+{
+  "Living in the Software Age": {
+    "territory": "computing", "arc": "wanderer", "status": "evergreen",
+    "summary": "Software has quietly become the layer on which civilization runs. Most of us live inside it without noticing — the question is what it means to build it well.",
+    "placement": { "x": -17.5, "z": -12.5 }
+  },
+  "Extending Human Intelligence": {
+    "territory": "computing", "arc": "wanderer", "status": "budding",
+    "summary": "The computer was never supposed to replace thinking. It was supposed to be a bicycle for the mind. We are only now learning to ride.",
+    "placement": { "x": -14.5, "z": -15.5 }
+  },
+  "The Future of Text": {
+    "territory": "computing", "arc": "wanderer", "status": "budding",
+    "summary": "Text is the oldest compression algorithm for thought. What happens to writing when machines can write back?",
+    "placement": { "x": -18, "z": -16.5 }
+  },
+  "Innovation is a Mindset": {
+    "territory": "building", "arc": "maker", "status": "evergreen",
+    "summary": "Innovation is not a department or a grant. It is a posture toward problems: the refusal to accept that the current way is the only way.",
+    "placement": { "x": 15.5, "z": -8.5 }
+  },
+  "Produce a Lot of Shitty Work": {
+    "territory": "building", "arc": "maker", "status": "evergreen",
+    "summary": "Volume beats perfection. The path to good work runs directly through a mountain of bad work, produced without shame.",
+    "placement": { "x": 18.5, "z": -11.5 }
+  },
+  "On Being a Founder": {
+    "territory": "building", "arc": "maker", "status": "budding",
+    "summary": "Nobody tells you that founding is less about ideas and more about endurance. The company becomes a mirror you cannot look away from.",
+    "placement": { "x": 16, "z": -13 }
+  },
+  "What are the Mathnuscripts": {
+    "territory": "knowledge", "arc": "origins", "status": "evergreen",
+    "summary": "A living system of mind: memory, meaning and making reinforcing one another until ideas become persons that act in the world.",
+    "placement": { "x": -21.5, "z": 9.5 }
+  },
+  "Publishing My Second Brain": {
+    "territory": "knowledge", "arc": "maker", "status": "budding",
+    "summary": "A garden is published unfinished on purpose. The open kitchen, not the canon — where readers watch thought being cooked.",
+    "placement": { "x": -18.5, "z": 6.5 }
+  },
+  "The Appeal of Personal Blogs": {
+    "territory": "knowledge", "arc": "sovereign", "status": "budding",
+    "summary": "In an age of feeds, a personal blog is a room of one's own on the internet. Slow, owned, and answerable only to its gardener.",
+    "placement": { "x": -22, "z": 6 }
+  },
+  "Knowledge, Innovation and Africa": {
+    "territory": "africa", "arc": "origins", "status": "evergreen",
+    "summary": "The strength of a civilisation is shaped by its ability to create and preserve knowledge. Africa's next liberation is a knowledge liberation.",
+    "placement": { "x": 4.5, "z": -20.5 }
+  },
+  "The Future is African": {
+    "territory": "africa", "arc": "sovereign", "status": "evergreen",
+    "summary": "The youngest continent, the oldest land. The future will not be handed to us — it will be built here, by people who believe it can be.",
+    "placement": { "x": 7.5, "z": -23.5 }
+  },
+  "In Search of Competence": {
+    "territory": "philosophy", "arc": "origins", "status": "evergreen",
+    "summary": "Competence is the quiet self-respect of doing hard things well. It cannot be borrowed, bought, or performed — only earned, slowly.",
+    "placement": { "x": 19.5, "z": 11.5 }
+  },
+  "Choosing your Game will Choose Your Life": {
+    "territory": "philosophy", "arc": "wanderer", "status": "budding",
+    "summary": "Pick the game carefully. The scoreboard you accept becomes the life you live, and most people never notice they are playing someone else's.",
+    "placement": { "x": 16.5, "z": 8.5 }
+  },
+  "Towards Being a Man": {
+    "territory": "philosophy", "arc": "origins", "status": "evergreen",
+    "summary": "Becoming a man is not an event but a never-ending process — a calculus with no final answer, only better approximations.",
+    "placement": { "x": 20, "z": 8 }
+  },
+  "Avocado ROI Calculator (Kenya)": {
+    "territory": "building", "status": "evergreen",
+    "summary": "A working field instrument: model the real cost and return of an avocado shamba in Kenya, season by season.",
+    "component": "avocado-roi"
+  }
+}

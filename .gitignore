@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.asset-staging/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+coverage/
+test-results/
+playwright-report/
+.impeccable/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

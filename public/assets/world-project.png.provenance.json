@@ -1,0 +1,10 @@
+{
+  "origin": "Origin: Screenshot of the actual running upgraded Mwaweru native Three.js garden, captured with Playwright at 1440x900. Immutable source: .asset-staging/world-project-source-5f8f4abd10a01a23.png. Treatment: 800x620 crop at x=580,y=110. Original procedural scene geometry and painted material textures; no image generation or reference-photo compositing.",
+  "source": "docs/provenance/world-project-source-5f8f4abd10a01a23.png",
+  "capture": ".impeccable/review/mwaweru-upgrade/world-project.png",
+  "source_sha256": "5f8f4abd10a01a234793cd92acffc030dd002a90466381b0cf84ca8261f193ae",
+  "treatment": "Crop 800 x 620 at x=580, y=110; actual native scene screenshot.",
+  "sha256": "265588ca2a03d1947612c51f8a4d6a2fcd43edd5cc10767ca88266bbd166477a",
+  "originalSource": ".asset-staging/world-project-source-5f8f4abd10a01a23.png",
+  "publicationNote": "The immutable raw scene capture is archived in this repository. Existing embedded origin metadata retains the original production-stage path."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "media": [
+    {
+      "path": "articles/media/b067e7ed48ddc8494ccff445.png",
+      "sourceUrl": "https://mathnuscript.com/media/hans-moravecs-illustration-of-the-rising-tide-of-the-ai-capacity-from-max-tegmark.png",
+      "bytes": 166009,
+      "sha256": "b067e7ed48ddc8494ccff445043cefcf8ab87a80bbc837b9c755486b81c4a9a0"
+    },
+    {
+      "path": "articles/media/13cffce4cb167934cd113865.png",
+      "sourceUrl": "https://mathnuscript.com/media/ruliad.png",
+      "bytes": 3037921,
+      "sha256": "13cffce4cb167934cd1138659b0fb684e881859890ab4770db06d59562d076e6"
+    },
+    {
+      "path": "articles/media/ad3b3e05e0a79062b4d6ca6f.png",
+      "sourceUrl": "https://mathnuscript.com/media/intropitchpic.png",
+      "bytes": 5134573,
+      "sha256": "ad3b3e05e0a79062b4d6ca6fa05867c6b36cfe0b2488d077c3dd136ee37e5b2f"
+    }
+  ],
+  "unavailable": [
+    {
+      "sourceUrl": "https://mathnuscript.com/audio-on-the-alternative-narrative-on-ai.webm",
+      "reason": "The published source returned HTTP 404 or 410."
+    }
+  ]
+}

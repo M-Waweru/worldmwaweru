@@ -1,0 +1,16 @@
+.elsewhere-list { margin: 23px 0; }
+.elsewhere-list > a, .elsewhere-list > button { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 76px; padding: 17px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; text-decoration: none; text-align: left; }
+.elsewhere-list > a > svg:first-child, .elsewhere-list > button > svg:first-child { flex-shrink: 0; color: #637d5b; }
+.elsewhere-list > a > span, .elsewhere-list > button > span { flex: 1; }
+.elsewhere-list strong { display: block; font-family: var(--display); font-size: 21px; font-weight: 400; }
+.elsewhere-list small { display: block; color: var(--muted); font-size: 12px; line-height: 1.6; margin-top: 5px; }
+.elsewhere-list a:hover strong, .elsewhere-list button:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+.mwaweru-garden .portfolio-sheet .elsewhere-source { font-size: 12px; line-height: 1.7; }
+.elsewhere-source a { display: inline; }
+.elsewhere-source svg { display: inline; vertical-align: middle; }
+.contact-links { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; margin-top: 15px; }
+.contact-links a { display: flex; gap: 9px; align-items: center; min-height: 46px; padding: 12px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-size: 13px; }
+.contact-links a:hover span { text-decoration: underline; text-underline-offset: 4px; }
+.personal-mantra { font-family: var(--display); font-size: 22px; line-height: 1.6; color: #476449; margin: 22px 0; padding: 0; }
+.project-entry--linked p { max-width: 55ch; }
+.mwaweru-garden .garden-actions > button[aria-pressed='true'] { background: #e0e6d3; }

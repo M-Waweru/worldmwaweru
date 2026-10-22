@@ -1,0 +1,21 @@
+{
+  "source": "https://linktr.ee/mathengewaweru",
+  "aboutSource": "https://mwaweru.com/about",
+  "statement": "Express yourself. Contribute to humanity. Tell the story.",
+  "links": [
+    { "id": "linkedin", "label": "LinkedIn", "description": "Work, people, and professional conversations.", "url": "https://www.linkedin.com/in/mathenge-waweru", "kind": "social" },
+    { "id": "x", "label": "X", "description": "Thoughts, discoveries, and conversations along the way.", "url": "https://x.com/mathenge_waweru", "kind": "social" },
+    { "id": "github", "label": "GitHub", "description": "Code, experiments, and things in the making.", "url": "https://github.com/M-Waweru", "kind": "social", "source": "https://mwaweru.com/about" },
+    { "id": "email", "label": "Say hello", "description": "A good conversation can be the beginning of something.", "url": "mailto:mathenge2waweru@gmail.com", "kind": "contact", "source": "https://mwaweru.com/about" },
+    { "id": "thenks", "label": "Thenks", "description": "Card and mobile-money tipping in Africa.", "url": "https://thenks.co", "kind": "project" },
+    { "id": "mathnuscripts", "label": "Mathnuscripts", "description": "A living system of writing about technology, knowledge, Africa, philosophy, and building the future.", "url": "https://mathnuscript.com", "kind": "writing" },
+    { "id": "about", "label": "The earlier chapter", "description": "More about my work, projects, and the things that keep me curious.", "url": "https://mwaweru.com/about", "kind": "about" },
+    { "id": "linktree", "label": "My Linktree", "description": "The collection of links that brought these little paths together.", "url": "https://linktr.ee/mathengewaweru", "kind": "collection" }
+  ],
+  "projects": [
+    { "id": "shukran", "name": "Shukran", "description": "Previously co-founder and Product Lead, working across product research, software, go-to-market, and operations for a digital tipping and financial-services platform.", "url": "https://shukran.co", "source": "https://mwaweru.com/about" },
+    { "id": "agrarian", "name": "Agrarian", "description": "An IoT agritech project using environmental data to support farmers. Served as Project Manager and President of Enactus Strathmore, representing Kenya at the Enactus Global Competition.", "url": "https://strathmore.edu/news/enactus-strathmore-to-represent-kenya-in-the-enactus-global-competition-set-for-september/", "source": "https://mwaweru.com/about" },
+    { "id": "voting", "name": "Blockchain voting", "description": "An experiment in censorship-resistant student elections at Strathmore University.", "url": "https://github.com/M-Waweru/truffledapping", "source": "https://mwaweru.com/about" },
+    { "id": "crowdsourcing", "name": "Crowdsourced fact-checking", "description": "Exploring collective human judgment to flag misinformation on Twitter.", "url": "https://github.com/M-Waweru/Crowdsourcing-Ranking-of-Tweets", "source": "https://mwaweru.com/about" }
+  ]
+}

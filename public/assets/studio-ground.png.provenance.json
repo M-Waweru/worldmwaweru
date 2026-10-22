@@ -1,0 +1,6 @@
+{
+  "origin": "User-provided reference: C:\\Users\\Mathenge\\OneDrive\\Pictures\\Pinterest\\download (24).jpg",
+  "source": "/mnt/c/Users/Mathenge/OneDrive/Pictures/Pinterest/download (24).jpg",
+  "treatment": "crop=100:80:40:25; seeded 512 × 512 overlapping-patch quilting from the source crop to remove recognizable mirrored repetitions while retaining its native ink marks.",
+  "use": "Reference-derived terrain texture."
+}

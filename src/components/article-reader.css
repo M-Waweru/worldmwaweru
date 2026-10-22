@@ -1,0 +1,68 @@
+.mwaweru-garden.is-reading .portfolio-sheet { width: min(760px, calc(100% - 56px)); padding-left: 43px; padding-right: 43px; }
+.mwaweru-garden.is-reading .sheet-toolbar { margin-bottom: 15px; }
+.mwaweru-garden.is-reading .essay-preview > h1 { max-width: 21ch; font-size: clamp(32px, 3vw, 43px); line-height: 1.12; margin-bottom: 20px; }
+.mwaweru-garden.is-reading .essay-meta { margin-bottom: 18px; line-height: 1.65; }
+.full-article { clear: both; }
+.article-reading-tools { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 0; margin-bottom: 23px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.article-reading-tools .text-button { gap: 7px; font-size: 12px; min-height: 30px; }
+.article-contents { margin: 0 0 27px; padding: 12px 15px; background: #e7ebdc; border-radius: 5px; }
+.article-contents summary { display: flex; align-items: center; gap: 9px; cursor: pointer; font-size: 13px; font-weight: 500; }
+.article-contents nav { display: flex; flex-direction: column; padding-top: 10px; }
+.article-contents button { border: 0; background: transparent; text-align: left; padding: 7px 0; font-size: 12px; line-height: 1.5; }
+.article-contents button:hover { text-decoration: underline; text-underline-offset: 4px; }
+.article-contents button[data-level='3'] { padding-left: 14px; }
+.reader-content { max-width: 66ch; margin: 0 auto; color: var(--ink); overflow-wrap: break-word; }
+.mwaweru-garden .portfolio-sheet .reader-content p, .mwaweru-garden .portfolio-sheet .reader-content li { font-size: 16px; line-height: 1.85; color: #384d3b; }
+.mwaweru-garden .portfolio-sheet .reader-content p { margin: 0 0 1.35em; }
+.mwaweru-garden .portfolio-sheet .reader-content h1, .mwaweru-garden .portfolio-sheet .reader-content h2 { font-family: var(--display); font-size: 29px; font-weight: 400; line-height: 1.25; margin: 1.6em 0 .65em; letter-spacing: -.025em; }
+.mwaweru-garden .portfolio-sheet .reader-content h3 { font-family: var(--display); font-weight: 400; font-size: 23px; margin: 1.5em 0 .65em; line-height: 1.35; }
+.reader-content h4 { font-size: 17px; margin: 1.5em 0 .7em; }
+.reader-content [id] { scroll-margin-top: 82px; }
+.reader-content ul, .reader-content ol { padding-left: 1.55em; margin: 0 0 1.5em; }
+.reader-content li { padding-left: .18em; margin-bottom: .5em; }
+.reader-content li > p { margin-bottom: .6em; }
+.reader-content strong { font-weight: 700; }
+.reader-content a { color: #3c6949; text-decoration-color: #91a585; text-underline-offset: .2em; overflow-wrap: anywhere; }
+.reader-content a:hover { text-decoration-color: currentColor; }
+.reader-content blockquote { margin: 1.8em 0; padding: 4px 22px; border-left: 1px solid #aab899; }
+.mwaweru-garden .portfolio-sheet .reader-content blockquote p { font-family: var(--display); font-size: 21px; line-height: 1.65; color: #425f46; }
+.reader-content img, .reader-content video { display: block; max-width: 100%; height: auto; margin: 1.6em auto; border-radius: 5px; }
+.reader-content audio { width: 100%; margin: 1em 0; }
+.reader-content figure { margin: 1.8em 0; }
+.reader-content figcaption { font-size: 12px; line-height: 1.7; color: var(--muted); margin-top: 9px; text-align: center; }
+.reader-content pre { white-space: pre; overflow-x: auto; max-width: 100%; background: #e7eada; color: #324d3a; padding: 18px; border-radius: 5px; font-size: 13px; line-height: 1.8; scrollbar-width: thin; }
+.reader-content code { font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: .86em; }
+.reader-content :not(pre) > code { padding: 2px 5px; border-radius: 3px; background: #e6e9d9; }
+.reader-content table { display: block; max-width: 100%; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.5em 0; font-size: 14px; line-height: 1.7; }
+.reader-content th, .reader-content td { padding: 10px 13px; border: 1px solid var(--line); text-align: left; }
+.reader-content th { background: #e7ebdb; font-weight: 600; }
+.reader-content hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+.reader-content .katex-display { overflow-x: auto; overflow-y: hidden; padding: 7px 0; }
+.reader-content .katex { font-size: 1.05em; }
+.reader-content .footnotes { border-top: 1px solid var(--line); margin-top: 2em; padding-top: 1em; }
+.mwaweru-garden .portfolio-sheet .reader-content .footnotes p, .mwaweru-garden .portfolio-sheet .reader-content .footnotes li { font-size: 13px; line-height: 1.7; }
+.mwaweru-garden .portfolio-sheet .reader-content .article-attachment-note { font-size: 13px; color: var(--muted); font-style: italic; }
+.article-colophon { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 35px 0 24px; padding-top: 17px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.article-colophon a { display: flex; align-items: center; gap: 6px; text-decoration: none; }
+.article-colophon a:hover { text-decoration: underline; }
+.article-state { min-height: 160px; padding: 25px 0; }
+.mwaweru-garden .portfolio-sheet .article-state h2 { margin-top: 0; }
+.article-loading-line { display: block; height: 2px; width: 100%; max-width: 180px; background: #bdcbb0; margin: 0 0 20px; }
+.copy-link-notice { font-size: 12px; }
+@media(max-width:600px) {
+  .mwaweru-garden.is-reading .portfolio-sheet { width: calc(100% - 24px); padding-left: 23px; padding-right: 23px; }
+  .mwaweru-garden.is-reading .essay-preview > h1 { font-size: 32px; }
+  .article-reading-tools { font-size: 11px; gap: 8px; }
+  .article-reading-tools .text-button { font-size: 11px; min-height: 38px; }
+  .mwaweru-garden .portfolio-sheet .reader-content p, .mwaweru-garden .portfolio-sheet .reader-content li { font-size: 15px; line-height: 1.85; }
+  .mwaweru-garden .portfolio-sheet .reader-content h2 { font-size: 26px; }
+  .mwaweru-garden .portfolio-sheet .reader-content h3 { font-size: 22px; }
+  .reader-content blockquote { padding: 2px 14px; }
+  .mwaweru-garden .portfolio-sheet .reader-content blockquote p { font-size: 20px; }
+}
+@media print {
+  html,body,#root,.little-world { height: auto !important; overflow: visible !important; background: white !important; }
+  .world-canvas,.world-wash,.world-header,.garden-dock,.world-tools,.skip-link,.sheet-toolbar,.article-reading-tools,.article-contents,.related-notes,.essay-preview > .text-button { display: none !important; }
+  .mwaweru-garden.is-reading .portfolio-sheet { position: static; display: block; height: auto; max-height: none; width: 100%; padding: 0; overflow: visible; box-shadow: none; background: white; }
+  .reader-content { max-width: none; }
+}

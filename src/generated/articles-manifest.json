@@ -1,0 +1,1403 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-10-22T01:43:43.758Z",
+  "sourceSite": "https://mathnuscript.com",
+  "count": 155,
+  "articles": [
+    {
+      "slug": "2 Years After University",
+      "path": "articles/4473e5325d24aa87-bc855adbbd70.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/2-years-after-university",
+      "words": 972,
+      "readingTime": 5,
+      "publishedAt": "2023-12-08T18:14:18.272Z",
+      "sha256": "bc855adbbd70eed99089460cbeb4a74dd5f5f4847c6facfd3dd81eeb1b2eea75"
+    },
+    {
+      "slug": "4 Frontiers in Software in 2023",
+      "path": "articles/a475ef959af81b07-c72c4ffc6e3b.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/4-frontiers-in-software-in-2023",
+      "words": 61,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:18.319Z",
+      "sha256": "c72c4ffc6e3beb798cb9552fd96475fcd4086dfc245139bc3506f0fd727c7a4e"
+    },
+    {
+      "slug": "5-step process of rigorous implementation",
+      "path": "articles/db084cf8432e13af-6b1f703a073d.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/5-step-process-of-rigorous-implementation",
+      "words": 202,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.200Z",
+      "sha256": "6b1f703a073d2aa099f0e72701f0f6cead732770a0265642a1c00b83a284578a"
+    },
+    {
+      "slug": "A Better Way to Vote",
+      "path": "articles/785aae4a33ae9274-8403fd18e46c.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/a-better-way-to-vote",
+      "words": 126,
+      "readingTime": 1,
+      "publishedAt": "2025-05-02T17:48:09.446Z",
+      "sha256": "8403fd18e46c35f072eb72d607ac5be46f5e49c698be6431006e794c5c077db1"
+    },
+    {
+      "slug": "A Cry for Hope and Testament to Resilience",
+      "path": "articles/e71238f1e1769a52-e1f7b9d5f41e.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/a-cry-for-hope-and-testament-to-resilience",
+      "words": 630,
+      "readingTime": 3,
+      "publishedAt": "2025-09-13T07:57:03.023Z",
+      "sha256": "e1f7b9d5f41ec90a7fd916ac00ee7798a2904a0d8c623ac1ee567e576bc7136d"
+    },
+    {
+      "slug": "A Note of Good Ideas",
+      "path": "articles/ec75a7ad58ba1e11-9250a6c88a1e.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/a-note-of-good-ideas",
+      "words": 400,
+      "readingTime": 2,
+      "publishedAt": "2024-04-28T23:41:46.085Z",
+      "sha256": "9250a6c88a1e77e195ce07eb02555eb4c8e5812b938084667290a751e78f1fc0"
+    },
+    {
+      "slug": "A Study of Decadence",
+      "path": "articles/8e87fd2ffae47c74-2d9507fa6fa6.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/a-study-of-decadence",
+      "words": 64,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.221Z",
+      "sha256": "2d9507fa6fa693b080bb4ebf9c34122d27b7a3f291875ddc899dc3ebab984607"
+    },
+    {
+      "slug": "Acceralating Innovation for Good",
+      "path": "articles/1e2f40f63ec0c631-4e203585432b.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/acceralating-innovation-for-good",
+      "words": 621,
+      "readingTime": 3,
+      "publishedAt": "2025-08-14T00:40:04.114Z",
+      "sha256": "4e203585432bd1df1d63d3f405895c89fae244d5260ee96bef322550338bd881"
+    },
+    {
+      "slug": "Africa and the Discipline of Hope",
+      "path": "articles/f74d5609f7aaf836-26a2cff691c4.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/africa-and-the-discipline-of-hope",
+      "words": 1707,
+      "readingTime": 9,
+      "publishedAt": "2026-01-04T21:54:08.595Z",
+      "sha256": "26a2cff691c415ddc711114d0abce988d4c65e849c585d18e026741839ff3481"
+    },
+    {
+      "slug": "AI and Free Information",
+      "path": "articles/bcffb9ca736abc22-a09f91ce1e1f.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/ai-and-free-information",
+      "words": 599,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:13.676Z",
+      "sha256": "a09f91ce1e1fd2a548d722fa7e411691da9d23e1182f891f19dd3327ed1a182b"
+    },
+    {
+      "slug": "AI Conversation on Cost of Capital",
+      "path": "articles/e8e3b10ee0d954f4-e8c9a5f37bd3.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/ai-conversation-on-cost-of-capital",
+      "words": 488,
+      "readingTime": 2,
+      "publishedAt": "2023-12-08T18:14:18.366Z",
+      "sha256": "e8c9a5f37bd38f175d619c02825f64c8bcf0537fb1c416bd16f4f3a109085931"
+    },
+    {
+      "slug": "An Alternative Narrative on AI",
+      "path": "articles/52f37e3ef33e842f-b06dcad734d9.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/an-alternative-narrative-on-ai",
+      "words": 47,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.234Z",
+      "sha256": "b06dcad734d9e0647cd187493289bc43f5f98b541e266815a45e1034fa59c3b5"
+    },
+    {
+      "slug": "An Outburst on Building a Great Empire",
+      "path": "articles/ffae274e68d2a9f6-9f13bc491b16.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/an-outburst-on-building-a-great-empire",
+      "words": 584,
+      "readingTime": 3,
+      "publishedAt": "2024-10-19T23:17:24.104Z",
+      "sha256": "9f13bc491b164a62a63790e552ac16ed7bde168d174243795910314dbf01d2f4"
+    },
+    {
+      "slug": "Andrew Tate on Elon Musk",
+      "path": "articles/12d34b0e1cb63067-aeccf2b99bdb.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/andrew-tate-on-elon-musk",
+      "words": 225,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.251Z",
+      "sha256": "aeccf2b99bdb73f276accaca822e45e65103552d245594d0ed56f0a84da79e97"
+    },
+    {
+      "slug": "Antidote to Crime",
+      "path": "articles/3d27c21b7190cf28-ff8196f708d2.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/antidote-to-crime",
+      "words": 717,
+      "readingTime": 4,
+      "publishedAt": "2023-12-08T18:14:13.691Z",
+      "sha256": "ff8196f708d20d61a244fdc3671d4aa6ba3c86ed35f76b214fc68acfdd5cd46e"
+    },
+    {
+      "slug": "At the Cusp of Innovation",
+      "path": "articles/2426a43a65bb4ae8-a74f0b5a19ce.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/at-the-cusp-of-innovation",
+      "words": 1388,
+      "readingTime": 7,
+      "publishedAt": "2024-04-28T21:58:17.034Z",
+      "sha256": "a74f0b5a19ce4d6e75eaf0df76ba47a72c61f3f7089ea07c23a79c8a0875c5e5"
+    },
+    {
+      "slug": "Attention is Scarce",
+      "path": "articles/f2779a6cfb9ded36-e112f9f4f8aa.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/attention-is-scarce",
+      "words": 214,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.267Z",
+      "sha256": "e112f9f4f8aa4684d2658b7a4d1cfcb2b9a001264fe0dd1351d35300c69d255a"
+    },
+    {
+      "slug": "Attention, Attention, Attention",
+      "path": "articles/96b10ccb619189f0-3cb39bdc34d4.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/attention%2C-attention%2C-attention",
+      "words": 220,
+      "readingTime": 1,
+      "publishedAt": "2025-09-29T21:24:16.020Z",
+      "sha256": "3cb39bdc34d493283ddc7f018e6b7d734111297a0382bc47c8a905f6ac254642"
+    },
+    {
+      "slug": "Automated kitchen and bartender",
+      "path": "articles/9160759b583204c8-27cf7a1029ff.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/automated-kitchen-and-bartender",
+      "words": 126,
+      "readingTime": 1,
+      "publishedAt": "2025-05-02T17:48:41.446Z",
+      "sha256": "27cf7a1029ffb60a3fc68985d61bf47ea1326a7e1749bdbdfa997069f2ddc38b"
+    },
+    {
+      "slug": "Avocado Farming 101 (Kenya Edition)",
+      "path": "articles/2debff52428787a1-64d0b34c74f3.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/avocado-farming-101-(kenya-edition)",
+      "words": 831,
+      "readingTime": 4,
+      "publishedAt": "2025-08-30T15:30:58.087Z",
+      "sha256": "64d0b34c74f38cb801ed856a63855d345ff1d533f7eb2521bb20d4b4c6d58c56"
+    },
+    {
+      "slug": "Bearing Life Willingly",
+      "path": "articles/e2bada104bf87627-3f112297a69b.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/bearing-life-willingly",
+      "words": 1947,
+      "readingTime": 10,
+      "publishedAt": "2024-03-30T00:02:25.083Z",
+      "sha256": "3f112297a69bb264aa7a5e654695cc0beb8e3703e15dd26b3c074877d55c864c"
+    },
+    {
+      "slug": "Being a Beacon of Hope",
+      "path": "articles/6e4c8333b7914f62-6def30b54ab6.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/being-a-beacon-of-hope",
+      "words": 779,
+      "readingTime": 4,
+      "publishedAt": "2024-10-20T00:13:38.867Z",
+      "sha256": "6def30b54ab6ebbceeadbada56d3d539bab8e20f2bd0cffa27261906de8f6d39"
+    },
+    {
+      "slug": "Being a Tinkerer",
+      "path": "articles/daf76db96d499e09-b0a7dfe9c6af.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/being-a-tinkerer",
+      "words": 1078,
+      "readingTime": 5,
+      "publishedAt": "2023-12-08T18:14:13.697Z",
+      "sha256": "b0a7dfe9c6af69a66fc668a27fa72f02b76b3727b92f46b933e775b978bee8cd"
+    },
+    {
+      "slug": "Book - Land is a Big Deal",
+      "path": "articles/4d68bfe9325cd270-130fc9308e1f.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/book---land-is-a-big-deal",
+      "words": 134,
+      "readingTime": 1,
+      "publishedAt": "2024-04-28T22:59:16.886Z",
+      "sha256": "130fc9308e1f7bdb5a4b1ef2a909d61718446b38fec8042f72b150d05a534b6e"
+    },
+    {
+      "slug": "Build the Resources Then Build the Life",
+      "path": "articles/41d2e71de4925850-427c8d45444a.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/build-the-resources-then-build-the-life",
+      "words": 5,
+      "readingTime": 1,
+      "publishedAt": "2024-04-28T23:34:51.172Z",
+      "sha256": "427c8d45444a33e85cdfb63cc4a62574b296d429674a8016876c725d56bd699b"
+    },
+    {
+      "slug": "Building a PC",
+      "path": "articles/c660096f488e6ad9-7c012c3dc018.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/building-a-pc",
+      "words": 104,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.282Z",
+      "sha256": "7c012c3dc01896feb51fc96b6be6f0e27bb50e53f4dad00921a7d441cfc63446"
+    },
+    {
+      "slug": "Calculus Metaphor for Manhood",
+      "path": "articles/696ad0b21d2c93cd-ada8ba438a6d.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/calculus-metaphor-for-manhood",
+      "words": 263,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.298Z",
+      "sha256": "ada8ba438a6df4783c2925c42be51e315438d0079272e95a72e6a0fa0103e421"
+    },
+    {
+      "slug": "Capital over Labour is Dangerous",
+      "path": "articles/3388b32b4417b001-619ab0fecc04.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/capital-over-labour-is-dangerous",
+      "words": 801,
+      "readingTime": 4,
+      "publishedAt": "2026-01-05T19:40:14.151Z",
+      "sha256": "619ab0fecc04be43a2f229602c28c79ef3dbf815df389b48f806b6c6604d613b"
+    },
+    {
+      "slug": "Choose to Live Life on Your Own Terms",
+      "path": "articles/f03bebe7394ddf96-e41bc1e28469.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/choose-to-live-life-on-your-own-terms",
+      "words": 1099,
+      "readingTime": 5,
+      "publishedAt": "2024-05-24T00:35:48.728Z",
+      "sha256": "e41bc1e28469bc473feceda988d7cd9a2075069a0e8ccf8f90d062d104ea4d75"
+    },
+    {
+      "slug": "Choosing your Game will Choose Your Life",
+      "path": "articles/164073a7b6cf5ed0-89c388d3699d.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/choosing-your-game-will-choose-your-life",
+      "words": 577,
+      "readingTime": 3,
+      "publishedAt": "2024-05-08T23:35:48.882Z",
+      "sha256": "89c388d3699df5c563fa16abbd15d78b907022f4f7417d2a2b79985f6003325d"
+    },
+    {
+      "slug": "Computers as Molders of the Universe",
+      "path": "articles/fae03c886fe069fd-14038ce68697.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/computers-as-molders-of-the-universe",
+      "words": 96,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.313Z",
+      "sha256": "14038ce68697c3395cfae3c8344c51ab7ab12b87cafd7cc4b0c2dde2855738fa"
+    },
+    {
+      "slug": "Computing a theory for everything",
+      "path": "articles/8381ada3a47b1ee2-61281cd6ab6e.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/computing-a-theory-for-everything",
+      "words": 764,
+      "readingTime": 4,
+      "publishedAt": "2024-06-09T10:46:30.418Z",
+      "sha256": "61281cd6ab6e104406ed0b419595cdbf1e9f53284c27bd3804480d08e2a0d4bf"
+    },
+    {
+      "slug": "Developers building Startups",
+      "path": "articles/800bf41e4782fdff-77a3b2b86dab.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/developers-building-startups",
+      "words": 126,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.344Z",
+      "sha256": "77a3b2b86dabbf8bd97fba417012b84fe3ba456efd371cc2450efd6d38a3dc5c"
+    },
+    {
+      "slug": "Digitalizing Security Registrations",
+      "path": "articles/090cc3ed98bfe0fc-64e9202a3b3d.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/digitalizing-security-registrations",
+      "words": 195,
+      "readingTime": 1,
+      "publishedAt": "2024-10-19T23:56:16.808Z",
+      "sha256": "64e9202a3b3dbc4153256cf06637a309dbf85d3497fbc1efbe500aae5ae670ee"
+    },
+    {
+      "slug": "Discussion Paper on Central Bank Digital Currency",
+      "path": "articles/16ba2025da8dee27-cfcec8516a16.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/discussion-paper-on-central-bank-digital-currency",
+      "words": 623,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:14.360Z",
+      "sha256": "cfcec8516a1678fb64e3de2845bc7a81184f10988314cdb0c5730e4e90c5173f"
+    },
+    {
+      "slug": "Embrace the Machine",
+      "path": "articles/cc522e372b129a9b-7ceeaee4f7e1.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/embrace-the-machine",
+      "words": 2099,
+      "readingTime": 10,
+      "publishedAt": "2025-09-29T21:47:32.872Z",
+      "sha256": "7ceeaee4f7e1184982f395129b7331927a5fdf0eb3fcf8886f5d5fdf211d48ec"
+    },
+    {
+      "slug": "Embrace the Machine - Original",
+      "path": "articles/066fc01fab8b9f0f-15f7825d9256.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/embrace-the-machine---original",
+      "words": 1379,
+      "readingTime": 7,
+      "publishedAt": "2025-09-30T16:06:32.408Z",
+      "sha256": "15f7825d9256819c29f7b73f3ce7cc1a690d76db2d07ad825c0a47bffa1d10b8"
+    },
+    {
+      "slug": "Essay Improvement Prompt",
+      "path": "articles/072f0bc1f388c5c4-fa1faa081917.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/essay-improvement-prompt",
+      "words": 69,
+      "readingTime": 1,
+      "publishedAt": "2025-09-30T11:14:09.280Z",
+      "sha256": "fa1faa081917f15eaa8cac547714feda1ae7b5d0b9a8017ca939ffc825c8e255"
+    },
+    {
+      "slug": "Extending Human Intelligence",
+      "path": "articles/e833cd2b6df221fb-b71e0a6f805e.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/extending-human-intelligence",
+      "words": 1055,
+      "readingTime": 5,
+      "publishedAt": "2023-12-13T19:35:39.300Z",
+      "sha256": "b71e0a6f805eb3a181389e0f77410dd7010a6b47ac56311c979401b0cabd7d2e"
+    },
+    {
+      "slug": "Finding Passion in a Passionless Age",
+      "path": "articles/2f66a642fa59bcb5-df5f21a726f6.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/finding-passion-in-a-passionless-age",
+      "words": 223,
+      "readingTime": 1,
+      "publishedAt": "2024-03-13T16:48:15.754Z",
+      "sha256": "df5f21a726f6bf98ea0691f92e4f27af302ec2ed1e5f70cab7dce91ad01b7639"
+    },
+    {
+      "slug": "Future of Personal Computing",
+      "path": "articles/0967f8a732122e59-3de7a4226c81.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/future-of-personal-computing",
+      "words": 284,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.391Z",
+      "sha256": "3de7a4226c818088cc18ffa68a04aad26569c161bf6f31fd43d1cc546cd0c5d6"
+    },
+    {
+      "slug": "Gnosticism",
+      "path": "articles/d32301a69aae1da6-d3f726b075c4.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/gnosticism",
+      "words": 994,
+      "readingTime": 5,
+      "publishedAt": "2023-12-08T18:14:13.703Z",
+      "sha256": "d3f726b075c4d2ab2647c3bc3ba847672089572e24a2c9d2b565f967eaa1567a"
+    },
+    {
+      "slug": "Go Ahead, Scroll your Life Away",
+      "path": "articles/b812c16fa56c4325-a41d4ecca8a1.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/go-ahead%2C-scroll-your-life-away",
+      "words": 674,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:13.709Z",
+      "sha256": "a41d4ecca8a1737877e458566087f388d8682b0f95dd1accf9d2f0fbb4d307a1"
+    },
+    {
+      "slug": "Green Hydrogen",
+      "path": "articles/1ad00df50244f564-cb14f5a999c5.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/green-hydrogen",
+      "words": 278,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.407Z",
+      "sha256": "cb14f5a999c5668ee863d3532e72dfc817b752de5dc6344e34b6b19025eb4df9"
+    },
+    {
+      "slug": "How Finance Works",
+      "path": "articles/1c691f440546377a-a7307fdd038e.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/how-finance-works",
+      "words": 3002,
+      "readingTime": 15,
+      "publishedAt": "2023-12-08T18:14:13.720Z",
+      "sha256": "a7307fdd038e5e5e3ee7f2b131343f5963338e2d902d63f412193f8a1e413c47"
+    },
+    {
+      "slug": "How I Got Started with Blockchain",
+      "path": "articles/9755b181e96047fc-bb2192b9cf61.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/how-i-got-started-with-blockchain",
+      "words": 1190,
+      "readingTime": 6,
+      "publishedAt": "2023-12-16T21:43:33.464Z",
+      "sha256": "bb2192b9cf61d9251276723197f5f03711896ec02c048afaf6f49d919c44f471"
+    },
+    {
+      "slug": "How Norway Benefitted from its Oil",
+      "path": "articles/576e4dd7832e7fe9-312333c0570b.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/how-norway-benefitted-from-its-oil",
+      "words": 80,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.438Z",
+      "sha256": "312333c0570bf2226f36c35ff6041d4050138a4ff2f2743852a6f18bbecf4713"
+    },
+    {
+      "slug": "HTTP",
+      "path": "articles/56d6f32151ad8474-d45a90367e9f.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/http",
+      "words": 183,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.423Z",
+      "sha256": "d45a90367e9f262125808ccab9ed9dbea9a50b23c1724c5865bfee3af14c6327"
+    },
+    {
+      "slug": "Human Stupidity",
+      "path": "articles/df76fb80ac1ca234-e61fdae46833.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/human-stupidity",
+      "words": 140,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.454Z",
+      "sha256": "e61fdae468335f18baa552480b0b8709972bedd530fd0e44c6e54f70eb78c5ba"
+    },
+    {
+      "slug": "Ideas are Cheap, Execution is Everything",
+      "path": "articles/64d36cad0f498466-ddfb70c41b91.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/ideas-are-cheap%2C-execution-is-everything",
+      "words": 234,
+      "readingTime": 1,
+      "publishedAt": "2024-04-28T23:22:10.365Z",
+      "sha256": "ddfb70c41b9169343e56341587a2e845e10429ef4bea6efbef0d3b9a775b99e5"
+    },
+    {
+      "slug": "In Search of Competence",
+      "path": "articles/9e9ec8f89a73ecfc-fde7c7d08005.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/in-search-of-competence",
+      "words": 2644,
+      "readingTime": 13,
+      "publishedAt": "2023-12-08T18:14:13.745Z",
+      "sha256": "fde7c7d080051b10f2e4347963731eb9c7ecf28b0f274d28e3c0fa8f0ac87ed7"
+    },
+    {
+      "slug": "Incurable Itch",
+      "path": "articles/52b52c4e7b9eca1f-2c05fc4c8fe5.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/incurable-itch",
+      "words": 912,
+      "readingTime": 5,
+      "publishedAt": "2023-12-08T18:14:13.745Z",
+      "sha256": "2c05fc4c8fe52f91f3398fef091fbd306af6357f763b57a99f265b30efbb7c87"
+    },
+    {
+      "slug": "Index of Essays",
+      "path": "articles/f31e5444059b0e2b-acf9e5a6d2b8.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/index-of-essays",
+      "words": 58,
+      "readingTime": 1,
+      "publishedAt": "2026-08-02T12:27:00.784Z",
+      "sha256": "acf9e5a6d2b87e57b265cb769628ad8c34866c3114349c2e99956d152e80c9a8"
+    },
+    {
+      "slug": "Index of Notes",
+      "path": "articles/5b2f99b75183b733-5ec86981b838.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/index-of-notes",
+      "words": 40,
+      "readingTime": 1,
+      "publishedAt": "2026-08-02T12:27:00.912Z",
+      "sha256": "5ec86981b83875d1dd6b8a96c79822bd0072e24aad379712e8cb1e7b50223430"
+    },
+    {
+      "slug": "Innovation is a Mindset",
+      "path": "articles/0fadcd5716e60047-05257ce6eede.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/innovation-is-a-mindset",
+      "words": 1114,
+      "readingTime": 6,
+      "publishedAt": "2023-12-16T21:43:04.457Z",
+      "sha256": "05257ce6eedec840f749bcf30b8030f820435efb12c3558d0fe9dcfaa2ce6504"
+    },
+    {
+      "slug": "Inspiring PKM Systems",
+      "path": "articles/8ab9fbc71991d45a-7de7935065b5.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/inspiring-pkm-systems",
+      "words": 9,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:19.037Z",
+      "sha256": "7de7935065b54b8d4905cd4f51cc8db4c631290a9140f67129ffa53857bc5ad1"
+    },
+    {
+      "slug": "Isaac Asimov on Ideas",
+      "path": "articles/0c552a763abadc73-6ba3ec84f05d.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/isaac-asimov-on-ideas",
+      "words": 331,
+      "readingTime": 2,
+      "publishedAt": "2023-12-08T18:14:14.485Z",
+      "sha256": "6ba3ec84f05d2e0a8fb1a532bcf8416d4dc515bdfe52b9eaa0fd698df9e001d5"
+    },
+    {
+      "slug": "Knowledge, Innovation and Africa",
+      "path": "articles/e3d1b318b5caaf4f-788006d50697.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/knowledge%2C-innovation-and-africa",
+      "words": 1174,
+      "readingTime": 6,
+      "publishedAt": "2023-12-12T21:56:28.105Z",
+      "sha256": "788006d5069708e61c0c4277499aa869ef906d5a82e6a8ce6f67fd5377c5289f"
+    },
+    {
+      "slug": "Leaning into Responsibility at a Startup",
+      "path": "articles/c3328c909d134c16-78805502d88f.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/leaning-into-responsibility-at-a-startup",
+      "words": 389,
+      "readingTime": 2,
+      "publishedAt": "2024-09-23T21:27:34.530Z",
+      "sha256": "78805502d88fa8c9f66132fca81667ced8c24cada9268075c9632c0936b57f32"
+    },
+    {
+      "slug": "Listen to the Algorithm",
+      "path": "articles/42ad03f058af9181-8eb78c151a24.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/listen-to-the-algorithm",
+      "words": 38,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:19.178Z",
+      "sha256": "8eb78c151a24d773ac1c49a3d0a9d8551e8fd4c953ef144f83337183c1f197ea"
+    },
+    {
+      "slug": "Living in a Ghost Town",
+      "path": "articles/946f291673e376f0-eadefb7b6b8d.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/living-in-a-ghost-town",
+      "words": 604,
+      "readingTime": 3,
+      "publishedAt": "2026-05-11T20:00:11.204Z",
+      "sha256": "eadefb7b6b8d470795b799f6b3ff47095459c3e487cda4eaaff66b356f3bb33e"
+    },
+    {
+      "slug": "Living in the Software Age",
+      "path": "articles/560d2ab9334fead9-7790e1f9f182.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/living-in-the-software-age",
+      "words": 933,
+      "readingTime": 5,
+      "publishedAt": "2025-08-14T00:49:38.090Z",
+      "sha256": "7790e1f9f18220fa63ab6f0dc12f30346e69d417c4600691a96e00667d1acae3"
+    },
+    {
+      "slug": "Local Capital Should Take Its Place",
+      "path": "articles/8f1ca7a32c9073a2-4c0aa01d938c.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/local-capital-should-take-its-place",
+      "words": 1304,
+      "readingTime": 7,
+      "publishedAt": "2025-08-14T00:58:33.493Z",
+      "sha256": "4c0aa01d938cbec1ec41cfce4a6c1076048e294a2b8e58c1f5f562871ea48384"
+    },
+    {
+      "slug": "Long Live Literature",
+      "path": "articles/ef42c513827c0028-eb3235316eed.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/long-live-literature",
+      "words": 442,
+      "readingTime": 2,
+      "publishedAt": "2023-12-08T18:14:14.501Z",
+      "sha256": "eb3235316eedee84d4973cf65c81560e3f7139c927939c4886cdc2f7eb5e6ad6"
+    },
+    {
+      "slug": "Long-term View on People",
+      "path": "articles/5f67738f3398101f-a567f6fe87af.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/long-term-view-on-people",
+      "words": 72,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.516Z",
+      "sha256": "a567f6fe87af38bd35c774df694bdba936fc8e7c84cecddef792eca2ed20ba4f"
+    },
+    {
+      "slug": "Making Mobile Phones have Utility",
+      "path": "articles/c2135f79efef0ffa-77279605818f.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/making-mobile-phones-have-utility",
+      "words": 183,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.532Z",
+      "sha256": "77279605818f2dcd71e4ae8cf27e2ae9154fce7160c39ea6616ab7a918a2edcf"
+    },
+    {
+      "slug": "Mathnuscripts - A Living System of Mind",
+      "path": "articles/e472201f8c9e3c52-a8ffe3129d2f.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/mathnuscripts---a-living-system-of-mind",
+      "words": 1129,
+      "readingTime": 6,
+      "publishedAt": "2025-08-14T06:49:28.974Z",
+      "sha256": "a8ffe3129d2ffcca877fac6253c33a31ddd0d6bce97f18eac742180693a22002"
+    },
+    {
+      "slug": "Mosquito Problem",
+      "path": "articles/64485720358eca28-cfc8c781fc31.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/mosquito-problem",
+      "words": 194,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.548Z",
+      "sha256": "cfc8c781fc319b113e9f326cc177c84cf9eba48788ca0bd63c569b5636f9c52c"
+    },
+    {
+      "slug": "My Experience at the Enactus World Cup 2020 (Revised)",
+      "path": "articles/875c2f11905e368d-d3e00fd29b90.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/my-experience-at-the-enactus-world-cup-2020-(revised)",
+      "words": 708,
+      "readingTime": 4,
+      "publishedAt": "2023-12-08T18:14:13.840Z",
+      "sha256": "d3e00fd29b90f9f96f0d3a6f42561403351a018a88fac7a950480d8ef2034f37"
+    },
+    {
+      "slug": "My Journey into the World of Nanobots",
+      "path": "articles/56462720e971a893-b0ee1dc53c42.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/my-journey-into-the-world-of-nanobots",
+      "words": 930,
+      "readingTime": 5,
+      "publishedAt": "2024-09-23T19:19:15.437Z",
+      "sha256": "b0ee1dc53c42d52568f3ac0d5914838a7eea8131410af1480657180799fe90b7"
+    },
+    {
+      "slug": "My Journey with AI Models and Coding Environments",
+      "path": "articles/5ac12b27a5196fe7-b4f267e97eb2.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/my-journey-with-ai-models-and-coding-environments",
+      "words": 1484,
+      "readingTime": 7,
+      "publishedAt": "2025-09-30T15:40:06.273Z",
+      "sha256": "b4f267e97eb29cdcfdbf68a5ebf2ee4b94cabfa35d37684663cc20f115099978"
+    },
+    {
+      "slug": "My Living Manuscript",
+      "path": "articles/58721a3035112c64-7db534906ef5.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/my-living-manuscript",
+      "words": 608,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:13.855Z",
+      "sha256": "7db534906ef5903ab027ac97f207d26a25a4f512b09a5be422d677a42a977100"
+    },
+    {
+      "slug": "My Recap of 1 Year at IAN",
+      "path": "articles/9d417d7549f1d2af-a6113cbe330d.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/my-recap-of-1-year-at-ian",
+      "words": 1244,
+      "readingTime": 6,
+      "publishedAt": "2023-12-08T18:14:13.871Z",
+      "sha256": "a6113cbe330d98815319daa6e50d8bbde056d5421644c7a06e0217683d0293cc"
+    },
+    {
+      "slug": "My Story at IAN so Far - 2023",
+      "path": "articles/89ecfb418af9a774-bb7a122add4a.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/my-story-at-ian-so-far---2023",
+      "words": 2220,
+      "readingTime": 11,
+      "publishedAt": "2023-12-12T21:56:28.168Z",
+      "sha256": "bb7a122add4a2097f89a1735908a91d19da8a862dc699ddad9bc8a6eeb3d6d42"
+    },
+    {
+      "slug": "My Thoughts on 21st Century Financial Services",
+      "path": "articles/c01efee53a8a39dd-9770c67cd1be.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/my-thoughts-on-21st-century-financial-services",
+      "words": 727,
+      "readingTime": 4,
+      "publishedAt": "2024-10-19T23:56:26.758Z",
+      "sha256": "9770c67cd1bed75506b3e028e4ef3a875d3dabe8dcb6bd3030c9e3379e0e50fe"
+    },
+    {
+      "slug": "Naval's Important Skills to Have",
+      "path": "articles/51f013be1e73be37-4b559f8abf29.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/naval's-important-skills-to-have",
+      "words": 10,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.563Z",
+      "sha256": "4b559f8abf29114d01d943089150db35533fad00d168144e8df432a7b8abe401"
+    },
+    {
+      "slug": "Navigating Geopolitics and Building Value as Kenya",
+      "path": "articles/a61c3c7f6f8bf299-b3f096671c83.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/navigating-geopolitics-and-building-value-as-kenya",
+      "words": 574,
+      "readingTime": 3,
+      "publishedAt": "2024-04-28T23:26:05.389Z",
+      "sha256": "b3f096671c836573e96d6e7349ae10e813952e291bfd11080d33ad23e7966d0b"
+    },
+    {
+      "slug": "Note-taker's Dilemma",
+      "path": "articles/bed92a05a76f50b4-7a83f27c937b.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/note-taker's-dilemma",
+      "words": 540,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:13.886Z",
+      "sha256": "7a83f27c937bc4c0e094526d25e96adc9ab4dcfdae865ce81e29c9d19bd102cd"
+    },
+    {
+      "slug": "On Being a Founder",
+      "path": "articles/81311fb7c128c514-cb8504bf0cef.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/on-being-a-founder",
+      "words": 1654,
+      "readingTime": 8,
+      "publishedAt": "2025-08-14T00:57:50.722Z",
+      "sha256": "cb8504bf0cef79071323527b0158e8976c73fad8773beebd4c4a8a49445c3744"
+    },
+    {
+      "slug": "On Thinking About What I Care About",
+      "path": "articles/4d5a9f5eb64c580b-5c216dc6f1e2.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/on-thinking-about-what-i-care-about",
+      "words": 1401,
+      "readingTime": 7,
+      "publishedAt": "2026-01-18T14:50:18.058Z",
+      "sha256": "5c216dc6f1e22260ec4626b4fa06acd1de7db24c407b1d727a02727c7bcbe714"
+    },
+    {
+      "slug": "Online Books By New Age Thinkers",
+      "path": "articles/0f8daee9504bde02-94c09a9e0165.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/online-books-by-new-age-thinkers",
+      "words": 79,
+      "readingTime": 1,
+      "publishedAt": "2025-08-14T00:40:11.257Z",
+      "sha256": "94c09a9e0165d02bb26f6dabd9e14cb76ef9273194eca5a46f3696bb8bab7ba0"
+    },
+    {
+      "slug": "Operations-as-a-Service",
+      "path": "articles/6c852b005418b76c-ff3421396862.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/operations-as-a-service",
+      "words": 61,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.579Z",
+      "sha256": "ff34213968622928e18600d7ae6244a20cf7b26e5d79b9997f49ff9017b638ed"
+    },
+    {
+      "slug": "Organisations are the new communities",
+      "path": "articles/077086679eaf702c-c660013d60f2.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/organisations-are-the-new-communities",
+      "words": 101,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.594Z",
+      "sha256": "c660013d60f2ff524ca99f3d1340f760877311c3005496d2b7c16920d7cb2c74"
+    },
+    {
+      "slug": "People Don't Know What Dangerous Is",
+      "path": "articles/fb06a21ffa21fd7c-a5dab3502523.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/people-don't-know-what-dangerous-is",
+      "words": 55,
+      "readingTime": 1,
+      "publishedAt": "2024-04-28T23:43:26.612Z",
+      "sha256": "a5dab3502523576ec692bb2935947452f461305e14c56c9d9ae6558171273a03"
+    },
+    {
+      "slug": "Permissionless",
+      "path": "articles/cbc68abde68650bb-d8b8d7b8178d.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/permissionless",
+      "words": 200,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.610Z",
+      "sha256": "d8b8d7b8178d65a5c48482babadc9eca55171eece52f2f775f79bad091d7ea22"
+    },
+    {
+      "slug": "Personal Blogs",
+      "path": "articles/ef46e0f9ad7c7a02-ed12d940fcf0.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/personal-blogs",
+      "words": 53,
+      "readingTime": 1,
+      "publishedAt": "2026-05-06T17:33:52.430Z",
+      "sha256": "ed12d940fcf086b61794059b2438d39040c2aa5c36e54ab0efab2226c3a789a1"
+    },
+    {
+      "slug": "Personal Monopoly",
+      "path": "articles/16e9bec7930eb21f-f8e916e9dd27.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/personal-monopoly",
+      "words": 38,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:19.428Z",
+      "sha256": "f8e916e9dd27f358339fb4b2b74dbc559b7a30745941923aef30ada5470419d7"
+    },
+    {
+      "slug": "Pillars of Building a Great Startup",
+      "path": "articles/ae123b6cdfc906c9-a098a594cf74.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/pillars-of-building-a-great-startup",
+      "words": 5,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.626Z",
+      "sha256": "a098a594cf7495837afd5cf15d030d02f2927d584e7c4551266c679c3b4570dd"
+    },
+    {
+      "slug": "Polymath",
+      "path": "articles/7b637403250dff5e-9322cd83e3b3.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/polymath",
+      "words": 80,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.641Z",
+      "sha256": "9322cd83e3b38a86fde18e46e76e201aee2cfb54d46a5b7c4cf7c886b8af11bd"
+    },
+    {
+      "slug": "Poverty as a Prison of Consciousness",
+      "path": "articles/6eb7f5b4b2df77e8-7e49ce57e92b.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/poverty-as-a-prison-of-consciousness",
+      "words": 819,
+      "readingTime": 4,
+      "publishedAt": "2026-05-26T21:55:01.008Z",
+      "sha256": "7e49ce57e92ba98f3d69cb27d9401954f40d54e01a91d45e97da37681dff70ff"
+    },
+    {
+      "slug": "Power of the Builder",
+      "path": "articles/15011a8f943b0e2c-e472c06d651b.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/power-of-the-builder",
+      "words": 98,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.657Z",
+      "sha256": "e472c06d651b3b7332ee434828f8780e6e56f35330f95842ef0fc963bfca3404"
+    },
+    {
+      "slug": "Problems to Solve in Government",
+      "path": "articles/8724631ec2457236-12e4e1c2807d.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/problems-to-solve-in-government",
+      "words": 1139,
+      "readingTime": 6,
+      "publishedAt": "2025-08-14T00:49:38.090Z",
+      "sha256": "12e4e1c2807dd14d5372bd4899eceeeae617652e74c7047e04b7c885345bd138"
+    },
+    {
+      "slug": "Produce a Lot of Shitty Work",
+      "path": "articles/50948bf2b7c18677-044351af0361.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/produce-a-lot-of-shitty-work",
+      "words": 424,
+      "readingTime": 2,
+      "publishedAt": "2023-12-16T21:09:33.083Z",
+      "sha256": "044351af03612a01a088d3692a396d3e3de69ce8b1d6027c337535647a4aace4"
+    },
+    {
+      "slug": "Product Development Frameworks",
+      "path": "articles/a1e038c2b00c1d96-adce93c21854.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/product-development-frameworks",
+      "words": 387,
+      "readingTime": 2,
+      "publishedAt": "2025-08-14T00:58:19.579Z",
+      "sha256": "adce93c21854bb2121e642102b58589dfaf3da5e759b5778061f2a33c7796552"
+    },
+    {
+      "slug": "Publishing My Second Brain",
+      "path": "articles/052ab89d038dc09e-dd7fae74a90d.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/publishing-my-second-brain",
+      "words": 685,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:19.491Z",
+      "sha256": "dd7fae74a90d319be6c288e02c0bfa4bbc9b866dd9129f8deff4efe170ca4376"
+    },
+    {
+      "slug": "Quick and Hard Changes in Government",
+      "path": "articles/7104ef325804655a-e896a98cf7f8.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/quick-and-hard-changes-in-government",
+      "words": 298,
+      "readingTime": 1,
+      "publishedAt": "2024-10-20T00:02:05.320Z",
+      "sha256": "e896a98cf7f8f7b174c7b5116e5f7e69d6399aa3929112331837021eea39b295"
+    },
+    {
+      "slug": "Rise of Artificial Intelligence",
+      "path": "articles/cf71425f539eebcf-5038bc35f277.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/rise-of-artificial-intelligence",
+      "words": 705,
+      "readingTime": 4,
+      "publishedAt": "2025-08-14T00:53:56.970Z",
+      "sha256": "5038bc35f277624d2eeb18e44866f038168bc4bec6c0d0cff1a0da99e6069c7a"
+    },
+    {
+      "slug": "Rough Bullet Points on Hiring at a Startup",
+      "path": "articles/c39d584c4404ef51-f1950ac727a8.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/rough-bullet-points-on-hiring-at-a-startup",
+      "words": 888,
+      "readingTime": 4,
+      "publishedAt": "2023-12-12T21:56:28.231Z",
+      "sha256": "f1950ac727a8684ec9ad9ab1abb38f634b559620b09911dee6ba1b29ace849af"
+    },
+    {
+      "slug": "Ruliad",
+      "path": "articles/de3673a789520c61-53259d845856.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/ruliad",
+      "words": 314,
+      "readingTime": 2,
+      "publishedAt": "2025-12-30T15:42:31.623Z",
+      "sha256": "53259d845856b4e95774ce15baf0287d7c699d4360bfae702101d0ca03af3ed7"
+    },
+    {
+      "slug": "Rumblings on Nation-building, Philosophy and Financial Freedom",
+      "path": "articles/3857fc354d121c80-f6c721e9ebe9.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/rumblings-on-nation-building%2C-philosophy-and-financial-freedom",
+      "words": 647,
+      "readingTime": 3,
+      "publishedAt": "2024-03-21T18:03:43.946Z",
+      "sha256": "f6c721e9ebe924bb504a51e37f2aaefeabf5c992e0ea8e5a69488636f961837b"
+    },
+    {
+      "slug": "Save Now and Buy Later",
+      "path": "articles/a9ff99a7ad324e7a-3063480a80b0.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/save-now-and-buy-later",
+      "words": 161,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.674Z",
+      "sha256": "3063480a80b0e9e511e13e4f89025d5a013d855dffdda20e763b29b449058f7b"
+    },
+    {
+      "slug": "Software Development for All",
+      "path": "articles/2fe5236d8879c197-f02e8d4a02a4.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/software-development-for-all",
+      "words": 535,
+      "readingTime": 3,
+      "publishedAt": "2025-08-14T00:49:38.090Z",
+      "sha256": "f02e8d4a02a48588cfc0d4e342a3682d037c5715473bfc8d00309457f843580e"
+    },
+    {
+      "slug": "Space Exploration is About Perspective",
+      "path": "articles/aa65bea7f4d8d919-3c045f385bc9.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/space-exploration-is-about-perspective",
+      "words": 301,
+      "readingTime": 2,
+      "publishedAt": "2023-12-08T18:14:14.689Z",
+      "sha256": "3c045f385bc948bda9c4c31b0f562b167f8478246f864e99410bc8e19a972d8c"
+    },
+    {
+      "slug": "Success is a Responsibility",
+      "path": "articles/b085fc9cde3d44f1-7f085862b188.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/success-is-a-responsibility",
+      "words": 639,
+      "readingTime": 3,
+      "publishedAt": "2025-12-30T15:36:54.857Z",
+      "sha256": "7f085862b18866782607ada26bf052baf4accb8596ed0e58eaa1871f6e42c91c"
+    },
+    {
+      "slug": "Surfing the Wave of One's Time",
+      "path": "articles/3a17232d6b578901-2ee71163e4a0.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/surfing-the-wave-of-one's-time",
+      "words": 120,
+      "readingTime": 1,
+      "publishedAt": "2024-03-21T18:14:48.655Z",
+      "sha256": "2ee71163e4a0405298803c89375641d11b903a3ae06ab14912dc0ada2322081d"
+    },
+    {
+      "slug": "The 5Ms by Amerix",
+      "path": "articles/8b4c779448ede196-21710878eab6.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/the-5ms-by-amerix",
+      "words": 1301,
+      "readingTime": 7,
+      "publishedAt": "2023-12-08T18:14:14.704Z",
+      "sha256": "21710878eab66f8666269a72144e8cfe9ec095561567b4910acea84f290fe13b"
+    },
+    {
+      "slug": "The Appeal of Personal Blogs",
+      "path": "articles/e6f28b55db23d77b-9851bf7c3255.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-appeal-of-personal-blogs",
+      "words": 1837,
+      "readingTime": 9,
+      "publishedAt": "2023-12-08T18:14:13.969Z",
+      "sha256": "9851bf7c32558d1eda4b145eaacf027f12efadbf0d10c507207eee111b48b131"
+    },
+    {
+      "slug": "The Changing World Order",
+      "path": "articles/a4dbe57aa30e9ab6-09abaa433bbe.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/the-changing-world-order",
+      "words": 533,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:14.720Z",
+      "sha256": "09abaa433bbe3ac47db1ef83001ebd24610248ac1477b289ba6711de8f870e80"
+    },
+    {
+      "slug": "The Chronicles of IAN",
+      "path": "articles/7e7020dd063c7423-b55d6a9f44ea.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-chronicles-of-ian",
+      "words": 3488,
+      "readingTime": 17,
+      "publishedAt": "2025-10-29T02:34:43.683Z",
+      "sha256": "b55d6a9f44eac31db4cf9387ba1545a8895d73e6ebf6d570b08396c6fb7c283f"
+    },
+    {
+      "slug": "The Curse of the Gifted",
+      "path": "articles/a1870a7aeff94fec-4dd2aeab7470.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/the-curse-of-the-gifted",
+      "words": 254,
+      "readingTime": 1,
+      "publishedAt": "2024-07-06T22:56:36.541Z",
+      "sha256": "4dd2aeab74705f6effb3b6524c8dc6e5c3ad2456552d6f19ca558deb93d32f0b"
+    },
+    {
+      "slug": "The Future is African",
+      "path": "articles/80fe363982a47e9e-d6bfccdccf0f.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/the-future-is-african",
+      "words": 197,
+      "readingTime": 1,
+      "publishedAt": "2024-04-28T22:59:43.799Z",
+      "sha256": "d6bfccdccf0fb777e31f0a499904b0fd56eb878b82d94150c674d352c0c6990e"
+    },
+    {
+      "slug": "The Future of Text",
+      "path": "articles/5cccc253dd6fc89f-e5fe6f7bc17b.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-future-of-text",
+      "words": 1551,
+      "readingTime": 8,
+      "publishedAt": "2024-05-15T16:40:58.463Z",
+      "sha256": "e5fe6f7bc17b4236c65fdd49359ec0f724ef56286ed794ba203b6bfb21ae061d"
+    },
+    {
+      "slug": "The Human Symphony",
+      "path": "articles/6894824dbdebf842-5dce081d7e59.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/the-human-symphony",
+      "words": 796,
+      "readingTime": 4,
+      "publishedAt": "2023-12-12T21:56:28.653Z",
+      "sha256": "5dce081d7e5990b5cef2decf528612f7c177ed3a3273fb1ccea7a6aee291cd10"
+    },
+    {
+      "slug": "The Journey to Elsa's Kopje",
+      "path": "articles/d3cd7ada87ed65d2-fba59e5b719f.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/the-journey-to-elsa's-kopje",
+      "words": 1410,
+      "readingTime": 7,
+      "publishedAt": "2025-10-10T00:01:21.788Z",
+      "sha256": "fba59e5b719f0fb5ba52b3b98a9a461e2e2bc3454e9bdf3a45ddadadd8e64ef1"
+    },
+    {
+      "slug": "The Key Metric of a Healthy Nation",
+      "path": "articles/e69ef3a7385ee855-dfca2d4e4ee3.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-key-metric-of-a-healthy-nation",
+      "words": 1050,
+      "readingTime": 5,
+      "publishedAt": "2025-08-14T00:53:56.970Z",
+      "sha256": "dfca2d4e4ee332aa6199fc4fcb680475694d3ff131007aadb654d3719c14b8fa"
+    },
+    {
+      "slug": "The Management of Things, People and Money",
+      "path": "articles/c59d537629fa4ad9-2ac825f417bf.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-management-of-things%2C-people-and-money",
+      "words": 1124,
+      "readingTime": 6,
+      "publishedAt": "2025-08-14T00:40:17.753Z",
+      "sha256": "2ac825f417bf2a5816d018a69a9fec5f3ed91a398b7449879e9c4bbe5b18f270"
+    },
+    {
+      "slug": "The most important thing that we didn't get taught in school",
+      "path": "articles/513dd479340dc025-7a5928c56287.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/the-most-important-thing-that-we-didn't-get-taught-in-school",
+      "words": 11,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.767Z",
+      "sha256": "7a5928c56287d1a0927f93ce5c6c4340d9bdde0977f456a4375de937966d5d5e"
+    },
+    {
+      "slug": "The Odyssey - Finding My Way Back Home",
+      "path": "articles/b57a4279bda6b835-74d445e73795.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-odyssey---finding-my-way-back-home",
+      "words": 2151,
+      "readingTime": 11,
+      "publishedAt": "2026-08-03T03:53:18.717Z",
+      "sha256": "74d445e73795a8576d7a5aab4b1e34909c47f9434782b7202b0da32f6210e59a"
+    },
+    {
+      "slug": "The One Big Idea",
+      "path": "articles/9f28bf95f8ecd3bb-01fd49999643.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/the-one-big-idea",
+      "words": 181,
+      "readingTime": 1,
+      "publishedAt": "2024-04-28T22:55:58.838Z",
+      "sha256": "01fd49999643bc50b7feda1d13c7894ccd38c53845229a7a38eb2225bbc139bd"
+    },
+    {
+      "slug": "The Organization Is the Product",
+      "path": "articles/73eb6d1e9da11573-d0055a50dd5c.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/the-organization-is-the-product",
+      "words": 1377,
+      "readingTime": 7,
+      "publishedAt": "2025-08-30T11:32:32.851Z",
+      "sha256": "d0055a50dd5cd3a51d34245ec394e96a7813c67fb579453efcfc318e45f34421"
+    },
+    {
+      "slug": "The Problem with Agriculture in Africa",
+      "path": "articles/eb82c43bdd8cdb37-73ee8012c231.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/the-problem-with-agriculture-in-africa",
+      "words": 1333,
+      "readingTime": 7,
+      "publishedAt": "2025-12-30T14:32:56.006Z",
+      "sha256": "73ee8012c23140fbd2dbcc2c596eb18c22a45c3a22ef57f4bab6a0dea34a11c1"
+    },
+    {
+      "slug": "The Unseen Side of Innovation",
+      "path": "articles/87217d5e8ca4ec93-c0816a08962b.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-unseen-side-of-innovation",
+      "words": 671,
+      "readingTime": 3,
+      "publishedAt": "2025-08-14T00:58:36.160Z",
+      "sha256": "c0816a08962b3dbcfd4bfb1837f574ae7968de86e9573caa667cfb8a44284ad7"
+    },
+    {
+      "slug": "The Use of PKM",
+      "path": "articles/f648aaf56bb47861-777bf728e4fd.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/the-use-of-pkm",
+      "words": 97,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.751Z",
+      "sha256": "777bf728e4fd2195e703a5ea74acd59974a583c7b9d70de694336168f54aa79e"
+    },
+    {
+      "slug": "The Vision of Shukran",
+      "path": "articles/baf1179ecdd71d81-048a78b19bfb.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/the-vision-of-shukran",
+      "words": 1967,
+      "readingTime": 10,
+      "publishedAt": "2025-08-14T00:58:08.522Z",
+      "sha256": "048a78b19bfb6d1a962c202fea9a5da713bf83d12d22165d4002ea3a33594765"
+    },
+    {
+      "slug": "There is Nothing Better to Do",
+      "path": "articles/c9ce75bdb803bf6c-e330af73bf0d.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/there-is-nothing-better-to-do",
+      "words": 780,
+      "readingTime": 4,
+      "publishedAt": "2025-08-14T00:58:53.652Z",
+      "sha256": "e330af73bf0d50cdb6c24631bc2a705cce65311c260d5379fca4397435164468"
+    },
+    {
+      "slug": "Things I am excited about in 2023",
+      "path": "articles/24630f4c3f0346d3-a0f39881560f.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/things-i-am-excited-about-in-2023",
+      "words": 562,
+      "readingTime": 3,
+      "publishedAt": "2023-12-08T18:14:14.782Z",
+      "sha256": "a0f39881560f44001deab71058be8e680b3221004cddbbacb846771123595f1d"
+    },
+    {
+      "slug": "Things to do in your 20s",
+      "path": "articles/dda6cded2958c06a-8117cec22c13.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/things-to-do-in-your-20s",
+      "words": 89,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.798Z",
+      "sha256": "8117cec22c1328e0ce4b8a6e3c260c3f1c6d5f739258e6facc65f02b64f22da7"
+    },
+    {
+      "slug": "Thoughts on Web3 and How to Fix it",
+      "path": "articles/7890f263dc84f3bc-b0c242d0714d.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/thoughts-on-web3-and-how-to-fix-it",
+      "words": 175,
+      "readingTime": 1,
+      "publishedAt": "2023-12-16T21:41:52.892Z",
+      "sha256": "b0c242d0714d6156cb9bcf42aea600da31680fe0083bd492e11bd8e0a2e4645b"
+    },
+    {
+      "slug": "To the Land Called Prosperity",
+      "path": "articles/201c85d0f5c8747a-a33789b92a1b.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/to-the-land-called-prosperity",
+      "words": 1700,
+      "readingTime": 9,
+      "publishedAt": "2023-12-29T21:24:17.716Z",
+      "sha256": "a33789b92a1b160cb03f51c4e2cfa07039b50d74d87ac589fdd8c732c085873b"
+    },
+    {
+      "slug": "Tomorrow Will Be Better Than Today",
+      "path": "articles/acfb1497d433d9f9-35185a4ac11b.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/tomorrow-will-be-better-than-today",
+      "words": 818,
+      "readingTime": 4,
+      "publishedAt": "2025-08-14T00:58:29.877Z",
+      "sha256": "35185a4ac11bef864edf9723ed84713ae9d2d83f390795efb77b3c522b246c9a"
+    },
+    {
+      "slug": "Tools for Government Accountability",
+      "path": "articles/bd0a89e4921e345b-31f323d1b2d8.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/tools-for-government-accountability",
+      "words": 141,
+      "readingTime": 1,
+      "publishedAt": "2025-09-29T21:23:44.524Z",
+      "sha256": "31f323d1b2d871e7d9707858759bcf75bdec15daf831cb8a8323fea3ed3f3150"
+    },
+    {
+      "slug": "Towards Being a Man",
+      "path": "articles/f07b7ba6dd6b1702-e509dafdc4a8.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/towards-being-a-man",
+      "words": 4079,
+      "readingTime": 20,
+      "publishedAt": "2023-12-08T18:14:14.074Z",
+      "sha256": "e509dafdc4a853be90e3d41cd44cea6c0c6ec556c1157d6a27a2313ba07d0828"
+    },
+    {
+      "slug": "Towards Zero",
+      "path": "articles/0af680d5f9b65e1f-aa295f2a3070.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/towards-zero",
+      "words": 147,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.814Z",
+      "sha256": "aa295f2a3070d98fd84a22af2e1b13dfad6982c9e275e84a00531e9417b149f1"
+    },
+    {
+      "slug": "Transcendent Mind",
+      "path": "articles/6894148f72fad363-6bc941987919.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/transcendent-mind",
+      "words": 385,
+      "readingTime": 2,
+      "publishedAt": "2024-06-09T01:06:37.705Z",
+      "sha256": "6bc9419879193e2324e535064af0ee5876e931c744a1de94f6919a5afd2dc365"
+    },
+    {
+      "slug": "Turning a Desert into an Oasis",
+      "path": "articles/c4ad070105ef78bb-1209a0e7d93f.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/turning-a-desert-into-an-oasis",
+      "words": 301,
+      "readingTime": 2,
+      "publishedAt": "2023-12-12T21:56:28.215Z",
+      "sha256": "1209a0e7d93fbe8af6a12ecf406a5919a0cb2da8e4550e565932d71535432092"
+    },
+    {
+      "slug": "Tweet Repo",
+      "path": "articles/abbf809be0078292-65b5c8fc7eca.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/tweet-repo",
+      "words": 15,
+      "readingTime": 1,
+      "publishedAt": "2025-12-31T11:54:11.793Z",
+      "sha256": "65b5c8fc7eca06e1154dab00ecb7b78f808aae2e915c808c38d50ef33f23459c"
+    },
+    {
+      "slug": "Understanding Debt",
+      "path": "articles/bebbf98fd65cb5f4-8f46d3767c26.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/understanding-debt",
+      "words": 569,
+      "readingTime": 3,
+      "publishedAt": "2024-09-23T21:29:27.846Z",
+      "sha256": "8f46d3767c2686a0473c861793c1c9d3f7d3268bfd80854552159ce1e06afa3f"
+    },
+    {
+      "slug": "Urge to write",
+      "path": "articles/eee81e22a1847892-3f664aaff412.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/urge-to-write",
+      "words": 335,
+      "readingTime": 2,
+      "publishedAt": "2023-12-08T18:14:14.845Z",
+      "sha256": "3f664aaff4120ca0c9d2cad1c1a72e45e342e8a91da323ff036f5843b4ff4ae0"
+    },
+    {
+      "slug": "Value Prop Story Test",
+      "path": "articles/0a6c4bec77fc583d-f624abd1b4f8.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/value-prop-story-test",
+      "words": 55,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.860Z",
+      "sha256": "f624abd1b4f82a6197a4e5d7b3c81a0a68c6e950929c190650d9b6f7fbe4a960"
+    },
+    {
+      "slug": "Vector Databases and AI",
+      "path": "articles/99ea5c952603113f-8f29fdcb38a0.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/vector-databases-and-ai",
+      "words": 28,
+      "readingTime": 1,
+      "publishedAt": "2023-12-29T19:26:04.816Z",
+      "sha256": "8f29fdcb38a00559a8cdb0589a2f0bfa65492d79abc606452340905a27df894e"
+    },
+    {
+      "slug": "We are the Saviors Our Nation",
+      "path": "articles/d9764ba062c35bd7-62d9c44a6bea.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/we-are-the-saviors-our-nation",
+      "words": 548,
+      "readingTime": 3,
+      "publishedAt": "2025-08-14T00:40:01.196Z",
+      "sha256": "62d9c44a6beaf73a7b5f248fc464f366835cbca5386c957f9449eff04ce77c74"
+    },
+    {
+      "slug": "We Must Learn Our Classics",
+      "path": "articles/f76dfd3fa15c300d-8bc1e51e29be.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/we-must-learn-our-classics",
+      "words": 1705,
+      "readingTime": 9,
+      "publishedAt": "2025-12-30T14:56:11.997Z",
+      "sha256": "8bc1e51e29be0eb2377af388a0d05f212a957ae7063133be37da724cb985736f"
+    },
+    {
+      "slug": "We Really Don't Know How to Compute",
+      "path": "articles/1cc0104d87172d94-a46c413f377f.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/we-really-don't-know-how-to-compute",
+      "words": 141,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.892Z",
+      "sha256": "a46c413f377f2bab36b7f3e7ad2a38af29b868c9c6ff7ba2b8873416e192ff38"
+    },
+    {
+      "slug": "What are the Mathnuscripts",
+      "path": "articles/8ba9b3c3ff47f5c8-9580bfe6bf03.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/what-are-the-mathnuscripts",
+      "words": 374,
+      "readingTime": 2,
+      "publishedAt": "2025-08-14T00:39:40.881Z",
+      "sha256": "9580bfe6bf0339ce0ab14667a5b5080611817ff55ca130906e04887d9f52ebf5"
+    },
+    {
+      "slug": "What Kenya is Good At",
+      "path": "articles/440bde126fd9ff2b-fec9d8b756a6.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/what-kenya-is-good-at",
+      "words": 119,
+      "readingTime": 1,
+      "publishedAt": "2025-05-30T21:09:53.624Z",
+      "sha256": "fec9d8b756a62b5c5ea57c666e73a48f71b94c0c69a8461ca520243f3d35e86e"
+    },
+    {
+      "slug": "What You Really Own",
+      "path": "articles/71c078ebf010d4b7-959a8de742b8.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/what-you-really-own",
+      "words": 1321,
+      "readingTime": 7,
+      "publishedAt": "2025-11-20T12:04:02.687Z",
+      "sha256": "959a8de742b891bbf9ed0502654611bb8ba56af69dca28b26d57e481ad269ed3"
+    },
+    {
+      "slug": "WhatsApp for more than Messaging",
+      "path": "articles/00a7f9baa2fbf6b2-f3c5f9fe30e6.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/whatsapp-for-more-than-messaging",
+      "words": 34,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:19.897Z",
+      "sha256": "f3c5f9fe30e6bde79367269aeb7bcbc13439779fcc73ffc81c0ce9cf1f797ce6"
+    },
+    {
+      "slug": "When a Man Knows His Destiny is Greatness",
+      "path": "articles/1fcb00d09a38a013-7b6e1d392a8d.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/when-a-man-knows-his-destiny-is-greatness",
+      "words": 411,
+      "readingTime": 2,
+      "publishedAt": "2026-05-26T22:05:45.825Z",
+      "sha256": "7b6e1d392a8d9b512b698ac48b28c7b08382ad5ed406ea5040e25c1cf6344d06"
+    },
+    {
+      "slug": "Where Do Kenyans Hangout and Socialise",
+      "path": "articles/e88fc9ef0d6882ca-ee38c7eb7d23.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/where-do-kenyans-hangout-and-socialise",
+      "words": 293,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.892Z",
+      "sha256": "ee38c7eb7d235eb69d71fe4543e91684c3cb049ba87bd34c7e3e60187717fff9"
+    },
+    {
+      "slug": "Why Land is Expensive",
+      "path": "articles/497d9d3a15a77b09-25bb22fbdeb3.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/why-land-is-expensive",
+      "words": 2874,
+      "readingTime": 14,
+      "publishedAt": "2024-04-28T22:17:43.225Z",
+      "sha256": "25bb22fbdeb3529c22a8ed6ee3e606998a6690fe16076e87925d4eee856b9147"
+    },
+    {
+      "slug": "Why Software is Important",
+      "path": "articles/8dce02fa829eee93-27a2ad371ce4.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/why-software-is-important",
+      "words": 1622,
+      "readingTime": 8,
+      "publishedAt": "2023-12-08T18:14:14.109Z",
+      "sha256": "27a2ad371ce473dbd41bf3c9eb49a43a7b4a6937dcf86f14d104d225c822d814"
+    },
+    {
+      "slug": "Winning makes things easier",
+      "path": "articles/bb030ecf50ab48aa-567b3357f1ce.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/winning-makes-things-easier",
+      "words": 391,
+      "readingTime": 2,
+      "publishedAt": "2025-08-14T00:40:08.833Z",
+      "sha256": "567b3357f1ce7216ed08d8b7837aaec59be51df444490a4bd0667d15edb600d3"
+    },
+    {
+      "slug": "Words on the marble for fertile minds",
+      "path": "articles/996a662dae28109a-b50e3f06a2e3.json",
+      "sourceUrl": "https://mathnuscript.com/fleeting-notes/words-on-the-marble-for-fertile-minds",
+      "words": 181,
+      "readingTime": 1,
+      "publishedAt": "2025-09-29T21:33:58.088Z",
+      "sha256": "b50e3f06a2e36473f58dfcd0185fe8f548d9d894c9911c611513cf39d4eb2472"
+    },
+    {
+      "slug": "Working should be fun",
+      "path": "articles/72c934ba9eb722a3-f4ef51575317.json",
+      "sourceUrl": "https://mathnuscript.com/content/essays/working-should-be-fun",
+      "words": 912,
+      "readingTime": 5,
+      "publishedAt": "2025-08-14T00:40:06.738Z",
+      "sha256": "f4ef5157531701dc28432c8a26e4661d5b2d0bd3572440833cd6d46aa360ee62"
+    },
+    {
+      "slug": "Zones of Work",
+      "path": "articles/2aeea0dacaeba162-628a67ad5390.json",
+      "sourceUrl": "https://mathnuscript.com/content/notes/zones-of-work",
+      "words": 67,
+      "readingTime": 1,
+      "publishedAt": "2023-12-08T18:14:14.907Z",
+      "sha256": "628a67ad5390bfe126249e76e1473bd182150f39ca25b92a7db844b8e9b894f7"
+    }
+  ]
+}

@@ -1,24 +1,23 @@
-import { ArrowRight, BookOpen, ExternalLink } from 'lucide-react'
-import { gardenIndex, essayBySlug } from '../game/essays'
+import { ArrowRight, BookOpen, ExternalLink, Github } from 'lucide-react'
+import { gardenIndex } from '../game/essays'
 import profile from '../../content/elsewhere.json'
+import { site, workshop } from '../content'
+import { ProjectPreview } from './ProjectPreview'
 
 export function PortfolioWork({ onReturn, onWriting }: { onReturn(): void; onWriting(): void }) {
   const avocado = gardenIndex.find(note => /avocado.*roi|avocado.*calculator/i.test(note.title))
   return <section className="work-content">
-    <h1>Made, and<br />in the making.</h1>
-    <p className="sheet-lead">Ideas become clearer when you build something with them.</p>
+    <h1>{site.workTitle}</h1>
+    <p className="sheet-lead">{site.workIntro}</p>
+    <a className="work-github" href={profile.links.find(link => link.id === 'github')!.url} target="_blank" rel="noreferrer"><Github size={20} /><span>Find my code on GitHub<small>M-Waweru · experiments, tools, and things in progress</small></span><ArrowRight size={17} /></a>
+    <div className="work-projects">{workshop.projects.map(project => <article className="project-entry" key={project.id}><ProjectPreview project={project} /><h2>{project.name}</h2><p>{project.description}</p><div className="project-entry__meta"><span>{project.category}{project.id === 'mathnuscripts' ? ` · ${gardenIndex.length} complete notes` : ''}</span>{project.id === 'mathnuscripts' ? <button className="text-button" onClick={onWriting}>{project.action} <BookOpen size={14} /></button> : <a href={project.url} target="_blank" rel="noreferrer">{project.action} <ExternalLink size={13} /></a>}</div></article>)}</div>
     <article className="project-entry">
       <img className="project-image" src={`${import.meta.env.BASE_URL}assets/world-project.png`} width="800" height="620" alt="Mwaweru’s native three-dimensional living garden" />
       <h2>The living garden</h2>
-      <p>A connected, walkable world generated from published notes. Five territories, planted ideas, and Kijazo to keep you company.</p>
+      <p>A connected world of published notes, open roads, interesting company, and five ways to get around. Built with Three.js, with Kijazo along for the journey.</p>
       <div className="project-entry__meta"><span>Three.js · React · TypeScript</span><button className="text-button" onClick={onReturn}>Keep wandering <ArrowRight size={14} /></button></div>
     </article>
-    <article className="project-entry">
-      <h2>The Mathnuscripts</h2>
-      <blockquote className="project-excerpt">{essayBySlug('What are the Mathnuscripts')?.summary || 'A living system of mind: memory, meaning, and making.'}</blockquote>
-      <div className="project-entry__meta"><span>{gardenIndex.length} complete notes</span><button className="text-button" onClick={onWriting}>Read here <BookOpen size={14} /></button></div>
-    </article>
-    <article className="project-entry project-entry--linked"><h2>Thenks</h2><p>Card and mobile-money tipping in Africa. One of the projects linked from my Linktree.</p><div className="project-entry__meta"><span>Digital tipping</span><a href="https://thenks.co" target="_blank" rel="noreferrer">Explore Thenks <ExternalLink size={13} /></a></div></article>
+    <h2>Earlier chapters.</h2>
     {profile.projects.map(project => <article className="project-entry project-entry--linked" key={project.id}><h2>{project.name}</h2><p>{project.description}</p><div className="project-entry__meta"><span>From my published portfolio</span><a href={project.url} target="_blank" rel="noreferrer">Explore the project <ExternalLink size={13} /></a></div></article>)}
     {avocado && <article className="project-entry project-entry--note">
       <h2>{avocado.title}</h2>

@@ -21,16 +21,32 @@ Article extraction is limited to the existing published-note manifest. Navigatio
 
 The **Links** tool brings together the verified destinations from [Mathenge’s Linktree](https://linktr.ee/mathengewaweru): LinkedIn, X, Thenks, Mathnuscripts, and About. Public contact/project details from the linked [About page](https://mwaweru.com/about) add GitHub, email, and the historical Shukran, Agrarian, voting, and crowdsourcing projects. `content/elsewhere.json` records these sources. Mathnuscripts and About entries open the relevant local panels; third-party destinations open explicitly as external links.
 
+## Homestead, workshop, and the wider world
+
+The homestead introduces Mathenge through his supplied current biography as Founder & CEO of Thenks, a **Right now** section, and his own photo album. GitHub is directly available in the desktop header, workshop, and contact links.
+
+The workshop leads with **Mathnuscripts**, its real website preview, a substantial summary, and a button opening all 155 complete notes locally. Thenks, Kenyan Tech Stack, Boda Rush, and Monad follow with summaries and visual previews. The three supplied Netlify projects offer user-loaded, sandboxed live iframe previews; screenshots provide an immediate glimpse without loading multiple apps on arrival.
+
+Choose **Vehicles** to walk to the Zontes-inspired bike, Land Cruiser, waterfront boat, western bush plane, or Starling launch field. The playable radius is 132 world metres, expanded from 54, with countryside roads and a wider coast. Land vehicles respect obstacles and water; the boat stays at sea and disembarks near land. The plane takes off and returns to the runway. The rocket rises vertically, hovers, and returns to its original pad.
+
+Wanjiku, Asha, Otieno, Jabali, and Imani are fictional garden residents with editable conversations. Each introduces a real Mathnuscripts note that opens in the full local reader.
+
+## Edit site copy with Pages CMS
+
+`.pages.yml` configures five editors for welcome/page copy, biography and photos, workshop projects, residents and dialogue, and social links/earlier projects. These edit the JSON files the site actually imports. See **[docs/EDITING.md](docs/EDITING.md)** for repository connection, media, and deployment steps. The owner signs in at [app.pagescms.org](https://app.pagescms.org/) and connects `M-Waweru/worldmwaweru` after the configuration is published.
+
+`npm run content:check` validates editorial fields, project IDs and URLs, image paths, and resident note references. A GitHub Actions workflow runs the tests and production build for repository changes.
+
 ## The living world
 
 - Original painted material textures for timber, stone, earth, foliage, roof tiles, snow, paving, flowers, and paper.
 - Terrain-aware clear water, moving highlights, bank foam, and caustic-like detail.
-- 135 trees, 6,500 grass placements, 600 flowers, and 220 reeds in the current authored scene.
+- 240 trees, 5,814 generated grass placements (6,500-instance capacity), 600 flowers, and 220 reeds in the current authored scene.
 - 87 fish, 20 birds, 32 butterflies, 16 bees, nighttime fireflies, drifting clouds, and a gently moving boat.
 - A garden-atmosphere panel with sunlight, golden hour, moonlight, still air, breeze, and rain.
 - Warm windows after dark and optional synthesised ambient sound with quiet birdsong.
 
-The living scenery shares the existing world and does not change note IDs, published URLs, reading paths, or traversal geography. Reduced-motion preferences continue to suppress ambient animation.
+The countryside extends the existing connected world while preserving note IDs, published URLs, the central territories, and reading paths. Reduced-motion preferences suppress ambient animation while retaining deliberate driving, flight, and walking.
 
 ## Run
 
@@ -62,6 +78,8 @@ Only the existing allowlisted folders and explicitly published Markdown files en
 - **WASD / arrows:** walk; **Shift:** run; **Space:** jump.
 - **Click / tap the ground:** find and walk a traversable route.
 - **E / Enter:** interact with a nearby note, guide, or landmark.
+- **While aboard:** W/S accelerate or reverse; A/D steer; Shift boosts land vehicles. E or **Park & exit** returns to walking where a safe exit is available.
+- **Plane / rocket:** Space or the vehicle action button takes off, returns to the runway, or lands vertically. A plane or rocket must land before the passenger can exit.
 - **M:** map overview; **K:** Kijazo; **Ctrl / Cmd K:** note search.
 - **Escape:** leave a note, close a sheet, or close the map/help.
 - **Atmosphere control:** choose the light and weather; Escape or the close control returns keyboard focus to its trigger.
@@ -110,6 +128,8 @@ The sync script extracts only the main article, sanitises it, rewrites known not
 
 - `src/world/WorldScene.ts`: simulation loop, input, articulated player, camera, proximity interactions, lighting, native overview, and ink rendering.
 - `src/world/engine/terrain.ts`: heightfield, walkability, simplified collisions, fixed-step controller, and A* routing.
+- `src/world/engine/vehicles.ts`: fixed-step vehicle motion, swept collisions, land/water boundaries, flight/landing states, boarding and safe exits.
+- `src/world/native/vehicles.ts`: original native motorcycle, Land Cruiser, motorboat, bush plane, and rocket meshes.
 - `src/world/native/`: modular native architecture, vegetation, material/spatial batches, and geometry helpers.
 - `src/world/native/textures.ts`: original, seeded runtime canvas paintings applied to native materials.
 - `src/world/water.ts`: depth-aware river and coastal water shader.

@@ -23,6 +23,20 @@ This standalone project is `worldmwaweru`, created inside the original project f
 - The cottage/studio/harbour/cabin structure is superseded by the earlier garden plan; the images remain art-direction references.
 - The user supplied `https://linktr.ee/mathengewaweru`. Its LinkedIn, X, Mathnuscripts, Thenks, and About links are confirmed. The linked public About page supplies the personal statement, historical Shukran role, Agrarian/voting/crowdsourcing projects, public GitHub profile, and contact email. Do not invent additional roles, metrics, or current employment.
 - The user confirmed evolving this connected garden into a richer Mwaweru personal-portfolio experience, with more detailed materials, living scenery, lighting, weather, and clearer identity/navigation. Published content, Kijazo, reading paths, search, and continuous walking remain core capabilities.
+- The user requests an expanded countryside, a ridable Zontes 250V based on their supplied photograph, a drivable Land Cruiser, a navigable boat, a bush plane at an airstrip, and a Starship-inspired rocket that rises, hovers, and lands vertically. Keyboard and touch controls share the same simulation.
+- Five fictional residents introduce real, complete Mathnuscripts articles through local conversations. They are garden characters, not claims about real people.
+- The user supplied Kenyan Tech Stack, Boda Rush, and Monad URLs. The workshop must show project previews and summaries, with Mathnuscripts as one of its most important projects. Mathnuscripts leads the visual workshop and opens the complete local writing collection.
+- The user requests Pages CMS editing for site copy. `.pages.yml` configures five directly consumed JSON files: site copy, biography, projects, residents, and links. Authenticating the GitHub connection requires the repository owner's sign-in; a prepared configuration is not an authenticated connection or a deployment.
+
+## Owner-supplied current biography
+
+The user explicitly supplied this current information in the vehicle/workshop expansion session. It supersedes inferences from the earlier published About page:
+
+- Mathenge Waweru is a Kenyan innovator and Founder and CEO of Thenks, a fintech platform for Africa's tourism industry enabling international travellers to tip, pay, and donate across the continent.
+- Over five years building at the intersection of fintech and hospitality, with software engineering, product development, and entrepreneurship experience.
+- First Class Honours in Informatics and Computer Science at Strathmore University; previously co-founded Shukran and was a Product Development Fellow at Impact Africa Network.
+- Led Enactus Strathmore to victory at the 2020 Enactus Kenya National Exposition. His startup was among the top 100 globally at the 2024 Entrepreneurship World Cup.
+- Eleven personal/reference images were supplied explicitly for this portfolio, including the Zontes 250V, hiking, work, travel, the Kenyan flag, and existing DALL·E artwork. Optimised derivatives are in `public/assets/photos/`; provenance names the supplied originals without requiring their original local drive.
 
 ## Brand Commitments
 

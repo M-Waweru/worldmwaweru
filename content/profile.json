@@ -1,0 +1,28 @@
+{
+  "name": "Mathenge Waweru",
+  "role": "Founder & CEO of Thenks",
+  "summary": "I’m a Kenyan innovator building meaningful products at the intersection of fintech, hospitality, and technology.",
+  "currentFocus": "I’m building Thenks, a fintech platform for Africa’s tourism industry that enables international travellers to tip, pay, and donate seamlessly across the continent.",
+  "portrait": "/assets/photos/flying-the-flag.webp",
+  "portraitAlt": "Mathenge Waweru holding the Kenyan flag on stage",
+  "mantra": "Express yourself.\nContribute to humanity.\nTell the story.",
+  "biography": [
+    "With over five years of experience building ventures at the intersection of fintech and hospitality, Mathenge brings expertise in software engineering, product development, and entrepreneurship. He holds a First Class Honours degree in Informatics and Computer Science from Strathmore University. Previously, he co-founded Shukran, a venture-backed hospitality fintech startup, and served as a Product Development Fellow at Impact Africa Network.",
+    "His entrepreneurial journey began at university, where he led Enactus Strathmore to victory at the 2020 Enactus Kenya National Exposition. In 2024, he gained international recognition when his startup was named among the top 100 globally at the Entrepreneurship World Cup.",
+    "Passionate about technology, innovation, and impact, Mathenge is driven by a vision to build meaningful products that solve real-world problems and improve the lives of millions of people."
+  ],
+  "outsideWork": "Outside the workbench: a mountain trail, good company, and the freedom of a ride on my Zontes 250V. The Mathnuscripts are where many of those questions become writing.",
+  "gallery": [
+    { "image": "/assets/photos/zontes-250v.webp", "alt": "Mathenge’s dark Zontes 250V motorcycle with a brown saddle", "caption": "My Zontes 250V. A little freedom on two wheels." },
+    { "image": "/assets/photos/summit-2022.webp", "alt": "Mathenge standing on a rocky mountain summit", "caption": "A different view from up here." },
+    { "image": "/assets/photos/at-the-table.webp", "alt": "Mathenge in conversation around a table with laptops", "caption": "Good conversations. Things in the making." },
+    { "image": "/assets/photos/mountain-rest.webp", "alt": "A rest on a rocky trail overlooking green mountain ridges", "caption": "Room to stop and think." },
+    { "image": "/assets/photos/savannah.webp", "alt": "Mathenge and a companion outdoors in the savannah", "caption": "Out in the open country." },
+    { "image": "/assets/photos/summit-2023.webp", "alt": "Mathenge beside a mountain summit sign under a clear blue sky", "caption": "One step, then another." },
+    { "image": "/assets/photos/on-the-road.webp", "alt": "A group gathered on a shaded veranda", "caption": "Company along the way." },
+    { "image": "/assets/photos/good-company.webp", "alt": "A smiling group travelling together in a vehicle", "caption": "The journey is better with people." },
+    { "image": "/assets/photos/flying-the-flag.webp", "alt": "Mathenge holding the Kenyan flag on a stage", "caption": "Flying the flag." },
+    { "image": "/assets/photos/family.webp", "alt": "A family photograph taken outside a home", "caption": "Home, and the people who make it." },
+    { "image": "/assets/photos/symbolic-mind.webp", "alt": "A black-and-white generated portrait composed of mathematical, scientific, and code symbols", "caption": "An imagined mind. DALL·E, 2022." }
+  ]
+}

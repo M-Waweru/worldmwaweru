@@ -1,15 +1,18 @@
 import * as THREE from 'three'
 import { gardenIndex } from '../game/essays'
 import { makeKijazo } from '../game/characters'
-import { districts, placeEntries, trails, type DistrictId, type GardenPlant } from './map'
-import { heightAt, riverX, shoreline, snowAt, BRIDGES, type Collider } from './engine/terrain'
+import { districts, placeEntries, trails, countryRoads, type DistrictId, type GardenPlant } from './map'
+import { heightAt, riverX, shoreline, snowAt, BRIDGES, WORLD_RADIUS, type Collider } from './engine/terrain'
 import { NativeKit, seeded } from './native/kit'
-import { homestead, pavilion, workshop, archive, waterfront, boat, bench, tree, resident, gardenWall, planter } from './native/architecture'
+import { homestead, pavilion, workshop, archive, waterfront, bench, tree, resident, gardenWall, planter, roof } from './native/architecture'
+import { buildVehicles, worldLabel, type VehicleVisual } from './native/vehicles'
+import { boardingPoint, type VehicleId } from './engine/vehicles'
+import people from '../../content/people.json'
 import { createGardenWater } from './water'
 import { buildLivingGarden } from './living'
 import { environmentProfile, type GardenEnvironment } from './environment'
 
-export type WorldTarget = { id: string; kind: 'essay' | 'guide' | 'district'; title: string; x: number; y: number; z: number; radius: number; slug?: string; district?: DistrictId }
+export type WorldTarget = { id: string; kind: 'essay' | 'guide' | 'district' | 'vehicle' | 'person'; title: string; x: number; y: number; z: number; radius: number; slug?: string; district?: DistrictId; vehicleId?: VehicleId; personId?: string }
 export type Landscape = {
   group: THREE.Group
   terrain: THREE.Mesh
@@ -18,6 +21,7 @@ export type Landscape = {
   plants: GardenPlant[]
   kijazo: THREE.Group
   gradient: THREE.DataTexture
+  vehicles: VehicleVisual[]
   statistics: Record<string, number>
   update(time: number, night: number, player: THREE.Vector3, animate: boolean, dt: number, environment?: GardenEnvironment): void
   dispose(): void
@@ -25,7 +29,7 @@ export type Landscape = {
 
 export function distanceToTrail(x: number, z: number) {
   let closest = Infinity
-  for (const trail of trails) for (let i = 1; i < trail.length; i++) {
+  for (const trail of [...trails, ...countryRoads]) for (let i = 1; i < trail.length; i++) {
     const a = trail[i - 1], b = trail[i], dx = b[0] - a[0], dz = b[1] - a[1]
     const t = Math.max(0, Math.min(1, ((x - a[0]) * dx + (z - a[1]) * dz) / (dx * dx + dz * dz)))
     closest = Math.min(closest, Math.hypot(x - a[0] - dx * t, z - a[1] - dz * t))
@@ -33,8 +37,8 @@ export function distanceToTrail(x: number, z: number) {
   return closest
 }
 
-function buildTerrain(kit: NativeKit) {
-  const geometry = new THREE.PlaneGeometry(120, 120, 128, 128)
+function buildTerrain(kit: NativeKit, horizon = false) {
+  const geometry = new THREE.PlaneGeometry(horizon ? 840 : 280, horizon ? 840 : 280, horizon ? 96 : 224, horizon ? 96 : 224)
   geometry.rotateX(-Math.PI / 2)
   const vertices = geometry.attributes.position as THREE.BufferAttribute
   const colors: number[] = []
@@ -42,15 +46,26 @@ function buildTerrain(kit: NativeKit) {
   const color = new THREE.Color()
   for (let i = 0; i < vertices.count; i++) {
     const x = vertices.getX(i), z = vertices.getZ(i), y = heightAt(x, z)
-    vertices.setY(i, y)
+    vertices.setY(i, y - (horizon ? .15 : 0))
     color.copy(grass)
     const variation = Math.sin(x * .4) * Math.cos(z * .33) * .05
     color.offsetHSL(variation * .15, variation, variation)
     color.lerp(red, Math.exp(-((x - 17) ** 2 + (z - 21) ** 2) / 180) * .5)
     color.lerp(sand, Math.max(0, Math.min(1, (z - shoreline(x) + 7) / 7)))
-    color.lerp(sand, 1 - Math.min(1, distanceToTrail(x, z) / 1.45))
+    color.lerp(sand, 1 - Math.min(1, distanceToTrail(x, z) / (Math.hypot(x, z) > 37 ? 2.8 : 1.45)))
     color.lerp(snow, snowAt(x, z))
     colors.push(color.r, color.g, color.b)
+  }
+  if (horizon) {
+    // A low-detail countryside skirt keeps the aerial view from exposing the
+    // detailed heightfield's rectangular edge. It is outside the walking map.
+    const source = geometry.index!, indices: number[] = []
+    for (let i = 0; i < source.count; i += 3) {
+      const a = source.getX(i), b = source.getX(i + 1), c = source.getX(i + 2)
+      const x = (vertices.getX(a) + vertices.getX(b) + vertices.getX(c)) / 3, z = (vertices.getZ(a) + vertices.getZ(b) + vertices.getZ(c)) / 3
+      if (Math.abs(x) > 137 || Math.abs(z) > 137) indices.push(a, b, c)
+    }
+    geometry.setIndex(indices)
   }
   geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3)); geometry.computeVertexNormals()
   const material = kit.material(0xffffff, 'earth')
@@ -76,11 +91,12 @@ export function buildLandscape(scene: THREE.Scene): Landscape {
   const group = new THREE.Group(); scene.add(group)
   const kit = new NativeKit(), colliders: Collider[] = [], targets: WorldTarget[] = []
   const terrain = buildTerrain(kit); group.add(terrain)
+  group.add(buildTerrain(kit, true))
   const water = createGardenWater(), waterTime = water.uniforms.time
   const creek = new THREE.Mesh(waterGeometry(), water.material); creek.renderOrder = 2; group.add(creek)
-  const seaGeometry = new THREE.PlaneGeometry(150, 90, 32, 24); seaGeometry.rotateX(-Math.PI / 2)
-  const sea = new THREE.Mesh(seaGeometry, water.material); sea.position.set(0, .43, 80); sea.renderOrder = 2; group.add(sea)
-  const seabed = new THREE.Mesh(new THREE.PlaneGeometry(150, 90).rotateX(-Math.PI / 2), kit.material(0xa6b593, 'earth')); seabed.position.set(0, -1.7, 80); group.add(seabed)
+  const seaGeometry = new THREE.PlaneGeometry(1000, 600, 48, 32); seaGeometry.rotateX(-Math.PI / 2)
+  const sea = new THREE.Mesh(seaGeometry, water.material); sea.position.set(0, .43, 325); sea.renderOrder = 2; group.add(sea)
+  const seabed = new THREE.Mesh(new THREE.PlaneGeometry(1000, 600).rotateX(-Math.PI / 2), kit.material(0xa6b593, 'earth')); seabed.position.set(0, -1.7, 325); group.add(seabed)
 
   homestead(kit, 0, 5)
   pavilion(kit, -20, -22)
@@ -88,8 +104,28 @@ export function buildLandscape(scene: THREE.Scene): Landscape {
   archive(kit, -26, 3)
   waterfront(kit, 16, 24)
   homestead(kit, 23, -30, true)
-  const boatKit = new NativeKit(), mooredBoat = new THREE.Group()
-  boat(boatKit, 0, 0); boatKit.commit(mooredBoat); mooredBoat.position.set(21, 0, 36); group.add(mooredBoat)
+  const vehicles = buildVehicles(group)
+  const vehicleTargets = vehicles.map(vehicle => {
+    const point = boardingPoint(vehicle.state)
+    const target: WorldTarget = { id: `vehicle:${vehicle.definition.id}`, kind: 'vehicle', vehicleId: vehicle.definition.id, title: vehicle.definition.name, x: point.x, z: point.z, y: heightAt(point.x, point.z), radius: 3.2 }
+    targets.push(target); return target
+  })
+  // A working airstrip and a separate launch field give travel a destination.
+  kit.box(-62, 1.3, -54, 8, .08, 62, 0x69786b, 'paving')
+  for (let z = -81; z <= -26; z += 5) {
+    kit.box(-62, 1.35, z, .28, .025, 2.5, 0xe4debf)
+    for (const side of [-1, 1]) kit.ball(-62 + side * 4.3, 1.45, z, .12, .13, .12, 0xe2b86d, 'plain')
+  }
+  for (const z of [-82, -27]) for (const x of [-64, -63, -61, -60]) kit.box(x, 1.36, z, .45, .03, 2.1, 0xe4debf)
+  kit.box(-75, heightAt(-75, -54) + 2, -54, 10, 4, 8, 0x8c9c8b, 'wood')
+  roof(kit, -75, heightAt(-75, -54) + 4, -54, 10.8, 8.7, 1.3, 0x818f8d)
+  colliders.push({ kind: 'box', x: -75, z: -54, w: 10, d: 8 })
+  kit.cylinder(-54, heightAt(-54, -74) + 2.4, -74, .045, .075, 4.8, 0xb8bba8)
+  kit.box(-53.4, heightAt(-54, -74) + 4.7, -74, 1.4, .35, .35, 0xc08552, 'plain', [0, 0, -.15])
+  kit.cylinder(61, 1.51, -61, 8, 8, .15, 0x838f87, 48)
+  const padRing = new THREE.TorusGeometry(5.8, .09, 4, 48)
+  kit.add(padRing, 0xe5dfbd, [61, 1.61, -61], [1, 1, 1], [Math.PI / 2, 0, 0]); padRing.dispose()
+  for (const side of [-1, 1]) for (const z of [-1, 1]) kit.cylinder(61 + side * 9, 2.2, -61 + z * 9, .09, .12, 1.4, 0xb8975f)
   // Planted rocks, sponges, and reed-like coral make the clear coastal water a habitat.
   for (const [x, z] of [[9, 39], [24, 42], [-2, 41], [33, 45]]) {
     kit.ball(x, -.47, z, 1.2, .22, .8, 0x98aca0, 'stone')
@@ -122,10 +158,10 @@ export function buildLandscape(scene: THREE.Scene): Landscape {
   // River crossings are native decks over the same terrain used by navigation.
   for (const z of BRIDGES) {
     const x = riverX(z)
-    for (let i = 0; i < 16; i++) kit.box(x - 3.5 + i * .45, 1.39, z, .42, .15, 1.85, 0xa89063, 'wood')
+    for (let i = 0; i < 16; i++) kit.box(x - 3.5 + i * .45, 1.39, z, .42, .15, 3.5, 0xa89063, 'wood')
     for (const side of [-1, 1]) {
-      kit.box(x, 2.1, z + side * .92, 7.2, .1, .1, 0x7b684c)
-      for (const dx of [-3.3, -1.1, 1.1, 3.3]) kit.box(x + dx, 1.85, z + side * .92, .1, 1.1, .1, 0x7b684c)
+      kit.box(x, 2.1, z + side * 1.75, 7.2, .1, .1, 0x7b684c)
+      for (const dx of [-3.3, -1.1, 1.1, 3.3]) kit.box(x + dx, 1.85, z + side * 1.75, .1, 1.1, .1, 0x7b684c)
     }
   }
   // Planted nursery: the many young, unclassified notes have a meaningful home.
@@ -163,9 +199,12 @@ export function buildLandscape(scene: THREE.Scene): Landscape {
   const groveRoots: { x: number; z: number }[] = []
   const rockGeometry = new THREE.DodecahedronGeometry(1, 0)
   let treeCount = 0
-  for (let attempt = 0; attempt < 1100 && treeCount < 130; attempt++) {
-    const x = (rand() - .5) * 96, z = (rand() - .5) * 92
-    if (Math.hypot(x, z) > 49 || z > shoreline(x) - 6 || Math.abs(x - riverX(z)) < 4 || distanceToTrail(x, z) < 3.1) continue
+  for (let attempt = 0; attempt < 2200 && treeCount < 235; attempt++) {
+    const inner = treeCount < 130
+    const x = (rand() - .5) * (inner ? 96 : 235), z = (rand() - .5) * (inner ? 92 : 230)
+    if (Math.hypot(x, z) > (inner ? 49 : WORLD_RADIUS - 8) || z > shoreline(x) - 6 || Math.abs(x - riverX(z)) < 4 || distanceToTrail(x, z) < (inner ? 3.1 : 5.5)) continue
+    if (Math.abs(x + 62) < 13 && z > -96 && z < -18 || Math.hypot(x - 61, z + 61) < 18) continue
+    if (vehicles.some(vehicle => Math.hypot(x - vehicle.state.x, z - vehicle.state.z) < 5)) continue
     if (districts.some((district) => Math.hypot(x - district.center[0], z - district.center[1]) < 9 || Math.hypot(x - district.entrance[0], z - district.entrance[1]) < 6)) continue
     if (x > -3 && x < 12 && z > 11 && z < 28) continue
     const size = .65 + rand() * .65
@@ -199,7 +238,13 @@ export function buildLandscape(scene: THREE.Scene): Landscape {
     kit.cylinder(x, y + .4, z, .055, .08, .8, 0x506853)
     for (const side of [-1, 1]) { kit.box(x + side * .9, y + .45, z, .42, .08, .42, 0x748a63); kit.box(x + side * 1.05, y + .75, z, .07, .5, .44, 0x748a63) }
   }
-  resident(kit, 10, 29, 0x5e8190); resident(kit, 18, 29, 0xb89d66); resident(kit, -23, 10, 0x80936c)
+  for (const person of people.people) {
+    const { x, z } = person
+    resident(kit, x, z, parseInt(person.coat.slice(1), 16))
+    const sign = new THREE.Group(); sign.position.set(x, heightAt(x, z), z); worldLabel(sign, person.name, 2.25, 2.3); group.add(sign)
+    targets.push({ id: `person:${person.id}`, kind: 'person', personId: person.id, title: `Talk to ${person.name}`, district: person.district as DistrictId, x, y: heightAt(x, z), z, radius: 2.6 })
+    colliders.push({ kind: 'circle', x, z, r: .25 })
+  }
   kit.commit(group)
 
   // Instanced living grass: one draw call, with height-biome-aware placement.
@@ -251,14 +296,17 @@ export function buildLandscape(scene: THREE.Scene): Landscape {
   const smokeOrigins = [new THREE.Vector3(-1.8, heightAt(0, 5) + 6, 4.3), new THREE.Vector3(21.2, heightAt(23, -30) + 6, -30.7)]
   const life = buildLivingGarden(group, kit.gradient)
   return {
-    group, terrain, colliders, targets, plants, kijazo, gradient: kit.gradient,
-    statistics: { notes: plants.length, trees: treeCount + 5, grass: placed, flowers: 600, ...life.counts },
+    group, terrain, colliders, targets, plants, kijazo, gradient: kit.gradient, vehicles,
+    statistics: { notes: plants.length, trees: treeCount + 5, grass: placed, flowers: 600, vehicles: vehicles.length, residents: people.people.length, worldRadius: WORLD_RADIUS, ...life.counts },
     update(time, night, player, animate, dt, environment = { weather: 'clear', light: 'day' }) {
       const t = animate ? time : 0
       const profile = environmentProfile(environment)
       waterTime.value = t; water.uniforms.night.value = night; water.uniforms.wind.value = profile.wind; water.uniforms.golden.value = profile.golden
-      kit.update(t, night, profile.wind); boatKit.update(t, night, profile.wind)
-      mooredBoat.position.y = Math.sin(t * .95) * .04; mooredBoat.rotation.z = Math.sin(t * .65) * .025; mooredBoat.rotation.x = Math.cos(t * .7) * .014
+      kit.update(t, night, profile.wind)
+      vehicles.forEach((vehicle, index) => {
+        const point = boardingPoint(vehicle.state)
+        vehicleTargets[index].x = point.x; vehicleTargets[index].z = point.z; vehicleTargets[index].y = heightAt(point.x, point.z)
+      })
       life.update(t, night, player, animate, dt, environment)
       fireGroups.forEach((fire, i) => { fire.scale.y = 1 + Math.sin(t * 7 + i) * .14 })
       if (player.distanceTo(kijazo.position) > 2.8) {
@@ -275,6 +323,6 @@ export function buildLandscape(scene: THREE.Scene): Landscape {
       }
       smoke.instanceMatrix.needsUpdate = true
     },
-    dispose() { kit.disposeTextures(); boatKit.disposeTextures(); boatKit.gradient.dispose(); water.dispose() },
+    dispose() { kit.disposeTextures(); vehicles.forEach(vehicle => vehicle.dispose()); water.dispose() },
   }
 }

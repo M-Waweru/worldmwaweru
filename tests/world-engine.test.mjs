@@ -1,7 +1,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { heightAt, isWalkable, stepCharacter, findPath, canWalkLine, riverX, shoreline, FIXED_STEP } from '../src/world/engine/terrain.ts'
+import { heightAt, isWalkable, stepCharacter, findPath, canWalkLine, riverX, shoreline, FIXED_STEP, WORLD_RADIUS } from '../src/world/engine/terrain.ts'
 import { districts, placeEntries } from '../src/world/map.ts'
 import { roofProfile } from '../src/world/native/shapes.ts'
 
@@ -105,7 +105,8 @@ test('jump lands back on the native terrain, including the highland', () => {
 
 test('coast and outer world boundaries are respected', () => {
   assert.equal(isWalkable(12, shoreline(12) + 3), false)
-  assert.equal(isWalkable(60, 0), false)
+  assert.equal(isWalkable(WORLD_RADIUS + 1, 0), false)
+  assert.equal(isWalkable(90, 0), true)
   assert.equal(isWalkable(2, 12), true)
 })
 

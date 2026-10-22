@@ -3,7 +3,7 @@ export type Point = { x: number; z: number }
 export type Collider = { kind: 'box'; x: number; z: number; w: number; d: number } | { kind: 'circle'; x: number; z: number; r: number }
 export type CharacterState = Point & { y: number; vx: number; vz: number; vy: number; grounded: boolean }
 
-export const WORLD_RADIUS = 54
+export const WORLD_RADIUS = 132
 export const BRIDGES = [-14, 4, 22]
 export const PLAYER_RADIUS = 0.32
 export const FIXED_STEP = 1 / 60
@@ -28,13 +28,19 @@ export function heightAt(x: number, z: number) {
     const influence = 1 - smooth(radius, radius + 3, Math.hypot(x - px, z - pz))
     h += (y - h) * influence
   }
+  // The western airstrip and eastern launch field are level clearings in the
+  // expanded countryside; the original garden's terrain remains continuous.
+  const airstrip = (1 - smooth(5, 9, Math.abs(x + 62))) * (1 - smooth(30, 35, Math.abs(z + 54)))
+  h += (1.3 - h) * airstrip
+  const launchpad = 1 - smooth(10, 17, Math.hypot(x - 61, z + 61))
+  h += (1.5 - h) * launchpad
   const coast = 1 - smooth(shoreline(x) - 5, shoreline(x) + 2, z)
   h = -0.6 + (h + 0.6) * coast
   if (z > -32 && z < shoreline(x)) {
     const distance = Math.abs(x - riverX(z))
     const river = 1 - smooth(1.05, 2.7, distance)
     h += (0.12 - h) * river
-    if (BRIDGES.some((bridge) => Math.abs(z - bridge) < 1.15) && distance < 3.6) h = 1.35
+    if (BRIDGES.some((bridge) => Math.abs(z - bridge) < 1.8) && distance < 3.6) h = 1.35
   }
   return h
 }
@@ -46,7 +52,7 @@ export function snowAt(x: number, z: number) {
 export function isWalkable(x: number, z: number, colliders: readonly Collider[] = [], radius = PLAYER_RADIUS) {
   if (Math.hypot(x, z) > WORLD_RADIUS - radius || z > shoreline(x) - 1.5) return false
   const riverDistance = Math.abs(x - riverX(z))
-  if (z > -32 && z < 33 && riverDistance < 1.55 + radius && !BRIDGES.some((bridge) => Math.abs(z - bridge) < 1.05 - radius * 0.3)) return false
+  if (z > -32 && z < 33 && riverDistance < 1.55 + radius && !BRIDGES.some((bridge) => Math.abs(z - bridge) < 1.75 - radius)) return false
   for (const object of colliders) {
     if (object.kind === 'circle') {
       if ((x - object.x) ** 2 + (z - object.z) ** 2 < (object.r + radius) ** 2) return false

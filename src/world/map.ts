@@ -18,6 +18,12 @@ export const trails: [number, number][][] = [
   [[2, 12], [12, 17], [14, 29]],
   [[21, 2], [30, -7], [32, -15], [28, -22], [21, -23]],
 ]
+export const countryRoads: [number, number][][] = [
+  [[13, 10], [37, 10], [49, -12], [61, -38], [61, -61]],
+  [[61, -61], [28, -64], [-10, -61], [-39, -65], [-62, -65]],
+  [[-62, -65], [-69, -38], [-56, -5], [-42, 15], [-24, 10]],
+  [[61, -61], [86, -30], [85, 4], [57, 23], [37, 10]],
+]
 export const arcs: { id: Arc; name: string; description: string }[] = [
   { id: 'origins', name: 'Origins', description: 'Begin with the questions that made this garden.' },
   { id: 'wanderer', name: 'Wanderer', description: 'Follow curiosity into unfamiliar ground.' },

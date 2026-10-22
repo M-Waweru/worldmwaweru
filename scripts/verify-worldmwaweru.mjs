@@ -12,12 +12,13 @@ const garden = JSON.parse(await readFile(path.join(root, 'src/generated/garden-m
 const results = { checkedAt: new Date().toISOString(), checks: [], errors: [], articleRequests: [], snapshots: {} }
 const browser = await chromium.launch({ ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: 'chrome' }), headless: true, chromiumSandbox: true, args: ['--enable-unsafe-swiftshader'] })
 const check = (name, pass) => { results.checks.push({ name, pass: Boolean(pass) }); console.log(JSON.stringify(results.checks.at(-1))) }
-async function snapshot(page) { return page.evaluate(() => window.__gardenEngine.getSnapshot()) }
+async function snapshot(page) { return page.evaluate(() => window.__gardenEngine?.getSnapshot() ?? null) }
 async function capture(page, name) {
-  const previous = (await snapshot(page)).manualPaused
-  await page.evaluate(() => window.__gardenEngine.setPaused(true)); await page.waitForTimeout(700)
+  const current = await snapshot(page), previous = current?.manualPaused ?? false
+  if (current) await page.evaluate(() => window.__gardenEngine.setPaused(true))
+  await page.waitForTimeout(700)
   await page.screenshot({ path: path.join(output, `${name}.png`) }); results.snapshots[name] = await snapshot(page)
-  await page.evaluate(value => window.__gardenEngine.setPaused(value), previous)
+  if (current) await page.evaluate(value => window.__gardenEngine.setPaused(value), previous)
 }
 async function load(page, hash = '') {
   page.on('pageerror', error => results.errors.push(error.message))
@@ -46,8 +47,7 @@ try {
   const position = (await snapshot(page)).position; await page.waitForTimeout(800)
   check('full-length reading preserves the visitor’s actual world position', JSON.stringify((await snapshot(page)).position) === JSON.stringify(position))
   await page.reload(); await reader(page)
-  check('a shared article deep link opens the full local post', (await page.locator('.reader-content').textContent()).includes('The road is paved organically'))
-  await page.waitForFunction(() => window.__gardenEngine?.getSnapshot().native, undefined, { timeout: 90000 })
+  check('a shared article deep link opens its full text before WebGL startup', (await page.locator('.reader-content').textContent()).includes('The road is paved organically') && await snapshot(page) === null)
 
   let linked
   for (const record of articles.articles) {
@@ -68,7 +68,7 @@ try {
   await page.locator('.elsewhere-list button').filter({ hasText: 'Mathnuscripts' }).click()
   check('the Mathnuscripts collection link opens the in-site index', await page.locator('.note-entry').count() === 155)
   await page.getByRole('button', { name: 'About', exact: true }).click()
-  check('published biography and real contact links are available', (await page.locator('.about-content').textContent()).includes('Product Lead at Shukran') && await page.locator('.contact-links a[href="mailto:mathenge2waweru@gmail.com"]').count() === 1)
+  check('the supplied current biography and real contact links are available', (await page.locator('.about-content').textContent()).includes('Founder & CEO of Thenks') && await page.locator('.contact-links a[href="mailto:mathenge2waweru@gmail.com"]').count() === 1)
   await capture(page, 'desktop-about')
   await page.getByRole('button', { name: 'Work', exact: true }).click()
   check('Thenks and the linked historical projects appear in Work', (await page.locator('.work-content').textContent()).includes('Thenks') && (await page.locator('.work-content').textContent()).includes('Agrarian'))
@@ -77,7 +77,7 @@ try {
 
   const mobileContext = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true })
   const mobile = await mobileContext.newPage(); await load(mobile); await capture(mobile, 'mobile')
-  check('five mobile garden tools fit without document overflow', await mobile.locator('.garden-actions button').count() === 5 && await mobile.evaluate(() => document.documentElement.scrollWidth === 390))
+  check('six mobile garden tools fit without document overflow', await mobile.locator('.garden-actions button').count() === 6 && await mobile.evaluate(() => document.documentElement.scrollWidth === 390))
   await mobile.getByRole('button', { name: 'Links', exact: true }).tap(); await capture(mobile, 'mobile-links')
   await mobile.locator('.elsewhere-list button').filter({ hasText: 'Mathnuscripts' }).tap()
   await mobile.getByRole('searchbox', { name: 'Search notes' }).fill('Choosing your Game'); await mobile.locator('.note-entry').first().tap(); await reader(mobile)

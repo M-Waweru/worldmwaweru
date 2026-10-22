@@ -5,7 +5,7 @@ const icons = { linkedin: Linkedin, github: Github, email: Mail, x: MessageCircl
 export function ElsewhereLinks({ onWriting, onAbout }: { onWriting(): void; onAbout(): void }) {
   return <section className="elsewhere-content">
     <h1>A few more<br />paths to follow.</h1>
-    <p className="sheet-lead">Express yourself.<br />Contribute to humanity.<br />Tell the story.</p>
+    <p className="sheet-lead">{profile.statement}</p>
     <p>Some of the places where my work, conversations, and curiosity continue.</p>
     <nav className="elsewhere-list" aria-label="Find Mathenge elsewhere">
       {profile.links.map(link => {

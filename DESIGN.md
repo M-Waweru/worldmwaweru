@@ -1,6 +1,6 @@
 ---
 name: Mwaweru · A Living Garden
-description: Mathenge Waweru’s connected native world, with painted materials, full-length paper reading, and sourced paths to work and conversation.
+description: Mathenge Waweru’s connected illustrated garden and countryside, with native vehicles, a visual workshop, and full-length reading on opaque paper.
 colors:
   paper: "#f5f2e7"
   ink: "#2d4435"
@@ -25,6 +25,8 @@ colors:
   snow: "#f0f1f2"
   bridge-timber: "#a89063"
   paving: "#b8b7a2"
+  muted-icon: "#637d5b"
+  preview-dot: "#97a68a"
 typography:
   display:
     fontFamily: "'Averia Serif Libre', Georgia, serif"
@@ -144,6 +146,22 @@ components:
     rounded: "{rounded.surface}"
     padding: "0 33px 30px"
     width: "480px"
+  workshop-sheet:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.surface}"
+    padding: "0 33px 30px"
+    width: "800px"
+  project-preview:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.action}"
+  vehicle-hud:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.surface}"
+    padding: "16px 18px"
+    width: "640px"
   article-sheet:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.reader-ink}"
@@ -189,24 +207,35 @@ An inhabited, ink-edged native world with a calm fibrous-paper interface. Painte
 
 The user confirmed evolving the existing connected garden into Mwaweru, Mathenge Waweru’s broader personal portfolio. Tidehaven’s detailed materials, living-world richness, and dynamism inform this expansion. Native Three.js geometry, original seeded canvas paintings, triplanar material sampling, eight-band toon shading, geometric linework, depth-derived ink, and directional shadows supply its own illustrated character. The four original user images remain art-direction references. The approved native framework, continuous walking, published notes, and self-hosted type pairing remain foundational.
 
+The countryside extension carries that same world into roads, an airstrip, a launch field, five usable native vehicles, and conversations with fictional residents. The homestead uses the owner's supplied biography and images; the workshop pairs real project evidence with complete local writing. These additions inherit the opaque-paper surfaces and established type voices.
+
 **Key Characteristics:**
 - Native geometry and material-specific surface paintings own scenery and environmental depth.
 - Dark green ink on fibrous paper separates controls and reading from the living landscape.
 - Averia Serif Libre headings pair with Karla body text and controls.
-- A continuous, camera-follow world supports keyboard, pointer, and touch walking.
+- A continuous, camera-follow world supports keyboard, pointer, and touch walking, driving, boating, and flight.
 - Accessible HTML reading and search remain independently reachable.
 - Complete Mathnuscripts articles and sourced Elsewhere destinations share the existing paper interface.
+- Owner-supplied homestead content, real workshop previews, and fictional residents extend the same world.
 - Sunlight, golden hour, moonlight, and weather change atmosphere while the paths stay connected.
 
-### Standalone Read / Elsewhere extension
+### Standalone Read / Elsewhere history
 
 As-built documentation for **worldmwaweru (2026-10-22)**. The approved parent garden is the inherited visual foundation. This child adds full-length Read and sourced Elsewhere surfaces while retaining its materials, connected geography, motion grammar, and direct HTML navigation. Any earlier parent acceptance belongs to foundation history only.
 
-`src/main.tsx` loads `src/styles.css`, then the effective shell overrides in `src/mwaweru.css`, then `src/components/elsewhere.css`. `src/components/EssayArticle.tsx` lazy-loads `ArticleReader.tsx`, its DOMPurify dependency, KaTeX stylesheet, and `article-reader.css`. `src/App.tsx` owns panel routes and the five garden tools. Native-world evidence remains in `src/world/WorldScene.ts`, `src/world/landscape.ts`, `src/world/water.ts`, `src/world/living.ts`, `src/world/environment.ts`, `src/world/map.ts`, `src/world/native/`, and `src/game/characters.ts`.
+The current cascade in `src/main.tsx` loads `src/styles.css`, the effective shell overrides in `src/mwaweru.css`, `src/components/elsewhere.css`, then `src/components/world-expansion.css`. `src/components/EssayArticle.tsx` lazy-loads `ArticleReader.tsx`, its DOMPurify dependency, KaTeX stylesheet, and `article-reader.css`. `src/App.tsx` owns panel routes and the six garden tools. Native-world evidence remains in `src/world/WorldScene.ts`, `src/world/landscape.ts`, `src/world/water.ts`, `src/world/living.ts`, `src/world/environment.ts`, `src/world/map.ts`, `src/world/native/`, and `src/game/characters.ts`; vehicle simulation and models are in `src/world/engine/vehicles.ts` and `src/world/native/vehicles.ts`.
 
 Frontmatter records reusable values; the sections below describe their use. `PRODUCT.md` owns confirmed product facts. [Publication record](docs/PUBLICATION.md) owns the content boundary, portable provenance, and verification summary. `.impeccable/` is ignored local QA, not a repository dependency or a source of required parent files.
 
-**Review status: SHIP at the one scored no-WebGL paper-fix scope (2026-10-22).** The reviewer reopened the affected desktop/mobile reader and Links captures, marked the fix resolved, and observed no regressions there. The independent 18/18 browser-check record is separate execution evidence. `docs/REVIEW.md` records the limited verdict; GitHub delivery is recorded by repository history, not a deployment claim.
+**Historical review: SHIP at the one scored no-WebGL paper-fix scope (2026-10-22).** The reviewer reopened the affected desktop/mobile reader and Links captures, marked the fix resolved, and observed no regressions there. This remains a separate, narrow review in `docs/REVIEW.md`, alongside earlier parent-garden review history.
+
+### Countryside / homestead / workshop extension
+
+As built after the last material correction (2026-10-22), the playable radius grows from 54 to 132 world units. `countryRoads` connects the existing territories to the western airstrip/hangar and eastern launch field. A terrain horizon skirt supports aerial views; the coast and terrain-derived water depth map expand with the world extent. The central geography, note IDs, materials, lighting, and weather remain the inherited world.
+
+The new paper surfaces are `AboutContent.tsx`, `PortfolioWork.tsx`, `ProjectPreview.tsx`, `TravelContent.tsx`, and `Conversation.tsx`, styled by `world-expansion.css`. Directly consumed JSON supplies site copy, the owner's current biography and album, project summaries, fictional dialogue, and attributed links. `PRODUCT.md` and `content/profile.json` own the supplied personal facts; this design record adds no biography. Pages CMS is **CONFIGURED, not authenticated or deployed**; owner GitHub sign-in and publishing/rebuild steps are in `docs/EDITING.md`.
+
+**Latest reviewer disposition: SHIP at the two-fix verdict-pass scope only.** The same reviewer read four replacement captures and relevant source, scoring both the parked-rocket fog/camera mismatch and dropped cold-reader navigation intent **RESOLVED**. This is not renewed full-surface approval. Separate supplied execution evidence records 46/46 tests and a passing production build after final corrections, expansion checks 32/32, baseline checks 18/18, and follow-up checks 5/5, each browser record with `errors: []`. The captures use actual WebGL and keyboard/touch input, with explicitly documented fixed-step replay for long trips; they do not establish physical-hardware FPS. `docs/REVIEW.md` preserves the evidence paths, capture inventory, and scope. No changes were pushed for this handoff.
 
 ## Colors
 
@@ -227,6 +256,8 @@ The interface is restrained green and paper; native scene materials own a broade
 - **Pale leaf rule** (`line`) and **field edge** (`field-line`): list dividers and the search boundary.
 - **Action-paper text** (`button-ink`): lettering on filled actions.
 - **Leaf state surfaces** (`icon-hover`, `destination-hover`, `destination-active`, `tool-hover`, `tool-active`): localized interactive states; territory location and pressed garden-tool state retain their separate assignments.
+- **Muted pictorial ink** (`muted-icon`): reused travel and conversation SVG marks, supporting the darker text rather than introducing a new accent.
+- **Preview chrome** (`tool-hover`, `preview-dot`): the existing leaf surface also backs repeated project preview bars; quiet dots identify the preview frame. These are contextual component roles, not a new palette strategy. The Thenks icon/word treatment uses existing forest green and paper.
 - **Native edge ink** (`scene-ink`): the modular kit's geometric linework. Character outlines and the depth-ink shader have their own source assignments.
 - **Neutral snow** (`snow`): shared terrain and snowy-roof pigment, lit with a neutral key and cool fill for readable blue-gray shadows.
 - **Native paving** (`paving`): repeated landmark forecourts, with shader-defined staggered seams.
@@ -259,6 +290,8 @@ The five interface custom properties retain their source names. Additional names
 
 The serif `mwaweru.` wordmark is 32px with a Karla “Mathenge Waweru” subtitle. Welcome headings use 43px at widths up to 1100px, 35px/1.08 on phones, 33px below 370px, 30px in coarse-pointer short landscape, and 53px from 1650px. Phone welcome copy is 13px/1.6; ordinary portfolio body remains 14px/1.78, lead becomes 17px/1.48, and ordinary sheet headline becomes 35px. Full-article rules above take precedence within the Read surface.
 
+The expansion retains those voices with contextual assignments: the lead Mathnuscripts project title is 32px (27px on touch layouts); conversation quotations are 24px/1.45 and their linked-note titles 23px/1.3; vehicle names are 21px (18px on touch layouts), with tabular Karla speed/altitude at 25px (23px on touch layouts). Captions, travel context, project support text, and action labels reuse 12px Karla; compact identity/HUD guidance uses 11px, reducing to 10px on touch layouts, while preview hosts and HUD units use 10px. The Thenks-only word treatment is 38px (28px on touch layouts). These observed component assignments do not turn every detector advisory or one-off branding size into a global type-scale step; the pre-existing small metadata role remains contextual.
+
 Both faces are self-hosted WOFF2 with `font-display: swap`. Averia is weight 400; Karla's shipped variable range is 200–800, with regular, medium, and semibold used. Preserve `public/assets/averia-OFL.txt` and `public/assets/karla-OFL.txt`.
 
 ### Named Rules
@@ -268,17 +301,19 @@ Both faces are self-hosted WOFF2 with `font-display: swap`. Averia is weight 400
 
 The shell fills and clips the viewport (`100dvh`). Canvas, header wash, invitation, tools, dock, atmosphere panel, and reading sheets occupy separate layers. A subtle wash supports identity; paper texture backs the invitation, header navigation, and other reading/control surfaces. Sheets scroll internally with contained overscroll and a sticky toolbar. Recurring spacing steps are observed values, not a strict universal grid.
 
-Ordinary desktop portfolio sheets use a 480px cap, viewport-minus-56px width constraint, right inset 28px, top 101px, and native bottom inset 103px. Full articles widen that sheet to `min(760px, calc(100% - 56px))`, with 43px horizontal padding and a centred 66ch body. They retain the sticky toolbar, internal vertical scroll, and the character's actual world position. At widths above 900px, a camera view offset leaves scenery beside the sheet.
+Ordinary desktop portfolio sheets use a 480px cap, viewport-minus-56px width constraint, right inset 28px, top 101px, and native bottom inset 103px. The workshop widens to `min(800px, calc(100% - 56px))`. Its Mathnuscripts lead spans the grid, with a 42%-width preview beside the summary; subsequent projects form two columns with 28px row and 24px column gaps. Full articles use `min(760px, calc(100% - 56px))`, with 43px horizontal padding and a centred 66ch body. These sheets retain the sticky toolbar, internal vertical scroll, and the character's actual world position. At widths above 900px, a camera view offset leaves scenery beside the sheet.
 
-The dock is a single shallow paper strip with six territory buttons and five garden tools: Map, Kijazo, Paths, Index, and Links. Its effective desktop minimum height is 61px; it sits 22px from either side and respects the bottom safe area. The atmosphere panel sits beside the lower-right tool tray, with a three-column light selector and a compact weather row.
+The dock is a single shallow paper strip with six territory buttons and six garden tools: Map, Vehicles, Kijazo, Paths, Index, and Links. Its effective desktop minimum height is 61px; it sits 22px from either side and respects the bottom safe area. The atmosphere panel sits beside the lower-right tool tray, with a three-column light selector and a compact weather row.
 
-Effective responsive behavior across `src/styles.css` and the later `src/mwaweru.css`:
+The vehicle HUD is a separate paper layer above the desktop dock: bottom 112px, horizontally centred, width `min(640px, calc(100% - 250px))`, wrapping identity, metric, and actions as needed. On touch layouts it moves upper left (top 90px, left 14px, right 70px), with full-row action buttons and mobile-specific guidance. The homestead pairs its heading with a cropped portrait and uses a two-column album with first/last figures spanning both columns.
+
+Effective responsive behavior across `src/styles.css`, `src/mwaweru.css`, and the later `src/components/world-expansion.css`:
 - **From 1650px:** enlarge outer header/invitation margins and the welcome display.
-- **Up to 1100px:** tighten native dock gaps and territory/tool padding; narrow the invitation.
+- **Up to 1100px:** hide the inline territory row and distribute all six garden tools across the dock; narrow the invitation. This expansion override takes precedence over the earlier 800px territory cutoff.
 - **Up to 900px:** inherited header padding and sheet top clearance compact; sheet top becomes 84px.
-- **Up to 800px:** hide the inline territory row and distribute all five garden tools across the dock. The expanded map retains all six labelled destinations.
-- **Up to 600px, or coarse pointer with height up to 600px:** compact invitation with 31px left/right insets and bottom 116px; tools move upper right (top 90px; inherited 150px with a journey). Hide zoom controls and the collapsed minimap. Use a 96px thumbstick at lower left, separated circular jump/action buttons with 52px minima at lower right, and safe-area-aware bottom positions. The atmosphere panel fits beside the tools, capped at `calc(100vw - 81px)`.
-- **Up to 600px:** inherited phone sheet rules set top 75px, horizontal insets 12px, and padding `0 24px 25px`; the native bottom inset is 90px. The full reader uses `calc(100% - 24px)` width and 23px horizontal padding. Search remains at least 48px tall; the shortcut hint is hidden. Five dock actions retain icons above their labels and 46px minimum height.
+- **Up to 800px:** compact the header and retain 46px-minimum dock actions. The expanded map retains all six territory destination rows, with additional airstrip and launch-field routes.
+- **Up to 600px, or coarse pointer with height up to 600px:** compact invitation with 31px left/right insets and bottom 116px; tools move upper right (top 90px; inherited 150px with a journey). Hide zoom controls, the collapsed minimap, and the header GitHub icon; GitHub remains in workshop and contacts. Use a 96px thumbstick at lower left, separated circular jump/action buttons with 52px minima at lower right, and safe-area-aware bottom positions. While aboard, the nearby action becomes Exit and Jump is replaced by the HUD's flight actions. The atmosphere panel fits beside the tools, capped at `calc(100vw - 81px)`. The workshop becomes a single column, its lead preview becomes full-width, and its sheet uses `calc(100% - 24px)` width. The vehicle HUD moves above the scenery as described above.
+- **Up to 600px:** inherited phone sheet rules set top 75px, horizontal insets 12px, and padding `0 24px 25px`; the native bottom inset is 90px. The full reader uses `calc(100% - 24px)` width and 23px horizontal padding. Search remains at least 48px tall; the shortcut hint is hidden. Six dock actions retain icons above their labels and 46px minimum height.
 - **Coarse-pointer short landscape:** invitation width is 295px, atmosphere panel top is 81px, thumbstick/actions sit at bottom 105px, jump/action buttons become a horizontal pair, the location label is hidden, and expanded map width is 320px. Desktop-width inherited header/sheet rules still participate in this cascade.
 - **Up to 370px:** tighten the header and hide the wordmark subtitle; the native welcome size remains its native override.
 
@@ -290,10 +325,12 @@ Code blocks, tables, and display mathematics scroll horizontally inside their ow
 
 Environmental depth comes from native geometry, terrain height, material-specific paintings sampled triplanarly, eight toon bands, geometric edges, depth-ink postprocessing, directional shadows, and fog. Wood grain/knots, stone courses, roof shingles, foliage flecks, earth, paving, and fine snow grain stay distinct. Glass and emissive window surfaces bypass opaque surface painting; sparse transparent glazing keeps native desks and shelves visible. Terrain-derived water depth controls transparency, foam and caustics, with moving highlights. Winter retains a neutral key and cool fill; golden hour warms light and fog, rain cools/dims them, and moonlight retains the actor’s lowered, offset lamp.
 
+The expanded coast/depth map and horizon skirt keep that material continuity in flight. `WorldScene.ts` adapts camera span to each vehicle and altitude. Rocket framing blends ground and aerial focus/offset across altitude 8–35; aerial fog applies above altitude 15. Returning to the pad restores ground framing inside the ground-fog clear range. The retained landed observation is 43.75 camera distance against fog near 65; this is correction evidence, not a new universal camera token.
+
 Paper overlays use soft, low-opacity green-tinted shadows and original runtime-generated fiber grain. Buttons and reading rows remain flat inside them. The HTML interface has no backdrop blur or hard-offset-shadow vocabulary; native fire, lighting, glass, and toon shading are legitimate world materials.
 
 ### Shadow Vocabulary
-- **Navigation dock:** `0 7px 26px rgba(32,58,37,.10)`.
+- **Navigation dock / vehicle HUD:** `0 7px 26px rgba(32,58,37,.10)`.
 - **Reading sheet:** `0 12px 38px rgba(29,51,34,.16)`.
 - **Header navigation:** `0 4px 19px rgba(36,62,42,.065)`.
 - **Invitation:** `0 8px 28px rgba(34,60,39,.085)`.
@@ -313,6 +350,8 @@ HTML corners are gently softened: keycaps and small schematic areas use `rounded
 
 The world deliberately reuses authored primitives: boxes, cylinders, deformed spheres, cones, extruded silhouettes, curved roof profiles, and arcs. Composition, material seams, ink, and deformation give them specificity. Roofs have curved eaves and shingle linework; the waterfront has readable arched openings; trees vary among flattened acacias, clustered/elongated crowns, and tiered snow pines. Reusing geometry is part of the native kit, not a defect or an instruction to return to photo plates.
 
+The native vehicle kit follows that form language: a low dark motorcycle with brown saddle and visible forks/spokes; a boxy sand-toned Cruiser with rack and spare wheel; an extruded motorboat hull with timber seating; a cream/ochre high-wing bush plane with struts and propeller; and a ringed silver Starling with fins, landing legs, and a native flame plume. Their local pigments describe the models, not extra interface tokens. Runtime paper labels use Karla and disappear while occupied; the HTML HUD takes over the vehicle identity.
+
 ## Components
 
 ### Buttons
@@ -330,8 +369,8 @@ Quiet, compact actions that leave the world in charge.
 Paper supports reading and orientation rather than packaging every item.
 - **Reading sheet:** paper, broad softened corners, ambient shadow, sticky toolbar, internal scroll, and an explicit close control.
 - **Help:** smaller paper layer with SVG close control and concise keyboard/touch instructions.
-- **Project entries and narrative paths:** flat article blocks with single-pixel rules. The garden thumbnail is an actual native-scene capture, displayed with `object-fit: cover` at 190px high. `public/assets/world-project.png.provenance.json` identifies its immutable raw archive under `docs/provenance/`; historical staging/capture locations are not build prerequisites.
-- **Map:** compact desktop schematic, or expanded paper panel with outlined Karla labels, position dot, six destination rows, and a clear close action. Territory marker colors remain sourced from `src/world/map.ts`.
+- **Project entries and narrative paths:** flat article blocks with single-pixel rules. Repeated website-preview frames use an action-sized corner, leaf-rule border, shallow host bar, and top-aligned real screenshots. They do not add independent card shadows. The garden thumbnail remains an actual native-scene capture, displayed with `object-fit: cover` at 190px high. `public/assets/world-project.png.provenance.json` identifies its immutable raw archive under `docs/provenance/`; historical staging/capture locations are not build prerequisites.
+- **Map:** compact desktop schematic, or expanded paper panel with outlined Karla labels, position dot, six territory destination rows plus airstrip/launch-field routes, and a clear close action. Country roads and the wider coast appear in the schematic. Expanded height is capped at `calc(100dvh - 190px)` with contained internal scrolling. Territory marker colors remain sourced from `src/world/map.ts`.
 
 ### Inputs / Fields
 
@@ -339,9 +378,9 @@ Search is a restrained outlined line: SVG search mark, gap 10px, minimum height 
 
 ### Navigation
 
-- **Identity/header:** serif `mwaweru.` and the personal-name subtitle lead; semibold About, Work, and Writing actions sit on shallow textured paper and reach HTML sheets directly. `aria-current="page"` underlines the selected sheet; hover uses a 6px underline offset.
+- **Identity/header:** serif `mwaweru.` and the personal-name subtitle lead; semibold About, Work, and Writing actions sit on shallow textured paper and reach HTML sheets directly. GitHub is a direct desktop header link as well as a prominent workshop row and an existing contact. `aria-current="page"` underlines the selected sheet; hover uses a 6px underline offset.
 - **Territory dock:** six text buttons initiate actual walking. Pale current-location treatment uses `aria-current="location"` and follows the character's district, not the requested destination.
-- **Garden tools:** SVG plus label for Map, Kijazo, Paths, Index, and Links. Map and Links expose pressed state; compact layouts put icons above labels. Links opens the local Elsewhere sheet (`#links`).
+- **Garden tools:** SVG plus label for Map, Vehicles, Kijazo, Paths, Index, and Links. Map, Vehicles, and Links expose pressed state; compact layouts put icons above labels. Vehicles opens `#travel`; Links opens the local Elsewhere sheet (`#links`).
 - **Map destinations:** full-width flat rows initiate the same terrain-aware navigation as dock buttons. SVGs, rather than text glyphs, provide pictorial icons.
 
 ### Atmosphere
@@ -362,19 +401,41 @@ Notes remain flat full-width rows with a growth/read mark, medium-weight title, 
 
 Shareable routes retain the original note IDs as `#essay/<encoded-note-id>`. Known links between represented articles open the local reader; section and footnote anchors scroll within the sheet without replacing that route hash. Section scrolling respects reduced motion. External citations retain their destinations. “Original publication” is a secondary footer link only; complete reading does not require a Mathnuscripts redirect.
 
+Cold shared-article routes render full text before constructing WebGL. Closing the sheet or choosing a spatial action requests the world. `App.tsx` retains a pending `NavigationIntent` until a world exists and dispatches it with panel/overview pause cleared; the ready-with-no-panel effect flushes deferred requests. District, essay, vehicle, and person destinations share this path; journey start/next actions enqueue essay destinations. The follow-up evidence confirms arrival at the exact requested note, rather than merely successful engine startup.
+
 The article body preserves rich prose, lists, semantic code, tables, images, footnotes, and pre-rendered mathematical markup styled by KaTeX CSS. Subtle rules, tonal code/table insets, and a collapsible contents block structure long text without introducing elevated content cards. An unavailable published attachment gets an inline notice while the complete text stays readable. Content import scope and SHA-256 validation are recorded in `docs/PUBLICATION.md`.
 
 ### Elsewhere / About / Work
 
 `ElsewhereLinks.tsx`, `AboutContent.tsx`, and `PortfolioWork.tsx` extend the existing paper-sheet grammar. Elsewhere destination rows have a 76px minimum height, 17px vertical padding, a single leaf-rule separator, an SVG identity mark, Averia title, Karla description, and a direction/external-link mark. Hover underlines the title; keyboard focus inherits the shared green outline. Contact links use flat 46px-minimum rows.
 
-`content/elsewhere.json` records `https://linktr.ee/mathengewaweru` and `https://mwaweru.com/about` as public sources. LinkedIn, X, Thenks, Mathnuscripts, and About come from Linktree; GitHub, email, the personal statement, and historical Shukran, Agrarian, voting, and crowdsourcing details come from the linked About page. Mathnuscripts and About rows open local panels. Other web destinations are explicitly external; email uses its mail action. Sources remain visible as secondary attribution. Thenks is a sourced project link, not evidence of a current founder role, employment, or metrics.
+`content/elsewhere.json` records `https://linktr.ee/mathengewaweru` and `https://mwaweru.com/about` as public sources. LinkedIn, X, Thenks, Mathnuscripts, and About come from Linktree; GitHub, email, the personal statement, and historical Shukran, Agrarian, voting, and crowdsourcing details come from the linked About page. Mathnuscripts and About rows open local panels. Other web destinations are explicitly external; email uses its mail action. Sources remain visible as secondary attribution. That historical source boundary remains intact: the current Founder & CEO of Thenks role and the supplied degree, experience, and achievements now come explicitly from the owner via `PRODUCT.md` and `content/profile.json`, not an employment inference from a project link.
+
+The homestead pairs the supplied portrait with the heading, followed by the current role, introduction, a ruled “Right now” section, supplied biography, existing personal statement, workshop/writing actions, contacts, and an 11-image captioned album. The symbolic portrait is labelled existing DALL·E artwork from 2022. This is owner-supplied content, not a licence to invent further personal claims.
+
+The 800px-capped workshop leads with Mathnuscripts: real site screenshot, summary from `content/projects.json`, and a local-reading CTA for all 155 complete notes. Thenks uses a branded SVG icon/word treatment in forest and paper, not a simulated website screenshot. Kenyan Tech Stack, Boda Rush, and Monad use real website screenshots and explicit user-loaded sandboxed iframes. `ProjectPreview.tsx` shows a loading status, live-site context, and a close control; the normal project link remains available. Screenshots appear before opt-in iframe loading. Preview host bars and dots are contextual chrome, not evidence of a browser session running inside a static image.
+
+### Travel / Vehicles / Conversations
+
+`TravelContent.tsx` presents the supplied Zontes photograph, flat vehicle entries with SVG marks and walk-to actions, and five explicitly fictional residents. Native vehicles are the owner-photo-inspired Zontes 250V, Land Cruiser, motorboat, bush plane, and Starling rocket. Nearby E/Enter or touch action boards; W/S supplies throttle and A/D steering, with a thumbstick equivalent. Safe exits return to walkable land; the boat requires proximity to shore and aircraft require landing. The plane takes off and offers Return & land to its runway; the rocket ascends, hovers, and lands vertically on its original pad.
+
+The paper vehicle HUD uses an SVG identity mark, serif vehicle name, contextual keyboard/touch guidance, tabular speed or altitude, flight action where applicable, and Park & exit. Disabled exit has an explanatory shore/landing hint. The desktop HUD sits bottom-centre; touch layout sits upper left and gives actions a full row. The same simulation drives both input modes. Reading/panel pauses still freeze vehicle motion, including airborne states.
+
+`Conversation.tsx` uses a muted SVG mark, resident name/role, serif greeting, authored paragraphs, a ruled full-width note action, and a return-to-wandering action. `content/people.json` is editable and explicitly identifies the residents as fictional; each recommendation is an exact real local article ID: Wanjiku → “Pillars of Building a Great Startup”; Asha → “Extending Human Intelligence”; Otieno → “Africa and the Discipline of Hope”; Jabali → “Space Exploration is About Perspective”; Imani → “Choosing your Game will Choose Your Life”. These are authored conversations, not generated biographies or claims about real people.
+
+### Editable Content / Asset Boundary
+
+`.pages.yml` configures five editors for `content/site.json`, `content/profile.json`, `content/projects.json`, `content/people.json`, and `content/elsewhere.json`; the app consumes these files directly. Media resolution supports Vite `BASE_URL`. The editorial validator checks field types, required IDs, URLs, media, and referenced notes. `docs/EDITING.md` documents the owner's GitHub sign-in, publishing, and rebuild flow. Configuration does not establish an authenticated CMS connection or deployment.
+
+The supplied provenance scan covered 15 new shipping rasters with zero missing origins: 11 sourced WebP derivatives with sidecars under `public/assets/photos/` and four real website JPEG captures with embedded source under `public/assets/projects/`. No new AI generation was performed; the pre-existing DALL·E artwork keeps its original attribution. Preserve these origins, the native-garden thumbnail's archived raw source, article-import boundaries, and both font OFL files. Review captures remain local QA rather than shipping image assets.
 
 ### Native World and Characters
 
 The wanderer is articulated geometry with copper jacket, curly hair and facial details, deep teal scarf, leather satchel and map, trousers, and footwear. Limb gait, torso bob, head sway, and bag/scarf secondary motion follow simulation movement; static details are merged within articulated groups. Kijazo has a sage body and dark-blue face, follows the wanderer, and offers deterministic recommendations from published notes. Native seeds, buds, and evergreen campfires reflect manifest growth status. Seeded grass, flowers, reeds, fish, birds, butterflies, bees, night fireflies, drifting leaves/clouds, chimney smoke, and a gently bobbing moored boat inhabit the existing terrain. Authored counts in `src/world/landscape.ts` and `src/world/living.ts` are implementation details, not reusable visual quotas.
 
 Camera follow, restrained mouse peek, terrain grounding, sliding, jumping, and A* navigation share one connected world. Reading pauses movement at the exact location; closing restores world focus there. Reduced-motion preference freezes ambient landscape animation, snaps camera/light interpolation, and minimizes CSS motion while preserving deliberate walking. Mechanics live in `src/world/WorldScene.ts` and `src/world/engine/terrain.ts`; recorded browser checks do not establish physical-hardware frame rates.
+
+The retained post-correction scene snapshot records 155 notes, 240 trees, **5,814 generated grass placements**, 600 flowers, five vehicles, five residents, radius 132, 87 fish, 20 birds, 32 butterflies, 16 bees, 99 fireflies, and 220 reeds. Grass capacity is 6,500, but `grass.count = placed` makes 5,814 the actual generated instance count. These are current as-built statistics, not density quotas or a claim that every instance is visible in a frame.
 
 ## Do's and Don'ts
 
@@ -398,4 +459,4 @@ Camera follow, restrained mouse peek, terrain grounding, sliding, jumping, and A
 - **Don't** invent biography, social destinations, or live-product claims from a published project note.
 - **Don't** broaden the 155-note public snapshot import into unpublished vault content or clippings.
 
-Not canonized: unused `--paper-deep`, superseded base/plate/pin/four-place and preview-only summary selectors, one-off model pigments, and local tooling previews are not reusable shipped primitives. Runtime paintings are source-generated material inputs, not reference-photo plates. Contextual prompt labels are not decorative eyebrows. The single detector run's palette/type advisories are not blanket errors; its code-font warning reflected the missing semantic role in the old document, now recorded above. The review scope is recorded above and does not establish physical-hardware FPS or deployment.
+Not canonized: unused `--paper-deep`, superseded base/plate/pin/four-place and preview-only summary selectors, one-off model pigments or branding sizes, and local tooling previews are not reusable shipped primitives. Runtime paintings are source-generated material inputs, not reference-photo plates. Contextual prompt, preview-host, identity, and HUD metadata are not a decorative eyebrow system or a global small-type prescription. Historical detector code-font advice concerned the semantic reading role recorded above; the expansion detector's contextual palette/type advisories are not blanket defects or new universal tokens. Scene capacities are not generated counts, and software-renderer timings are not hardware benchmarks. The two-fix verdict is not full-surface approval, CMS authentication, or deployment certification.

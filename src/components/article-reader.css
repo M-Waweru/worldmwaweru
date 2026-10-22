@@ -24,6 +24,7 @@
 .reader-content strong { font-weight: 700; }
 .reader-content a { color: #3c6949; text-decoration-color: #91a585; text-underline-offset: .2em; overflow-wrap: anywhere; }
 .reader-content a:hover { text-decoration-color: currentColor; }
+.reader-content a .external-icon { display: inline-block; width: .75em; height: .75em; margin-inline-start: .25em; vertical-align: -.05em; fill: currentColor; }
 .reader-content blockquote { margin: 1.8em 0; padding: 4px 22px; border-left: 1px solid #aab899; }
 .mwaweru-garden .portfolio-sheet .reader-content blockquote p { font-family: var(--display); font-size: 21px; line-height: 1.65; color: #425f46; }
 .reader-content img, .reader-content video { display: block; max-width: 100%; height: auto; margin: 1.6em auto; border-radius: 5px; }

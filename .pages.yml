@@ -1,0 +1,138 @@
+# Pages CMS reads this file from the selected branch of M-Waweru/worldmwaweru.
+media:
+  input: public/assets
+  output: /assets
+  categories: [image]
+  rename: safe
+
+content:
+  - name: site
+    label: Welcome and page copy
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: welcomeTitle, label: Welcome heading, type: text, required: true }
+      - { name: welcomeIntro, label: Welcome introduction, type: text, required: true }
+      - { name: welcomeAction, label: Explore button, type: string, required: true }
+      - { name: aboutTitle, label: Homestead heading, type: text, required: true }
+      - { name: workTitle, label: Workshop heading, type: string, required: true }
+      - { name: workIntro, label: Workshop introduction, type: text, required: true }
+      - { name: travelTitle, label: Vehicles heading, type: string, required: true }
+      - { name: travelIntro, label: Vehicles introduction, type: text, required: true }
+      - { name: guideGreeting, label: Kijazo greeting, type: text, required: true }
+      - { name: guideIntro, label: Kijazo introduction, type: text, required: true }
+      - { name: guideDescription, label: Kijazo description, type: text, required: true }
+
+  - name: profile
+    label: Homestead and biography
+    type: file
+    path: content/profile.json
+    format: json
+    fields:
+      - { name: name, label: Your name, type: string, required: true }
+      - { name: role, label: Current role, type: string, required: true }
+      - { name: summary, label: Short introduction, type: text, required: true }
+      - { name: currentFocus, label: What I am doing now, type: text, required: true }
+      - { name: portrait, label: Portrait, type: image, required: true }
+      - { name: portraitAlt, label: Portrait description, type: string, required: true }
+      - { name: mantra, label: Personal statement, type: text, required: true }
+      - { name: biography, label: Biography paragraphs, type: text, list: true, required: true }
+      - { name: outsideWork, label: Beyond the workbench, type: text, required: true }
+      - name: gallery
+        label: Photo album
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image, required: true }
+          - { name: alt, label: Image description, type: string, required: true }
+          - { name: caption, label: Caption, type: text, required: true }
+
+  - name: workshop
+    label: Workshop projects
+    type: file
+    path: content/projects.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects in display order
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Stable ID, type: string, required: true, description: 'Use lowercase letters and hyphens. Keep mathnuscripts as the first project.' }
+          - { name: name, label: Project name, type: string, required: true }
+          - { name: category, label: Project type, type: string, required: true }
+          - { name: description, label: Summary, type: text, required: true }
+          - { name: url, label: Website URL, type: string, required: true }
+          - { name: preview, label: Preview image, type: image }
+          - { name: previewAlt, label: Preview description, type: string }
+          - { name: embedUrl, label: Optional live iframe URL, type: string, description: 'Use an HTTPS site that permits embedding. Leave blank for a static preview.' }
+          - name: icon
+            label: Project symbol
+            type: select
+            options:
+              values: [book, bike, layers, heart]
+          - { name: action, label: Open button text, type: string, required: true }
+
+  - name: residents
+    label: People and conversations
+    type: file
+    path: content/people.json
+    format: json
+    fields:
+      - { name: title, label: Section heading, type: string, required: true }
+      - { name: intro, label: Introduction, type: text, required: true }
+      - name: people
+        label: Garden residents
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Stable ID, type: string, required: true }
+          - { name: name, type: string, required: true }
+          - { name: role, type: string, required: true }
+          - { name: greeting, type: text, required: true }
+          - { name: dialogue, label: Conversation paragraphs, type: text, list: true, required: true }
+          - { name: essaySlug, label: Recommended Mathnuscripts note, type: string, required: true, description: 'Use the exact note ID from the writing index. The build checks that it exists.' }
+          - { name: x, label: East-west position, type: number, required: true }
+          - { name: z, label: North-south position, type: number, required: true }
+          - name: district
+            label: Territory
+            type: select
+            required: true
+            options:
+              values: [trailhead, computing, building, knowledge, africa, philosophy]
+          - { name: coat, label: Coat colour, type: string, required: true, description: 'A six-digit hex colour such as #667e93.' }
+
+  - name: elsewhere
+    label: Social links and earlier projects
+    type: file
+    path: content/elsewhere.json
+    format: json
+    fields:
+      - { name: source, label: Original links source, type: string, required: true }
+      - { name: aboutSource, label: Earlier biography source, type: string, required: true }
+      - { name: statement, label: Statement, type: text, required: true }
+      - name: links
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Stable ID, type: string, required: true }
+          - { name: label, type: string, required: true }
+          - { name: description, type: text, required: true }
+          - { name: url, label: Destination, type: string, required: true }
+          - name: kind
+            type: select
+            required: true
+            options:
+              values: [social, contact, project, writing, about, collection]
+          - { name: source, label: Optional attribution URL, type: string }
+      - name: projects
+        label: Earlier projects
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Stable ID, type: string, required: true }
+          - { name: name, type: string, required: true }
+          - { name: description, type: text, required: true }
+          - { name: url, type: string, required: true }
+          - { name: source, type: string, required: true }

@@ -1,0 +1,114 @@
+/* The homestead and workshop inherit the garden's paper, Karla, and Averia. */
+.welcome h1, .about-content h1, .guide-content h1, .personal-mantra { white-space: pre-line; }
+.welcome-identity { display: flex; align-items: center; gap: 12px; margin-bottom: 19px; }
+.welcome-identity img { width: 45px; height: 56px; object-fit: cover; object-position: 50% 15%; border-radius: 4px; }
+.welcome-identity > span { font-size: 13px; font-weight: 600; }
+.welcome-identity small { display: block; margin-top: 4px; font-size: 11px; color: var(--muted); font-weight: 400; }
+.header-github { text-decoration: none; }
+.homestead-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+.homestead-heading h1 { flex: 1; }
+.homestead-heading img { width: 112px; height: 145px; object-fit: cover; object-position: 50% 20%; border-radius: 5px; }
+.homestead-now { margin: 25px 0; padding: 20px 0; border-block: 1px solid var(--line); }
+.homestead-now h2 { margin: 0 0 12px; }
+.homestead-now .text-button { text-decoration: none; }
+.homestead-album { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+.homestead-album figure { margin: 0; min-width: 0; }
+.homestead-album figure:first-child, .homestead-album figure:last-child { grid-column: 1 / -1; }
+.homestead-album img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 5px; }
+.homestead-album figcaption { margin-top: 8px; font-size: 12px; line-height: 1.6; color: var(--muted); }
+.homestead-album figure:last-child img { aspect-ratio: 2 / 1; object-fit: contain; background: #253b36; }
+.mwaweru-garden.is-work .portfolio-sheet { width: min(800px, calc(100% - 56px)); }
+.work-github { display: flex; align-items: center; gap: 12px; padding: 16px 0; margin-bottom: 28px; border-block: 1px solid var(--line); text-decoration: none; font-size: 14px; }
+.work-github > span { flex: 1; }
+.work-github small { display: block; font-size: 12px; font-weight: 400; margin-top: 5px; color: var(--muted); line-height: 1.5; }
+.work-github:hover > span { text-decoration: underline; text-underline-offset: 4px; }
+.work-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; }
+.work-projects > .project-entry { min-width: 0; margin-top: 0; }
+.work-projects > .project-entry:first-child { grid-column: 1 / -1; }
+.work-projects > .project-entry:first-child .project-preview { float: left; width: 42%; margin: 0 23px 10px 0; }
+.work-projects > .project-entry:first-child .project-entry__meta { clear: both; }
+.work-projects > .project-entry:first-child h2 { font-size: 32px; padding-top: 12px; }
+.project-preview { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; background: var(--paper); margin-bottom: 18px; }
+.project-preview__bar { min-height: 28px; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 3px 10px; background: #e6eadb; }
+.project-preview__bar > span { display: flex; gap: 4px; }
+.project-preview__bar i { width: 5px; height: 5px; border-radius: 50%; background: #97a68a; }
+.project-preview__bar > small { font-size: 10px; color: var(--muted); margin-left: auto; }
+.project-preview__bar .icon-button { width: 28px; height: 28px; }
+.project-preview > img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.project-preview--monad > img { aspect-ratio: 2.2 / 1; }
+.project-preview__brand { min-height: 184px; padding: 24px; display: flex; flex-direction: column; align-items: flex-start; color: #f5f2e7; background: #405f46; }
+.project-preview__brand strong { font-family: var(--display); font-weight: 400; font-size: 38px; margin-top: 8px; }
+.project-preview__brand > span { font-size: 12px; line-height: 1.6; margin-top: 8px; color: #e4ead7; }
+.project-preview__play { display: inline-flex; align-items: center; gap: 8px; margin: 10px; padding: 9px 13px; min-height: 40px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); font-size: 12px; }
+.project-preview__play:hover { background: #e0e6d3; }
+.project-preview__live { position: relative; }
+.project-preview__live iframe { display: block; width: 100%; height: 420px; border: 0; background: var(--paper); }
+.project-preview__live > p { position: absolute; top: 16px; left: 16px; pointer-events: none; }
+.project-preview__hint { display: block; padding: 10px 12px; line-height: 1.5; font-size: 11px; color: var(--muted); }
+.travel-bike-photo { margin: 0 0 28px; }
+.travel-bike-photo img { display: block; width: 100%; height: auto; border-radius: 5px; }
+.travel-bike-photo figcaption { font-size: 12px; margin-top: 8px; color: var(--muted); line-height: 1.6; }
+.travel-list article { display: flex; gap: 17px; padding: 24px 0; border-top: 1px solid var(--line); }
+.travel-list article > svg { flex-shrink: 0; margin-top: 4px; color: #637d5b; }
+.travel-list h2 { margin: 0 0 6px; }
+.travel-list article small { display: block; color: var(--muted); font-size: 12px; margin-bottom: 12px; }
+.travel-list article .text-button { font-size: 12px; min-height: 40px; }
+.conversation-mark { color: #637d5b; margin: 8px 0 22px; }
+.conversation-content blockquote { font-family: var(--display); font-size: 24px; line-height: 1.45; margin: 25px 0; }
+.conversation-note { width: 100%; display: flex; gap: 14px; align-items: center; padding: 20px 0; margin: 25px 0; border: 0; border-block: 1px solid var(--line); background: transparent; text-align: left; }
+.conversation-note > span { flex: 1; }
+.conversation-note > svg { flex-shrink: 0; }
+.conversation-note strong { display: block; font-family: var(--display); font-size: 23px; line-height: 1.3; font-weight: 400; margin: 8px 0; }
+.conversation-note small { display: block; font-size: 12px; color: var(--muted); }
+.conversation-note:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+.vehicle-hud { position: absolute; z-index: 6; bottom: 112px; left: 50%; transform: translateX(-50%); width: min(640px, calc(100% - 250px)); display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 16px 18px; background: var(--garden-paper-texture), var(--paper); border-radius: 7px; box-shadow: 0 7px 26px rgba(32,58,37,.10); }
+.vehicle-hud > svg { flex-shrink: 0; color: var(--green); }
+.vehicle-hud__identity { flex: 1; min-width: 130px; }
+.vehicle-hud__identity strong { font-family: var(--display); font-size: 21px; font-weight: 400; }
+.vehicle-hud__identity small { display: block; font-size: 11px; margin-top: 5px; color: var(--muted); line-height: 1.5; }
+.vehicle-hud output { font-size: 25px; font-variant-numeric: tabular-nums; min-width: 44px; text-align: right; }
+.vehicle-hud output small { display: block; font-size: 10px; margin-top: 2px; color: var(--muted); }
+.vehicle-hud__actions { display: flex; gap: 8px; }
+.vehicle-hud__actions button { min-height: 42px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 4px; background: transparent; font-size: 12px; }
+.vehicle-hud__actions button:hover:enabled { background: #e0e6d3; }
+.vehicle-hud__hint { flex-basis: 100%; font-size: 11px; color: var(--muted); line-height: 1.5; }
+.vehicle-hud__touch { display: none; }
+.garden-map.is-expanded { max-height: calc(100dvh - 190px); overflow-y: auto; overscroll-behavior: contain; }
+.garden-map text { font-size: 10px; }
+@media (max-width: 1100px) {
+  .mwaweru-garden .territory-navigation { display: none; }
+  .mwaweru-garden .garden-actions { width: 100%; justify-content: space-around; }
+  .mwaweru-garden .garden-actions > button { flex: 1; justify-content: center; }
+}
+@media (max-width: 600px), (pointer: coarse) and (max-height: 600px) {
+  .mwaweru-garden .header-nav .header-github { display: none; }
+  .welcome-identity { margin-bottom: 13px; }
+  .welcome-identity img { width: 34px; height: 42px; }
+  .welcome-identity > span { font-size: 12px; }
+  .welcome-identity small { font-size: 10px; margin-top: 3px; }
+  .mwaweru-garden .garden-actions > button { padding: 5px 3px; gap: 5px; }
+  .mwaweru-garden.is-work .portfolio-sheet { width: calc(100% - 24px); }
+  .homestead-heading { gap: 12px; }
+  .homestead-heading img { width: 88px; height: 117px; }
+  .work-projects { grid-template-columns: minmax(0, 1fr); }
+  .work-projects > .project-entry:first-child .project-preview { float: none; width: 100%; margin-right: 0; }
+  .work-projects > .project-entry:first-child h2 { font-size: 27px; padding-top: 0; }
+  .project-preview__brand { padding: 17px; min-height: 177px; }
+  .project-preview__brand strong { font-size: 28px; }
+  .project-preview--monad > img { aspect-ratio: 16 / 10; }
+  .project-preview__live iframe { height: 440px; }
+  .vehicle-hud { top: 90px; bottom: auto; left: 14px; right: 70px; width: auto; transform: none; padding: 13px; gap: 10px; }
+  .vehicle-hud > svg { width: 21px; }
+  .vehicle-hud__identity { min-width: 0; }
+  .vehicle-hud__identity strong { font-size: 18px; }
+  .vehicle-hud__identity small { font-size: 10px; }
+  .vehicle-hud__keys { display: none; }
+  .vehicle-hud__touch { display: inline; }
+  .vehicle-hud output { font-size: 23px; min-width: 30px; }
+  .vehicle-hud__actions { flex-basis: 100%; }
+  .vehicle-hud__actions button { flex: 1; min-height: 43px; padding-inline: 7px; }
+  .travel-list article { gap: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vehicle-hud { animation: none; transition: none; }
+}

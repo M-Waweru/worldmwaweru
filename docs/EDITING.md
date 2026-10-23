@@ -22,7 +22,9 @@ GitHub sign-in and app access belong to the repository owner; no CMS credentials
 | People and conversations | `content/people.json` | Resident names, dialogue, note recommendations, coat colours, placement |
 | Social links and earlier projects | `content/elsewhere.json` | GitHub, contact/social links, historical project descriptions and attribution |
 
-Keep `mathnuscripts` first in the projects list, and retain the `github` social-link ID. Other list entries can be reordered or added. Project IDs use lowercase letters, numbers, and hyphens. The Mathnuscripts project opens the local writing collection; other projects use their website links.
+Keep `thenks` first in the projects list, retain the `mathnuscripts` project and `github` social-link ID. Other list entries can be reordered or added. Project IDs use lowercase letters, numbers, and hyphens. The Mathnuscripts project opens the local writing collection; other projects use their website links. The **Full-width featured project** setting gives important work a larger preview.
+
+Project **Published results** fields store editable value/label pairs. Use **Reporting period or context** to explain the period and **Results source URL** to link the published figures. Thenks starts with its published first-eight-month results: $500K+ tips processed, 80+ properties onboarded, and 2,050+ staff members impacted, sourced from https://www.thenks.co/#results. These are an editable publication snapshot, not a live analytics feed.
 
 ## Images and previews
 

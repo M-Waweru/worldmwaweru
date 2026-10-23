@@ -25,7 +25,7 @@ The **Links** tool brings together the verified destinations from [Mathenge’s 
 
 The homestead introduces Mathenge through his supplied current biography as Founder & CEO of Thenks, a **Right now** section, and his own photo album. GitHub is directly available in the desktop header, workshop, and contact links.
 
-The workshop leads with **Mathnuscripts**, its real website preview, a substantial summary, and a button opening all 155 complete notes locally. Thenks, Kenyan Tech Stack, Boda Rush, and Monad follow with summaries and visual previews. The three supplied Netlify projects offer user-loaded, sandboxed live iframe previews; screenshots provide an immediate glimpse without loading multiple apps on arrival.
+The workshop leads with **Thenks**, linking to https://www.thenks.co/, with its actual website preview and sourced first-eight-month results: $500K+ tips processed, 80+ properties onboarded, and 2,050+ staff members impacted. **Mathnuscripts** remains a full-width featured project immediately afterward, with its real preview, substantial summary, and access to all 155 complete local notes. Kenyan Tech Stack, Boda Rush, and Monad retain summaries and visual previews. The three supplied Netlify projects offer user-loaded, sandboxed live iframe previews; screenshots provide an immediate glimpse without loading multiple apps on arrival. Project results and their source/context are editable through Pages CMS.
 
 Choose **Vehicles** to walk to the Zontes-inspired bike, Land Cruiser, waterfront boat, western bush plane, or Starling launch field. The playable radius is 132 world metres, expanded from 54, with countryside roads and a wider coast. Land vehicles respect obstacles and water; the boat stays at sea and disembarks near land. The plane takes off and returns to the runway. The rocket rises vertically, hovers, and returns to its original pad.
 
@@ -79,6 +79,7 @@ Only the existing allowlisted folders and explicitly published Markdown files en
 - **Click / tap the ground:** find and walk a traversable route.
 - **E / Enter:** interact with a nearby note, guide, or landmark.
 - **While aboard:** W/S accelerate or reverse; A/D steer; Shift boosts land vehicles. E or **Park & exit** returns to walking where a safe exit is available.
+- **Arrow keys** are equivalent to WASD: Up/Down control speed, Left/Right steer toward the driver's left/right. The camera follows behind the bike, Land Cruiser, boat, and plane; natural reverse steering is preserved. Rocket hover retains its own overhead framing.
 - **Plane / rocket:** Space or the vehicle action button takes off, returns to the runway, or lands vertically. A plane or rocket must land before the passenger can exit.
 - **M:** map overview; **K:** Kijazo; **Ctrl / Cmd K:** note search.
 - **Escape:** leave a note, close a sheet, or close the map/help.

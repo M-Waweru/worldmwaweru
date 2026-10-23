@@ -63,7 +63,7 @@ try {
     check('wiki/note links open another post within this reader', new URL(page.url()).origin === new URL(base).origin && garden.essays.some(note => note.slug === nextSlug))
   } else check('wiki/note links open another post within this reader', false)
   await page.getByRole('button', { name: 'Links', exact: true }).click()
-  check('verified Linktree destinations are included', await page.locator('.elsewhere-list a[href="https://thenks.co"]').count() === 1 && await page.locator('.elsewhere-list a[href="https://www.linkedin.com/in/mathenge-waweru"]').count() === 1 && await page.locator('.elsewhere-list a[href="https://x.com/mathenge_waweru"]').count() === 1)
+  check('owner-approved Thenks and verified social destinations are included', await page.locator('.elsewhere-list a[href="https://www.thenks.co/"]').count() === 1 && await page.locator('.elsewhere-list a[href="https://www.linkedin.com/in/mathenge-waweru"]').count() === 1 && await page.locator('.elsewhere-list a[href="https://x.com/mathenge_waweru"]').count() === 1)
   await capture(page, 'desktop-links')
   await page.locator('.elsewhere-list button').filter({ hasText: 'Mathnuscripts' }).click()
   check('the Mathnuscripts collection link opens the in-site index', await page.locator('.note-entry').count() === 155)

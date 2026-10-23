@@ -4,7 +4,7 @@ import { makeMessenger, type CharacterParts } from '../game/characters'
 import { districts, districtById, type DistrictId } from './map'
 import { FIXED_STEP, heightAt, snowAt, stepCharacter, findPath, type CharacterState, type Point } from './engine/terrain'
 import type { GardenEnvironment, GardenLight, GardenWeather } from './environment'
-import { boardingPoint, exitPoint, stepVehicle, vehicleAction as actOnVehicle, vehicleStatus, type VehicleId, type VehicleStatus } from './engine/vehicles'
+import { boardingPoint, drivingCameraYaw, exitPoint, stepVehicle, vehicleAction as actOnVehicle, vehicleStatus, type VehicleId, type VehicleStatus } from './engine/vehicles'
 import type { VehicleVisual } from './native/vehicles'
 
 type Options = {
@@ -347,8 +347,13 @@ export class WorldScene {
     } else {
       if (this.explored) { this.desiredFocus.copy(this.player.position); this.desiredFocus.y += 1 }
       else this.desiredFocus.set(mobile ? 1.2 : -3, 1.7, mobile ? 15 : 8)
-      const peek = this.reducedMotion || mobile ? 0 : this.cursor.x * .15
-      this.yaw = THREE.MathUtils.lerp(this.yaw, .604 + peek, Math.min(1, dt * 3))
+      if (this.vehicle && this.vehicle.definition.id !== 'rocket') {
+        this.yaw = drivingCameraYaw(this.yaw, this.vehicle.state.heading, dt, this.reducedMotion)
+      } else {
+        const peek = this.reducedMotion || mobile ? 0 : this.cursor.x * .15, desiredYaw = .604 + peek
+        const delta = Math.atan2(Math.sin(desiredYaw - this.yaw), Math.cos(desiredYaw - this.yaw))
+        this.yaw += delta * (this.reducedMotion ? 1 : Math.min(1, dt * 3))
+      }
       this.offset.set(Math.sin(this.yaw) * 35, 25, Math.cos(this.yaw) * 35)
       this.scene.fog = this.fog
       if (this.vehicle?.definition.id === 'rocket') {

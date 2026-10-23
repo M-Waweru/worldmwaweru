@@ -59,9 +59,10 @@ content:
         type: object
         list: true
         fields:
-          - { name: id, label: Stable ID, type: string, required: true, description: 'Use lowercase letters and hyphens. Keep mathnuscripts as the first project.' }
+          - { name: id, label: Stable ID, type: string, required: true, description: 'Use lowercase letters and hyphens. Keep thenks as the first project and retain mathnuscripts.' }
           - { name: name, label: Project name, type: string, required: true }
           - { name: category, label: Project type, type: string, required: true }
+          - { name: featured, label: Full-width featured project, type: boolean }
           - { name: description, label: Summary, type: text, required: true }
           - { name: url, label: Website URL, type: string, required: true }
           - { name: preview, label: Preview image, type: image }
@@ -73,6 +74,15 @@ content:
             options:
               values: [book, bike, layers, heart]
           - { name: action, label: Open button text, type: string, required: true }
+          - name: stats
+            label: Published results
+            type: object
+            list: true
+            fields:
+              - { name: value, label: Display value, type: string, required: true, description: 'For example $500K+ or 80+.' }
+              - { name: label, label: What it measures, type: string, required: true }
+          - { name: statsNote, label: Reporting period or context, type: text }
+          - { name: statsSource, label: Results source URL, type: string }
 
   - name: residents
     label: People and conversations

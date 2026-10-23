@@ -35,10 +35,24 @@ test('broken editorial references are reported with actionable field names', () 
   assert.ok(errors.some(error => error.includes('elsewhere.linkedin.url')))
 })
 
-test('Mathnuscripts remains the lead visual project, with a complete summary and local-reading action', () => {
-  const project = documents['content/projects.json'].projects[0]
-  assert.equal(project.id, 'mathnuscripts')
+test('Thenks leads with the owner’s URL and sourced results, while Mathnuscripts keeps its full local-reading entry', () => {
+  const lead = documents['content/projects.json'].projects[0]
+  assert.equal(lead.id, 'thenks')
+  assert.equal(lead.url, 'https://www.thenks.co/')
+  assert.equal(lead.stats.length, 3)
+  assert.equal(lead.statsSource, 'https://www.thenks.co/#results')
+  assert.ok(lead.featured && lead.preview)
+  const project = documents['content/projects.json'].projects.find(project => project.id === 'mathnuscripts')
+  assert.ok(project.featured)
   assert.ok(project.preview && project.previewAlt)
   assert.ok(project.description.length > 150)
   assert.match(project.action, /here/)
+})
+
+test('project results remain editable and require a valid source', () => {
+  const edited = structuredClone(documents)
+  edited['content/projects.json'].projects[0].stats[0].value = '$600K+'
+  assert.deepEqual(validateEditableContent(config, edited, options), [])
+  edited['content/projects.json'].projects[0].statsSource = ''
+  assert.ok(validateEditableContent(config, edited, options).some(error => error.includes('thenks.statsSource')))
 })

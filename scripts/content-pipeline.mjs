@@ -16,6 +16,8 @@ export function validateEditableContent(config, documents, { mediaExists = () =>
       for (const child of definition.fields || []) field(value[child.name], child, `${path}.${child.name}`)
     } else if (definition.type === 'number') {
       if (typeof value !== 'number' || !Number.isFinite(value)) error(path, 'must be a finite number')
+    } else if (definition.type === 'boolean') {
+      if (typeof value !== 'boolean') error(path, 'must be true or false')
     } else {
       if (typeof value !== 'string') { error(path, 'must be text'); return }
       if (definition.type === 'select' && !definition.options?.values?.includes(value)) error(path, 'choose a configured option')
@@ -45,9 +47,12 @@ export function validateEditableContent(config, documents, { mediaExists = () =>
   }
   const projects = documents['content/projects.json']?.projects || []
   ids(projects, 'workshop.projects')
-  if (projects[0]?.id !== 'mathnuscripts') error('workshop.projects', 'keep Mathnuscripts as the lead project')
+  if (projects[0]?.id !== 'thenks') error('workshop.projects', 'keep Thenks as the lead project')
+  if (!projects.some(project => project.id === 'mathnuscripts')) error('workshop.projects', 'retain the Mathnuscripts project and local reading link')
   for (const project of projects) {
     url(project.url, `workshop.${project.id}.url`); url(project.embedUrl, `workshop.${project.id}.embedUrl`)
+    url(project.statsSource, `workshop.${project.id}.statsSource`)
+    if (Array.isArray(project.stats) && project.stats.length && !project.statsSource) error(`workshop.${project.id}.statsSource`, 'provide the published source for these results')
     if (project.preview && !project.previewAlt?.trim()) error(`workshop.${project.id}.previewAlt`, 'describe the preview image')
   }
   const people = documents['content/people.json']?.people || []

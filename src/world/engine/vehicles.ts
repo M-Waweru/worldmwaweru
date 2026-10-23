@@ -21,6 +21,12 @@ const clamp = (value: number, min: number, max: number) => Math.max(min, Math.mi
 const approach = (value: number, target: number, response: number, dt: number) => value + (target - value) * (1 - Math.exp(-response * dt))
 const turnTo = (heading: number, target: number, dt: number) => heading + Math.atan2(Math.sin(target - heading), Math.cos(target - heading)) * (1 - Math.exp(-dt * 4))
 
+/** Vehicles face local +Z, so the driving camera belongs on the opposite side. */
+export function drivingCameraYaw(current: number, heading: number, dt: number, reducedMotion = false) {
+  const behind = heading + Math.PI
+  return reducedMotion ? behind : turnTo(current, behind, dt)
+}
+
 export function isBoatable(x: number, z: number) { return Math.hypot(x, z) < WORLD_RADIUS - 2 && z > shoreline(x) + 1.35 }
 
 /** Swept collision samples prevent a fast bike from tunnelling through walls. */
@@ -84,7 +90,7 @@ export function stepVehicle(state: VehicleState, input: Point, dt: number, colli
       if (state.z >= -38) { state.phase = 'parked'; state.speed = 0; state.y = heightAt(state.x, state.z); return }
     } else {
       state.speed = approach(state.speed, clamp(19 + throttle * 9, 10, 28), .9, dt)
-      state.heading += steer * dt * .85
+      state.heading -= steer * dt * .85
       if (state.speed > 10) state.y = Math.min(heightAt(state.x, state.z) + 24, state.y + 6 * dt)
       if (state.y > heightAt(state.x, state.z) + 22) state.phase = 'flying'
     }
@@ -96,7 +102,9 @@ export function stepVehicle(state: VehicleState, input: Point, dt: number, colli
   }
   const topSpeed = state.id === 'plane' ? 8 : definition.topSpeed * (boost ? 1.3 : 1)
   state.speed = approach(state.speed, throttle * topSpeed * (throttle < 0 ? .4 : 1), throttle ? 1.8 : 4.5, dt)
-  state.heading += steer * dt * (state.id === 'boat' ? .9 : 1.7) * Math.min(Math.abs(state.speed) / 2, 1) * (state.speed < 0 ? -1 : 1)
+  // Positive Y yaw turns a +Z-facing model left. Right input therefore
+  // subtracts yaw; reversing changes yaw direction, as with real steering.
+  state.heading -= steer * dt * (state.id === 'boat' ? .9 : 1.7) * Math.min(Math.abs(state.speed) / 2, 1) * (state.speed < 0 ? -1 : 1)
   moveGround(state, state.speed * dt, colliders)
   if (state.id !== 'plane') state.phase = Math.abs(state.speed) > .1 ? 'driving' : 'parked'
 }

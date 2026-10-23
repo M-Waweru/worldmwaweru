@@ -7,7 +7,7 @@
     { "id": "x", "label": "X", "description": "Thoughts, discoveries, and conversations along the way.", "url": "https://x.com/mathenge_waweru", "kind": "social" },
     { "id": "github", "label": "GitHub", "description": "Code, experiments, and things in the making.", "url": "https://github.com/M-Waweru", "kind": "social", "source": "https://mwaweru.com/about" },
     { "id": "email", "label": "Say hello", "description": "A good conversation can be the beginning of something.", "url": "mailto:mathenge2waweru@gmail.com", "kind": "contact", "source": "https://mwaweru.com/about" },
-    { "id": "thenks", "label": "Thenks", "description": "Card and mobile-money tipping in Africa.", "url": "https://thenks.co", "kind": "project" },
+    { "id": "thenks", "label": "Thenks", "description": "Card and mobile-money tipping in Africa.", "url": "https://www.thenks.co/", "kind": "project" },
     { "id": "mathnuscripts", "label": "Mathnuscripts", "description": "A living system of writing about technology, knowledge, Africa, philosophy, and building the future.", "url": "https://mathnuscript.com", "kind": "writing" },
     { "id": "about", "label": "The earlier chapter", "description": "More about my work, projects, and the things that keep me curious.", "url": "https://mwaweru.com/about", "kind": "about" },
     { "id": "linktree", "label": "My Linktree", "description": "The collection of links that brought these little paths together.", "url": "https://linktr.ee/mathengewaweru", "kind": "collection" }

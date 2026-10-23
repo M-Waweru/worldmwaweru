@@ -65,3 +65,55 @@ Baseline full-reader captures remain under `.impeccable/review/worldmwaweru/`. F
 `DESIGN.md` reconciles the extension with the incumbent system after the last correction, retaining material details, licences/provenance boundaries, full-reader behavior, and narrow review history. The project-local `.impeccable/design.json` was absent; this handoff restores the supported sidecar at that path using incumbent metadata as reference and current project evidence. The parent garden's sidecar is unchanged. Its historical counts, bindings, staging paths, and verdicts are not promoted into current project authority. The README change is limited to the living-grass count/capacity distinction.
 
 The documenter role ran inline using the degraded documenter workflow. Application code, configuration, scripts, assets, and tests were not edited by this documentation handoff.
+
+## Controls / Thenks persistence follow-up — 2026-10-23
+
+The initial finish review requested **FIX** solely for superseded design-persistence assertions. After the documentation handoff, the same reviewer scored that single fix **RESOLVED** and returned **SHIP at the persistence-fix scope only**. The reviewer opened all eight captures listed below and found no further material code or visual fix; fidelity findings were match/adaptation. Earlier reviews above retain their original scope and historical facts.
+
+### Persistence correction recorded
+
+- `DESIGN.md` and the existing project-local `.impeccable/design.json` now record **Thenks first**, canonical URL `https://www.thenks.co/` across Work/Links/About, and the real `public/assets/projects/thenks.jpg` preview. The newest user requirement supersedes Mathnuscripts-first guidance. **Mathnuscripts remains full-width second**, with all **155 complete local notes**.
+- Thenks' semantic Work statistics show **$500K+ tips processed, 80+ properties onboarded, and 2,050+ staff members impacted**. “Published results from the first eight months.” and `https://www.thenks.co/#results` identify a sourced editorial snapshot, not live analytics. Source raw HTML starts the JS counters at zero; the supplied settled-browser observation and source JPEG show the stated totals.
+- CMS `featured` supplies the full-width entry class: Thenks, Mathnuscripts, and Monad are featured; Kenyan Tech Stack/Boda Rush share two columns. All featured previews float at 42% on desktop and become full-width on touch layouts. Featured titles use Averia 32px/27px; result values use tabular Averia 32px/26px, with Karla labels at 12px and source/context at 11px. At <=360px, results stack into label-left/value-right rows and the redundant monogram hides while wordmark text remains.
+- The HUD stays bottom-centre above 1200px, moves left at 601–1200px (22px inset, width `min(640px, calc(100% - 270px))`) to clear the right map, and keeps the later mobile/coarse-pointer upper-left override. The first main-thread pass found 320px statistics/header overflow and 1024px HUD/map overlap; one responsive batch corrected both before the supplied second-round 51/51 result.
+- Driver-relative arrow/WASD and touch steering subtract yaw for the +Z-facing models in ground/taxi and airborne-plane simulation; reverse steering changes with speed sign. Bike, Cruiser, boat, and plane use shortest-angle, exponentially damped rear-camera follow with reduced-motion snap. Walking returns by the short turn; the rocket retains its separate framing and corrected parked hint.
+- All five project previews are actual website JPEGs. The generic no-image fallback remains available for future entries; it is no longer Thenks' preview. `.pages.yml` exposes `featured`, result value/label pairs, context, and source; validation handles booleans, requires a statistics source, keeps Thenks first, and retains Mathnuscripts.
+
+The incumbent palette, Averia/Karla pairing, opaque-paper layers, and native illustrated world are retained. `README.md`, `PRODUCT.md`, and `docs/EDITING.md` already reflect the current facts and needed no reconciliation edit.
+
+### Supplied execution evidence
+
+These are retained or supplied results from the implementation work. This documentation-only pass did not rerun the browser, build, tests, detector, or provenance scan.
+
+| Record | Supplied outcome and boundary |
+| --- | --- |
+| `npm test` | **52/52 PASS**, including five new steering/camera regressions and statistics validation. |
+| Production build | **PASS after the final responsive correction batch**, confirmed by the parent thread. |
+| `.impeccable/review/controls/verification.json` via `scripts/verify-controls.mjs` | Latest **51/51 PASS**, `errors: []`, after the responsive correction batch. |
+| `/tmp/opencode/steering-thenks-detector.json` | Ran **once**; contextual type advisories only. These do not create universal tokens. |
+| Supplied project-raster provenance scan | **5 files, 0 missing origins**. The new Thenks JPEG embeds an actual Playwright 1600 × 1000 capture dated 2026-10-23, settled counters, JPEG quality 82; no image generation. |
+
+Runtime evidence includes actual native WebGL, controlled fixtures passed through actual DOM key handlers and `setTouch`/`simulate`, plus actual Playwright keyboard delivery and pointer-thumbstick checks. It does not establish 51 manually completed journeys or physical-hardware FPS. Earlier **18/32/5** browser checks and the older test/build results above remain unchanged historical records, not fresh rerun claims.
+
+### Reviewer-opened capture inventory
+
+All paths are under `.impeccable/review/controls/`; the reviewer opened all eight.
+
+| Capture | Scope |
+| --- | --- |
+| `desktop-driving.png` | 1024px, native WebGL; driving/HUD evidence. |
+| `mobile-driving.png` | 390px, native WebGL; mobile driving evidence. |
+| `desktop-workshop.png` | 1440px Work layout. |
+| `desktop-thenks-stats.png` | Desktop Thenks results and context. |
+| `mobile-workshop.png` | 390px Work layout. |
+| `mobile-thenks-stats.png` | Mobile Thenks results and context. |
+| `small-mobile-workshop.png` | 320px Work/header fit. |
+| `small-mobile-thenks-stats.png` | 320px stacked-result fit. |
+
+Work captures intentionally use the no-WebGL paper interface to evaluate content and native fallback; renderer evidence is in the driving captures. The documenter inspected source and retained verification text, without reopening captures or conducting a finish review.
+
+### Handoff / publication boundary
+
+The degraded documenter role ran inline. Writes were limited to `DESIGN.md`, the existing `.impeccable/design.json`, and this dated append; earlier review text remains intact. The same reviewer subsequently scored the single persistence finding **RESOLVED** and returned **SHIP** for that fix, with no documentation regressions identified in the correction. The parent thread recorded this returned verdict and the completed final build.
+
+At the documentation handoff, production was the earlier **`10622bc`**. Publication after review is recorded by Git and Netlify history; the documenter performed no commit or push. The supplied Netlify account settings are `built_with_badge_enabled=false` and `hud_enabled=false`; badge/HUD removal is an account setting, not a CSS workaround or new design-system rule.

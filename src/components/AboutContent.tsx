@@ -1,13 +1,13 @@
 import { ArrowRight, BookOpen, Code2 } from 'lucide-react'
 import { ContactLinks } from './ElsewhereLinks'
-import { mediaUrl, profile, site } from '../content'
+import { mediaUrl, profile, site, workshop } from '../content'
 
 export function AboutContent({ onWorkshop, onWriting }: { onWorkshop(): void; onWriting(): void }) {
   return <section className="about-content">
     <div className="homestead-heading"><h1>{site.aboutTitle}</h1><img src={mediaUrl(profile.portrait)} alt={profile.portraitAlt} width="128" height="160" /></div>
     <p className="sheet-lead">{profile.role}</p>
     <p>{profile.summary}</p>
-    <section className="homestead-now" aria-label="What I’m doing now"><h2>Right now</h2><p>{profile.currentFocus}</p><a href="https://thenks.co" target="_blank" rel="noreferrer" className="text-button">Meet Thenks <ArrowRight size={14} /></a></section>
+    <section className="homestead-now" aria-label="What I’m doing now"><h2>Right now</h2><p>{profile.currentFocus}</p><a href={workshop.projects.find(project => project.id === 'thenks')!.url} target="_blank" rel="noreferrer" className="text-button">Meet Thenks <ArrowRight size={14} /></a></section>
     {profile.biography.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
     <blockquote className="personal-mantra">{profile.mantra}</blockquote>
     <p>{profile.outsideWork}</p>

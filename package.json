@@ -20,6 +20,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@kijazo/sdk": "git+https://github.com/M-Waweru/kijazo-sdk.git#6540c88163ddb0e4bd0eb1af2369a170e8b0a8fe",
     "@types/three": "^0.185.4",
     "@vitejs/plugin-react": "4.7.0",
     "dompurify": "^3.3.0",

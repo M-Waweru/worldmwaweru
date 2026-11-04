@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ArrowLeft, ArrowRight, ArrowUp, Bike, BookOpen, Check, ChevronRight, CloudRain, Code2, Compass, Github, Home, Leaf, Link as LinkIcon, Map, Minus, Moon, Plus, Search, Sprout, Sun, Sunset, Volume2, VolumeX, Waypoints, Wind, X } from 'lucide-react'
 import { gardenIndex, essayBySlug, territoryNames, type Arc, type Territory } from './game/essays'
 import { districts, districtById, arcs, trails, countryRoads, type DistrictId } from './world/map'
@@ -12,8 +12,7 @@ import { EssayArticle } from './components/EssayArticle'
 import { TravelContent, vehicleIcons } from './components/TravelContent'
 import { Conversation } from './components/Conversation'
 import { mediaUrl, people, profile, site, setSiteContent } from './content'
-import { KijazoEditor } from './kijazo/Editor'
-import type { EditableCopy } from './kijazo/core'
+import { mountKijazo } from '@kijazo/sdk'
 import elsewhere from '../content/elsewhere.json'
 import { vehicleDefinitions, type VehicleId, type VehicleStatus } from './world/engine/vehicles'
 
@@ -33,10 +32,20 @@ function readHistory(): string[] {
 }
 
 export default function App() {
-  const baseCopy = useRef<EditableCopy>({ ...site })
-  const [, refreshCopy] = useState(0)
-  const applyKijazo = useCallback((next: EditableCopy) => { setSiteContent(next); refreshCopy(n => n + 1) }, [])
-  const editorMode = new URLSearchParams(window.location.search).get('kijazo') === '1'
+  const [, refreshKijazoContent] = useState(0)
+  useEffect(() => {
+    const editor = mountKijazo({
+      title: 'Kijazo',
+      project: 'worldmwaweru',
+      apiUrl: import.meta.env.VITE_KIJAZO_API_URL || '',
+      initialContent: { ...site },
+      onContentChange: next => {
+        setSiteContent({ ...site, ...next })
+        refreshKijazoContent(count => count + 1)
+      },
+    })
+    return () => editor.destroy()
+  }, [])
   const initial = useRef(route())
   const [panel, setPanel] = useState<Panel>(initial.current.panel)
   const [reading, setReading] = useState<string | null>(initial.current.reading)
@@ -285,7 +294,6 @@ export default function App() {
 
       {ready && !failed && exploring && !panel && !mapOpen && <div className="touch-wander"><button className="thumbstick" aria-label={vehicle ? 'Drag to drive and steer' : 'Drag to walk around the world'} onPointerDown={(event) => { event.currentTarget.setPointerCapture(event.pointerId); moveStick(event) }} onPointerMove={(event) => { if (event.currentTarget.hasPointerCapture(event.pointerId)) moveStick(event) }} onPointerUp={endStick} onPointerCancel={endStick} onLostPointerCapture={endStick}><span style={{ transform: `translate(${stick.x * 29}px, ${stick.y * 29}px)` }} /></button><div className="touch-actions">{!vehicle && <button onClick={() => worldRef.current?.jump()} aria-label="Jump"><ArrowUp size={20} /></button>}<button onClick={() => { worldRef.current?.interact(); mountRef.current?.focus({ preventScroll: true }) }} disabled={vehicle ? !vehicle.canExit : !near} aria-label={vehicle ? 'Park and exit vehicle' : near ? near.title : 'No object nearby'}>{vehicle ? <VehicleIcon size={21} /> : <Leaf size={21} />}<small>{vehicle ? 'Exit' : near?.kind === 'guide' || near?.kind === 'person' ? 'Talk' : near?.kind === 'essay' ? 'Read' : near?.kind === 'vehicle' ? 'Ride' : 'Enter'}</small></button></div></div>}
       <footer className="garden-dock"><nav className="territory-navigation" aria-label="Walk to a territory">{districts.map((item) => <button key={item.id} onClick={() => walkDistrict(item.id)} aria-current={location === item.id ? 'location' : undefined} disabled={!ready || failed}>{item.short}</button>)}</nav><nav className="garden-actions" aria-label="Garden tools"><button onClick={() => { closePanel(); setMapOpen(!mapOpen); setExploring(true) }} aria-pressed={mapOpen}><Map size={17} /><span>Map</span></button><button onClick={() => openPanel('travel')} aria-pressed={panel === 'travel'}><Bike size={17} /><span>Vehicles</span></button><button onClick={() => openPanel('guide')}><Compass size={17} /><span>Kijazo</span></button><button onClick={() => openPanel('journeys')}><Waypoints size={17} /><span>Paths</span></button><button onClick={() => openPanel('writing')}><BookOpen size={17} /><span>Index</span></button><button onClick={() => openPanel('links')} aria-pressed={panel === 'links'}><LinkIcon size={17} /><span>Links</span></button></nav></footer>
-      {editorMode && <KijazoEditor original={baseCopy.current} onChange={applyKijazo} />}
       {soundError && <p className="sound-error" role="status">Sound couldn’t start. Try the sound button again.</p>}
       <span className="sr-only" role="status">{ready ? `You are in ${district.name}.` : panel ? 'The portfolio is open.' : 'Loading the native garden.'}</span>
     </main>

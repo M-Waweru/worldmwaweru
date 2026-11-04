@@ -11,7 +11,7 @@ import { ElsewhereLinks } from './components/ElsewhereLinks'
 import { EssayArticle } from './components/EssayArticle'
 import { TravelContent, vehicleIcons } from './components/TravelContent'
 import { Conversation } from './components/Conversation'
-import { mediaUrl, people, profile, site, setSiteContent } from './content'
+import { mediaUrl, people, profile, site } from './content'
 import { mountKijazo } from '@kijazo/sdk'
 import elsewhere from '../content/elsewhere.json'
 import { vehicleDefinitions, type VehicleId, type VehicleStatus } from './world/engine/vehicles'
@@ -32,17 +32,11 @@ function readHistory(): string[] {
 }
 
 export default function App() {
-  const [, refreshKijazoContent] = useState(0)
   useEffect(() => {
     const editor = mountKijazo({
       title: 'Kijazo',
       project: 'worldmwaweru',
       apiUrl: import.meta.env.VITE_KIJAZO_API_URL || 'https://kijazo-api.mathenge2waweru.workers.dev',
-      initialContent: { ...site },
-      onContentChange: next => {
-        setSiteContent({ ...site, ...next })
-        refreshKijazoContent(count => count + 1)
-      },
     })
     return () => editor.destroy()
   }, [])

@@ -37,7 +37,7 @@ export default function App() {
     const editor = mountKijazo({
       title: 'Kijazo',
       project: 'worldmwaweru',
-      apiUrl: import.meta.env.VITE_KIJAZO_API_URL || '',
+      apiUrl: import.meta.env.VITE_KIJAZO_API_URL || 'https://kijazo-api.mathenge2waweru.workers.dev',
       initialContent: { ...site },
       onContentChange: next => {
         setSiteContent({ ...site, ...next })

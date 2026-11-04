@@ -33,6 +33,20 @@ function readHistory(): string[] {
 }
 
 export default function App() {
+  const [, refreshKijazoContent] = useState(0)
+  useEffect(() => {
+    const editor = mountKijazo({
+      title: 'Kijazo',
+      project: 'worldmwaweru',
+      apiUrl: import.meta.env.VITE_KIJAZO_API_URL || '',
+      initialContent: { ...site },
+      onContentChange: next => {
+        setSiteContent({ ...site, ...next })
+        refreshKijazoContent(count => count + 1)
+      },
+    })
+    return () => editor.destroy()
+  }, [])
   const baseCopy = useRef<EditableCopy>({ ...site })
   const [, refreshCopy] = useState(0)
   const applyKijazo = useCallback((next: EditableCopy) => { setSiteContent(next); refreshCopy(n => n + 1) }, [])

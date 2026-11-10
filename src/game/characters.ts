@@ -120,10 +120,10 @@ export function makeMessenger(gradient: THREE.DataTexture) {
 export function makeKijazo(gradient: THREE.DataTexture) {
   const kijazo = new THREE.Group()
 
-  // Change body color to white
-  const body = outlined(kijazo, new THREE.CapsuleGeometry(0.21, 0.34, 5, 10), 0xffffff, gradient, [0, 0.52, 0])
-  // Change face color to white
-  const face = outlined(kijazo, new THREE.SphereGeometry(0.24, 16, 12), 0xffffff, gradient, [0, 1.06, 0])
+  // Change body color to blue
+  const body = outlined(kijazo, new THREE.CapsuleGeometry(0.21, 0.34, 5, 10), 0x0000ff, gradient, [0, 0.52, 0])
+  // Change face color to blue
+  const face = outlined(kijazo, new THREE.SphereGeometry(0.24, 16, 12), 0x0000ff, gradient, [0, 1.06, 0])
   face.scale.set(1.12, .95, 1)
   for (const x of [-0.08, 0.08]) {
     const eye = new THREE.Mesh(new THREE.SphereGeometry(0.032, 8, 6), new THREE.MeshBasicMaterial({ color: 0xffd56d }))

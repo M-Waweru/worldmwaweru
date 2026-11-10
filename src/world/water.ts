@@ -22,7 +22,7 @@ export function createGardenWater() {
         vec2 p=vWorld.xz,uv=p/worldSpan+.5;float floorY=texture2D(bed,clamp(uv,0.,1.)).r*10.-2.;
         if(any(lessThan(uv,vec2(0.)))||any(greaterThan(uv,vec2(1.))))floorY=-.6;
         float d=max(0.,.43-floorY),n=noise(p*.7+time*.025);if(floorY>.55)discard;
-        vec3 c=mix(vec3(.12,.43,.32),vec3(.045,.25,.27),smoothstep(.2,2.5,d));
+        vec3 c=mix(vec3(1.0,1.0,1.0),vec3(1.0,1.0,1.0),smoothstep(.2,2.5,d));
         float caustic=1.-smoothstep(.025,.11,abs(sin(p.x*2.4+sin(p.y*1.3+time*.35))+cos(p.y*2.1+cos(p.x*1.4-time*.23))));
         c+=vec3(.15,.21,.10)*caustic*(1.-smoothstep(.2,2.,d))*.4;
         float glint=pow(max(0.,sin(p.x*6.+time*.9)*sin(p.y*4.8-time*.55)*sin(p.x*7.7+p.y*5.8)),14.);
